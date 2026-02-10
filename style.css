@@ -12,14 +12,14 @@ body {
 
 .hub {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: -40px;
   cursor: pointer;
 }
 
 .friends {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: -110px;
   color:orangered;
 }
