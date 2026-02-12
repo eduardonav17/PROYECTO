@@ -16,12 +16,12 @@
  position: absolute;
   top: 25px;
   right: -30px;
-  color:#219B9D;
+  color:hsl(181, 65%, 37%);
 }
 
 .hero {
   position: absolute;
-top:  -20px;
+top:  -50px;
 right: 550px;
 }
 
@@ -34,6 +34,11 @@ color: #FF8000;
 
 .buscador {
 position: absolute;
-top:  120px;
-right: 0px;
+top:  135px;
+right: 120px;
+width: 550px;
+font-size: 18px;
 }
+.buscador input{width: 90%;
+padding: 8px;
+font-size: 18px;}
