@@ -1,58 +1,68 @@
-.logo {
- position: absolute;
-  top: -5px;
-  right: 1225px;
-  color: #219B9D;
+.logo-text {
+margin: 0;
+font-size: 22px;
+font-weight: bold;
+color: hsl(181, 65%, 37%);
 }
 
 .friends {
- position: absolute;
-  top: 0px;
-  right: -95px;
   color:#FF8000;
 }
 
 .hub {
- position: absolute;
-  top: 25px;
-  right: -30px;
   color:hsl(181, 65%, 37%);
 }
 
 .hero {
-  position: absolute;
-top:  -50px;
-right: 550px;
+text-align: center;
+padding: 40px 20px;
 }
 .btn {
-  position: absolute;
-top:  30px;
-right: 20px;
-color: #FF8000;
+padding: 10px 15px;
+border: none;
+background: white;
+cursor: pointer;
 }
 
 .Busqueda {
-position: absolute;
-top: 135px;
-right: 20px; 
-width: 350px;
+margin: auto;
+margin-top: 20px;
+width: 90%;
+max-width: 500px;
 display: flex;
 align-items: center;
-background-color: white;
+background: white;
 border: 1px solid #ccc;
 border-radius: 4px;
-padding: 0 15px;
+padding: 10px;
 }
 .Busqueda input {
 border: none;
 outline: none;
-background: transparent;
-flex: 1; 
-padding: 8px;
-font-size: 18px;
+flex: 1;
+front-size: 16px;
 }
 .Busqueda i {
 font-size: 18px;
 margin-left: 10px;
 cursor: pointer;
+}
+
+.navbar {
+  background-color: #233D4D;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
 }
