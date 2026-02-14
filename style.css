@@ -2,15 +2,15 @@
 margin: 0;
 font-size: 22px;
 font-weight: bold;
-color: hsl(181, 65%, 37%);
+color: #2D4F4F;
 }
 
 .friends {
-  color:#FF8000;
+  color:#D36B2D;
 }
 
 .hub {
-  color:hsl(181, 65%, 37%);
+  color:#2D4F4F;
 }
 
 .hero {
@@ -36,12 +36,14 @@ border: 1px solid #ccc;
 border-radius: 4px;
 padding: 10px;
 }
+
 .Busqueda input {
 border: none;
 outline: none;
 flex: 1;
 front-size: 16px;
 }
+
 .Busqueda i {
 font-size: 18px;
 margin-left: 10px;
@@ -49,7 +51,7 @@ cursor: pointer;
 }
 
 .navbar {
-  background-color: #233D4D;
+  background-color: #E6E2D3;
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
