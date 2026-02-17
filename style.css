@@ -112,3 +112,18 @@ cursor: pointer;
   color: white;
   z-index:2;
 }
+<!--BOTON PARA PERRO>
+.card{text-decoration: none;
+color: inherit;
+position:relative;
+width: 280px;
+height: 320px;
+overflow:hidden;
+border-radius: 20px;
+display: block;
+transition: 25s;
+}
+.card{
+transform: scale(1.05);
+box-shadow: 0 20px 40px  rgba(0,0,0,.25);
+}
