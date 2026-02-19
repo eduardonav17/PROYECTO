@@ -17,6 +17,75 @@ color: #2D4F4F;
 text-align: center;
 padding: 40px 20px;
 }
+<!--menu_prinicipal-->
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  margin-left: 600px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #f4b400;
+}
+/* Contenedor del menú (si ya tienes flex, no lo repitas) */
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Submenú oculto */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* aparece debajo */
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    padding: 8px 0;
+}
+
+/* Links del submenú */
+.submenu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* Hover bonito */
+.submenu a:hover {
+    background: #f2f2f2;
+}
+
+/* Mostrar cuando pasas el mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
 .btn {
 padding: 10px 15px;
 border: none;
