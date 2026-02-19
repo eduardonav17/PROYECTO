@@ -3,14 +3,17 @@ margin: 0;
 font-size: 22px;
 font-weight: bold;
 color: #2D4F4F;
+font-family: JetBrains Mono,monospace;
 }
 
 .friends {
   color:#D36B2D;
+  font-family: JetBrains Mono,monospace;
 }
 
 .hub {
   color:#2D4F4F;
+  font-family: JetBrains Mono,monospace;
 }
 
 .hero {
@@ -83,10 +86,22 @@ padding: 40px 20px;
 
 
 .btn {
-padding: 10px 15px;
+padding: 10px 12px;
 border: none;
-background: white;
+border-radius: 12px;
+background:#D36B2D;
+color: #E6E2D3;
 cursor: pointer;
+font-family: JetBrains Mono, monospace;
+font-weight: bold;
+font-size: 11px;
+display: inline-block;
+border: #535858 4px;
+}
+
+.btn:hover{
+  background-color:#D36B2D;
+transform:scale(1.05);
 }
 
 .Busqueda {
