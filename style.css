@@ -17,7 +17,7 @@ color: #2D4F4F;
 text-align: center;
 padding: 40px 20px;
 }
-<!--menu_prinicipal-->
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -28,13 +28,14 @@ padding: 40px 20px;
 
 .menu {
   display: flex;
-  gap: 60px;
+  gap: 35px;
+  align-items: center;
   margin-left: 600px;
 }
 
 .menu a {
   text-decoration: none;
-  color:#2D4F4F;
+  color: #2D4F4F;
   font-weight: 600;
   font-size: 18px;
 }
@@ -43,47 +44,43 @@ padding: 40px 20px;
   color: #f4b400;
 }
 
-.menu {
-    display: flex;
-    gap: 35px;
-    align-items: center;
-}
-<!--contenedor .dropdown-->
+/* Dropdown */
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
-<!--submenu oculto-->
+/* Submenu oculto */
 .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    min-width: 200px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    border-radius: 6px;
-    padding: 8px 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  padding: 8px 0;
 }
 
-<!--submenus-->
+/* Links del submenu */
 .submenu a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
 
 .submenu a:hover {
-    background: #f2f2f2;
+  background: #f2f2f2;
 }
 
-<!--mostrar cuando pongas mause-->
+/* Mostrar al pasar el mouse */
 .dropdown:hover .submenu {
-    display: block;
+  display: block;
 }
+
 
 .btn {
 padding: 10px 15px;
