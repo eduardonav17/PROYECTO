@@ -42,23 +42,22 @@ padding: 40px 20px;
 .menu a:hover {
   color: #f4b400;
 }
-/* Contenedor del menú (si ya tienes flex, no lo repitas) */
+
 .menu {
     display: flex;
     gap: 35px;
     align-items: center;
 }
-
-/* Contenedor del dropdown */
+<!--contenedor .dropdown-->
 .dropdown {
     position: relative;
 }
 
-/* Submenú oculto */
+<!--submenu oculto-->
 .submenu {
     display: none;
     position: absolute;
-    top: 100%; /* aparece debajo */
+    top: 100%;
     left: 0;
     background: white;
     min-width: 200px;
@@ -67,7 +66,7 @@ padding: 40px 20px;
     padding: 8px 0;
 }
 
-/* Links del submenú */
+<!--submenus-->
 .submenu a {
     display: block;
     padding: 10px 15px;
@@ -76,12 +75,12 @@ padding: 40px 20px;
     font-size: 14px;
 }
 
-/* Hover bonito */
+
 .submenu a:hover {
     background: #f2f2f2;
 }
 
-/* Mostrar cuando pasas el mouse */
+<!--mostrar cuando pongas mause-->
 .dropdown:hover .submenu {
     display: block;
 }
