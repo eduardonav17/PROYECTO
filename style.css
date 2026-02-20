@@ -304,3 +304,26 @@ object-fit: cover;
     font-size: 22px;
     margin-top: 10px;
 }
+/*soy rescatista*/
+.titulo{
+  font-size: 48px;
+  color: #2D4F4F;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  
+}
+
+/*texto*/
+.hero{
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 20px;
+}
+
+.hero p{
+    max-width: 800px;   /* controla qué tan ancho será el texto */
+    margin: 0 auto;     /* lo centra horizontalmente */
+    line-height: 1.7;
+    font-size: 18px;
+}
