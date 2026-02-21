@@ -3,17 +3,17 @@ margin: 0;
 font-size: 22px;
 font-weight: bold;
 color:#35c2c2 ;
-font-family: JetBrains Mono,monospace;
+font-family: 'JetBrains Mono',monospace;
 }
 
 .friends {
   color:#D36B2D;
-  font-family: JetBrains Mono,monospace;
+  font-family: 'JetBrains Mono',monospace;
 }
 
 .hub {
   color:#35c2c2;
-  font-family: JetBrains Mono,monospace;
+  font-family: 'JetBrains Mono',monospace;
 }
 
 .hero {
@@ -92,7 +92,7 @@ border-radius: 12px;
 background:#D36B2D;
 color: #E6E2D3;
 cursor: pointer;
-font-family: JetBrains Mono, monospace;
+font-family: 'JetBrains Mono', monospace;
 font-weight: bold;
 font-size: 11px;
 display: inline-block;
