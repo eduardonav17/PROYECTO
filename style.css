@@ -103,7 +103,59 @@ border: #535858 4px;
   background-color:#D36B2D;
 transform:scale(1.05);
 }
+/* Reportar PET funcion */
 
+.overlay-pestaña {
+    display: none; 
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ReportarPET se muestra la ventana */
+#activar-pestaña:checked ~ .overlay-pestaña {
+    display: flex;
+}
+
+
+.ventana-blanca {
+    background: #E6E2D3;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.encabezado-pestaña {
+    padding: 10px 15px;
+    background: #D36B2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #D4AF37;
+    color: #E6E2D3;
+    font-family: 'JetBrains Mono',monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cerrar-pestaña {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+.contenido-iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+/*BARRA DEL BUSCADOR*/
 .Busqueda {
 margin: auto;
 margin-top: 20px;
