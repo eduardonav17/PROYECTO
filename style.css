@@ -75,6 +75,7 @@ padding: 40px 20px;
 .dropdown:hover .submenu {
   display: block;
 }
+/*aqui termina los menus y submenus*/
 
 
 .btn {
@@ -356,38 +357,84 @@ object-fit: cover;
     font-size: 22px;
     margin-top: 10px;
 }
-/*titulos y mas de los submenus*/
-.titulo-seccion{
-  background-color: #dfe3e6;
-  padding: 80px 20px;
-  text-align: center;
+/*Soy rescatista*/
+.barra-titulo {
+    background-color: #555;   /* gris claro */
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.titulo-seccion h2{
-  font-size: 65px;
-  color: #3a3f45;
-  font: weight 400px;
-  letter-spacing: 1px;
-  margin: -50;
+.barra-titulo .titulo{
+    font-size: 48px;
+    color: #2D4F4F;
+    margin: 0;
+}
+.contenido-rescatista{
+    background-color: white;
+    padding: 70px 20px;
 }
 
-
-/*texto*/
-.hero{
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding: 20px 20px;
+.contenedor-texto{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.hero p{
-    max-width: 800px;   /* controla qué tan ancho será el texto */
-    margin: 0 auto;     /* lo centra horizontalmente */
+.contenedor-texto p{
+    font-size: 18px;
     line-height: 1.7;
+    margin-bottom: 20px;
+    color: #444;
+}
+/*Quiero ayudar*/
+.hero {
+    font-family: 'JetBrains Mono', monospace;
+}
+.titulo-seccion {
+    background-color: #e9ecef;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.titulo-seccion h2 {
+    font-size: 50px;
+    color: #3a3f45;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin: -50px;
+}
+/* Contenido */
+.contenido-hero {
+  font-size: 22px;
+  margin-bottom: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #555;
+}
+
+.contenido-hero p {
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 1px;
+}
+
+.contenido-hero ul {
+    padding-left: 60px;
+    text-align: left;
+}
+
+.contenido-hero li {
+    margin-bottom: 12px;
     font-size: 18px;
 }
 
- 
+.mensaje-final {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #35c2c2;
+}
+
+/*aqui termina css de quiero ayudar*/
 
 /* menus y submenus acomodados para celular siempre ira al ultimo
  todo lo que pongan tiene que ser ariba de esto */
