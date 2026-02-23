@@ -366,9 +366,9 @@ object-fit: cover;
 .titulo-seccion h2{
   font-size: 65px;
   color: #3a3f45;
-  font-weight: 500;
+  font: weight 400px;
   letter-spacing: 1px;
-  margin: 0;
+  margin: -50;
 }
 
 
