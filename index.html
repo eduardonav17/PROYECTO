@@ -54,7 +54,24 @@
       <a href="Acceder.html">Acceder</a>
    </nav>
 
-   <button class="btn">REPORTAR PET</button>
+   <!--REPORTAR PET HTML-->
+ <input type="checkbox" id="activar-pestaña" style="display: none;">
+<label for="activar-pestaña" class="btn" style="cursor: pointer; display: inline-block;">
+    REPORTAR PET
+</label>
+
+<div class="overlay-pestaña">
+    <div class="ventana-blanca">
+        <div class="encabezado-pestaña">
+            <span>Opciones de Reporte</span>
+            <label for="activar-pestaña" class="cerrar-pestaña">&times;</label>
+        </div>
+        
+        <iframe src="ReportarPET.html" class="contenido-iframe"></iframe>
+    </div>
+</div>
+</header>
+
 </header>
 
     <!-- Sección principal-->
