@@ -11,14 +11,19 @@
 <body>
 
 <header class="navbar">
-        <!--Logo de la pagina web-->
-<div class="brand">
-     <img src="logop.png" alt="Logo" class="logo-img">
-                    <!--nombre del proyecto-->
-     <h2 class="logo-text">
-        <span class="friends">PET </span><span class="hub">friends hub</span>
-    </h2>
- </div>
+    <div class="brand">
+        <!--Codigo para mandar al inicio-->
+        <a href="index.html" class="logo-link">
+            <img src="logop.png" alt="Logo" class="logo-img">
+            <!--Nombre del proyecto-->
+            <h1 class="logo-text">
+                PET<span class="friends">friends </span>
+                <span class="hub">hub</span>
+            </h1>
+        </a>
+    </div>
+</header>
+
  <div class="nav-right">
    <nav class="menu">
 <!--menu y submenus-->
@@ -123,32 +128,40 @@
         </select>
      </div>
 
+     <!--Tipo de pelaje-->
+     <div class="grupo">
+        <label>TIPO DE PELAJE</label>
+        <select>
+            <option>--</option>
+            <option>Corto</option>
+            <option>Medio</option>
+            <option>Largo</option>
+            <option>Rizado</option>
+        </select>
+     </div>
+
      <!--Color-->
      <div class="grupo">
         <label>COLOR</label>
         <select>
             <option>--</option>
+            <option>Negro</option>
             <option>Blanco</option>
-            <option>Güero</option>
             <option>Café</option>
             <option>Gris</option>
-            <option>Negro</option>
             <option>Atrigado</option>
             <option>Manchas</option>
         </select>
      </div>
 
-     <!--Caracter-->
+     <!--Nivel de energía-->
      <div class="grupo">
-        <label>CARACTER</label>
+        <label>NIVEL DE ENERGÍA</label>
         <select>
             <option>--</option>
-            <option>Faldero</option>
-            <option>Tímido</option>
-            <option>Activo</option>
             <option>Tranquilo</option>
-            <option>Juguetón</option>
-            <option>Nervioso</option>
+            <option>Moderado</option>
+            <option>Muy activo</option>
         </select>
        </div>
 

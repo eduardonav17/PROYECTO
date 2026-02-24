@@ -6,6 +6,13 @@ color:#35c2c2 ;
 font-family: 'JetBrains Mono',monospace;
 }
 
+/*Codigo para mandar al inicio*/
+.logo-link{
+    text-decoration: none;
+    color: inherit;
+}
+/*Aqui termina*/
+
 .friends {
   color:#D36B2D;
   font-family: 'JetBrains Mono',monospace;
