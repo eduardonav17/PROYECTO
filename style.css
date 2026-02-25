@@ -364,21 +364,11 @@ object-fit: cover;
     font-size: 22px;
     margin-top: 10px;
 }
-/*Soy rescatista*/
-.barra-titulo {
-    background-color: #555;   /* gris claro */
-    padding: 60px 20px;
-    text-align: center;
-}
 
-.barra-titulo .titulo{
-    font-size: 48px;
-    color: #2D4F4F;
-    margin: 0;
-}
-.contenido-rescatista{
+/*Soy rescatista*/
+.hero-rescatista{
     background-color: white;
-    padding: 70px 20px;
+    padding: 25px 50px 25px;
 }
 
 .contenedor-texto{
@@ -392,10 +382,19 @@ object-fit: cover;
     line-height: 1.7;
     margin-bottom: 20px;
     color: #444;
+} 
+/*aqui termina css de soy rescatista*/
+
+
+/*soy adoptante*/
+.hero-adoptante{
+    background-color: white;
+    padding: 25px 50px 25px;
 }
+
 /*Quiero ayudar*/
 .hero {
-    font-family: 'JetBrains Mono', monospace;
+   font-family: 'JetBrains Mono', monospace;
 }
 .titulo-seccion {
     background-color: #e9ecef;
@@ -405,7 +404,7 @@ object-fit: cover;
 
 .titulo-seccion h2 {
     font-size: 50px;
-    color: #3a3f45;
+    color: #3a3f45; /*color de las barrras*/
     font-weight: 400;
     letter-spacing: 0px;
     margin: -50px;
@@ -415,19 +414,21 @@ object-fit: cover;
   font-size: 22px;
   margin-bottom: 30px;
     max-width: 800px;
-    margin: 20px auto;
-    color: #555;
+    margin: -10px auto;
+    color: #444;
 }
 
 .contenido-hero p {
     font-size: 25px;
     line-height: 1.7;
-    margin-bottom: 1px;
+    margin-bottom: -30px;
+    padding: 25px 50px 25px;
 }
 
 .contenido-hero ul {
     padding-left: 60px;
     text-align: left;
+    padding: 25px 50px 25px;
 }
 
 .contenido-hero li {
@@ -439,6 +440,7 @@ object-fit: cover;
     margin-top: 25px;
     font-weight: bold;
     color: #35c2c2;
+   
 }
 /*aqui termina css de quiero ayudar*/
 
