@@ -7,9 +7,13 @@ font-family: 'JetBrains Mono',monospace;
 }
 
 /*Codigo para mandar al inicio*/
+/*No tocar!!*/
 .logo-link{
     text-decoration: none;
     color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 /*Aqui termina*/
 
@@ -234,6 +238,7 @@ cursor: pointer;
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 20px 40px rgba(0,0,0,.25);
+
 }
 
 .card img {
@@ -511,7 +516,6 @@ select, input[type="number"] {
     flex-direction: column;
   }
 }
-
 /*aqui termina css de filtro de busqueda*/
 
 /* menus y submenus acomodados para celular siempre ira al ultimo
