@@ -520,7 +520,7 @@ select, input[type="number"] {
 
 /* Estilo general para ambos iconos */
 .social-icon {
-    font-size: 25px;
+    font-size: 33px;
     text-decoration: none; /* Quita el subrayado del link */
     transition: transform 0.2s ease;
 }
