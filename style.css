@@ -135,11 +135,14 @@ transform:scale(1.05);
 
 .ventana-blanca {
     background: #E6E2D3;
-    width: 90%;
-    max-width: 400px;
+    width: 95vw;
+    max-width: 500px;
+    max-height: 90vw;
     border-radius: 15px;
+    flex-direction: column;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: auto;
 }
 
 .encabezado-pestaña {
@@ -163,9 +166,13 @@ transform:scale(1.05);
 
 .contenido-iframe {
     width: 100%;
-    height: 350px;
+    flex: 1;
+    height: 240px;
     border: none;
+    display: block;
 }
+/* aqui termina REPORTAR PET*/
+
 /*BARRA DEL BUSCADOR*/
 .Busqueda {
 margin: auto;
@@ -192,6 +199,8 @@ font-size: 18px;
 margin-left: 10px;
 cursor: pointer;
 }
+/* aqui termina barra de busqueda*/
+
 /*Navbar muy importante para santos y Juan*/
 .navbar {
   background-color: #E6E2D3;
