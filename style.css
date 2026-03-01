@@ -1,113 +1,113 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /*quita el margen exterior*/
+  padding: 0; /*quita el espacio interior entre contenido y borde*/
+  box-sizing: border-box; /*Define como se calcula el tamaño total*/
 }
 
 .logo-text {
-margin: 0;
-font-size: 22px;
-font-weight: bold;
-color:#35c2c2 ;
-font-family: 'JetBrains Mono',monospace;
+margin: 0; /*quita el margen del texto*/
+font-size: 22px; /*Tamaño fuente*/
+font-weight: bold; /*Grosor de texto*/
+color:#35c2c2 ; /*color del texto de pet*/
+font-family: 'JetBrains Mono',monospace; /*Tipo de letra*/
 }
 
 /*Codigo para mandar al inicio*/
 /*No tocar!!*/
 .logo-link{
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    text-decoration: none; /*decoracion del texto*/
+    color: inherit; /*color*/
+    display: flex; /*tipo de visualiacion*/
+    align-items: center; /*alineacion vertical*/
+    gap: 10px; /*da spacio entre filas*/
 }
 /*Aqui termina*/
 
 .friends {
-  color:#D36B2D;
-  font-family: 'JetBrains Mono',monospace;
+  color:#D36B2D; /*da color al texto en la parte de frinds*/
+  font-family: 'JetBrains Mono',monospace; /*tipo de letra*/
 }
 
 .hub {
-  color:#35c2c2;
-  font-family: 'JetBrains Mono',monospace;
+  color:#35c2c2; /*da color a la parte hub*/
+  font-family: 'JetBrains Mono',monospace; /*tipo de letra*/
 }
 
 .hero {
-text-align: center;
-padding: 40px 20px;
+text-align: center; /*alinea el texto*/
+padding: 40px 20px; /*da espacio interior entre el contenido y borde*/
 }
+
 /*menus y submenus*/
 .menu {
-  display: flex;
-  gap: 35px;
-  align-items: center;
-  
+  display: flex; /*tipo de visualizacion*/
+  gap: 35px; /*espcio entre filas*/
+  align-items: center; /*alineacion vertical*/
 }
 
 .menu a {
-  text-decoration: none;
-  color: #2D4F4F;
-  font-weight: 600;
-  font-size: 20px;
+  text-decoration: none; /*docoracion del texto*/
+  color: #2D4F4F; /*color del menu*/
+  font-weight: 600;/*grosor del texto*/
+  font-size: 20px; /*tamaño de la fuente*/
 }
 
 .menu a:hover {
-  color: #f4b400;
+  color: #f4b400; /*color que pone cuando el mouse pasa por encima del menu */
 }
 
 /* Dropdown */
 .dropdown {
-  position: relative;
+  position: relative; /*tipo de posicionamiento*/
 }
 
 /* Submenu oculto */
 .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  min-width: 200px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  padding: 8px 0;
+  display: none; /*tipo de visualizacion*/
+  position: absolute; /*tipo posicionamiento*/
+  top: 100%; /*distancia superior*/
+  left: 0; /*distancia hacia la izquierda*/
+  background: white; /*propiedad abreviada del fondo*/
+  min-width: 200px; /*ancho minimo permitido*/
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2); /*sombra de caja*/
+  border-radius: 10px; /*redondea esquinas*/
+  padding: 8px 0; /*espacio entre contenidos*/
 }
 
 /* Links del submenu */
-.submenu a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
+.submenu a { 
+  display: block; /*tipo de visualizacion*/
+  padding: 10px 15px; /*espacio entre contenido*/
+  text-decoration: none; /*decoracion del texto*/
+  color: black; /*color del texto*/
+  font-size: 14px; /*tamaño fuente*/
 }
 
 
 .submenu a:hover {
-  background: #f2f2f2;
+  background: #f2f2f2; /*propiedad abreviada del fondo*/
 }
 
 /* Mostrar al pasar el mouse */
 .dropdown:hover .submenu {
-  display: block;
+  display: block; /*tipo de visualizacion*/
 }
 /*aqui termina los menus y submenus*/
 
 
 .btn {
-margin-left: 60px;
-padding: 10px 12px;
-border: none;
-border-radius: 12px;
-background:#D36B2D;
-color: #E6E2D3;
-cursor: pointer;
-font-family: 'JetBrains Mono', monospace;
-font-weight: bold;
-font-size: 11px;
-display: inline-block;
-border: #535858 4px;
+margin-left: 60px; /*margen izquierdo*/
+padding: 10px 12px; /*espacio entre conenido*/
+border: none; /*define borde completo*/
+border-radius: 12px; /*redondea esquinas*/
+background:#D36B2D; /*propiedad abreviada del fondo*/
+color: #E6E2D3; /*color del texto*/
+cursor: pointer; /*define tipo de puntero*/
+font-family: 'JetBrains Mono', monospace; /*tipo de letra*/
+font-weight: bold; /*grosor del texto*/
+font-size: 11px; /*tamaño fuente*/
+display: inline-block; /*tipo de visualizacion*/
+border: #535858 4px; /*define borde completo*/
 }
 
 .btn:hover{
@@ -272,7 +272,7 @@ cursor: pointer;
   color: white;
   z-index:2;
 }
-<!--BOTON PARA PERRO>
+/*BOTON PARA PERRO*/
 .card{text-decoration: none;
 color: inherit;
 position:relative;
@@ -534,14 +534,31 @@ select, input[type="number"] {
 /*aqui termina css de filtro de busqueda*/
 
 /* Estilo general para ambos iconos */
-.social-icon {
-    font-size: 33px;
-    text-decoration: none; /* Quita el subrayado del link */
-    transition: transform 0.2s ease;
+.social-container {
+  position: fixed !important ;
+  bottom: 20px !important;
+  left: 20px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 99999 !important;
 }
 
-.social-icon:hover {
-    transform: translateY(-5px); /* Pequeño salto hacia arriba al pasar el mouse */
+.social-container a {
+  font-size: 30px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.social-container a:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+    text-decoration: none; /* Quita el subrayado del link */
 }
 
 /* Colores específicos */
