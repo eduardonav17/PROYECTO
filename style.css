@@ -406,6 +406,67 @@ object-fit: cover;
 /*aqui termina css de soy rescatista*/
 
 
+/*  FORMULARIO REGISTRO RESCATISTA  */
+.formulario {
+  width: 90%;            /* Se adapta */
+  max-width: 650px;      /* Más ancho que antes */
+  margin: 60px auto;     /* Centrado */
+  padding: 50px;         /* Espacio interno */
+  background: #f5f5f5;   /* Fondo */
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  font-family: Arial, sans-serif;
+}
+
+/*  CADA GRUPO (label + input) */
+.form-group {
+  margin-bottom: 20px;      /* Espacio entre campos */
+  display: flex;            /* Activa Flexbox */
+  flex-direction: column;   /* Label arriba, input abajo */
+}
+
+/*  ESTILO DE LAS ETIQUETAS */
+.form-group label {
+  margin-bottom: 8px;   /* Espacio entre label e input */
+  font-weight: 600;     /* Texto un poco más grueso */
+}
+
+/*  ESTILO DE INPUTS Y TEXTAREA  */
+.form-group input,
+.form-group textarea {
+  padding: 12px;          /* Espacio interno */
+  border-radius: 8px;     /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 14px;        /* Tamaño del texto */
+}
+
+/*  EFECTO CUANDO HACES CLICK EN UN CAMPO  */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;            /* Quita borde azul del navegador */
+  border-color: #35c2c2;    /* Cambia borde a turquesa */
+}
+
+/*  BOTÓN DE ENVIAR  */
+.btn-enviar {
+  width: 100%;               /* Ocupa todo el ancho */
+  padding: 14px;             /* Espacio interno */
+  background-color: #35c2c2;  /* Color principal */
+  border: none;              /* Sin borde */
+  border-radius: 8px;        /* Bordes redondeados */
+  color: white;              /* Texto blanco */
+  font-size: 16px;           /* Tamaño del texto */
+  cursor: pointer;           /* Cursor tipo mano */
+  transition: 0.3s;          /* Transición suave */
+}
+
+/*  EFECTO HOVER DEL BOTÓN  */
+.btn-enviar:hover {
+  background-color: #2aa5a5;  /* Color más oscuro al pasar el mouse */
+}
+/*aqui termina Reglamento rescatista*/
+
+
 /*soy adoptante*/
 .hero-adoptante{
     background-color: white;
@@ -586,4 +647,10 @@ select, input[type="number"] {
     font-size: 16px;
   }
 
+}
+/*registro rescatista*/
+@media (max-width: 480px) {
+  .registro-rescatista {
+    padding: 25px 20px;
+  }
 }

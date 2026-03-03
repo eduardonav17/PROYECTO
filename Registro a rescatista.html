@@ -1,2 +1,153 @@
-<Registro a rescatista html>
-<html lang="en">
+<Rgistro rescatista html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Titulo de la pagina web-->
+<title>PETfriends hub</title>
+<link rel="icon" type="logoSF.jpeg" href="logop.png" style="background-color: transparent;">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <!--Codigo para mandar al inicio-->
+        <a href="index.html" class="logo-link">
+            <!--Codigo para mostrar el logo-->
+            <img src="logop.png" alt="Logo" class="logo-img">
+            <!--Nombre del proyecto-->
+            <h1 class="logo-text">
+                PET<span class="friends">friends </span>
+                <span class="hub">hub</span>
+            </h1>
+        </a>
+    </div> 
+
+ <div class="nav-right">
+   <nav class="menu">
+<!--menu y submenus-->
+<div class="dropdown">
+    <a href="Soy rescatista.html">Soy rescatista</a>
+
+     <div class="submenu">
+        <a href="Registro a rescatista.html">Registro a rescatista</a>
+        <a href="Reglamento  rescatista.html">Reglamento rescatista</a>
+           
+     </div>
+    </div>
+ <div class="dropdown">
+    <a href="Soy adoptante.html">Soy adoptante</a>
+        
+     <div class="submenu">
+        <a href="Solicitud de adopcion de perro.html">Solicitud de adopcion de perro</a>
+        <a href="Solicitud de adopcion de gato.html">Solicitud de adopcion de gato</a>
+        <a href="Ya he adoptado.html">Ya eh adoptado</a>
+
+        </div>
+    </div>
+ <div class="dropdown">
+    <a href="Quiero ayudar.html">Quiero ayudar</a>
+
+    <div class="submenu">
+        <a href="Solicitud de adopcion de perro.html">Donaciones monetarias</a>
+
+         </div>
+    </div>
+     <a href="Acceder.html">Acceder</a>
+   
+<!--REPORTAR PET HTML-->
+<input type="checkbox" id="activar-pestaña" hidden>
+
+<label for="activar-pestaña" class="btn" style="cursor: pointer; display: inline-block;">
+    REPORTAR PET
+</label>
+   </nav>
+ </div>
+</header>
+<div class="overlay-pestaña">
+    <div class="ventana-blanca">
+        <div class="encabezado-pestaña">
+            <span>Opciones de Reporte</span>
+            <label for="activar-pestaña" class="cerrar-pestaña">&times;</label>
+        </div>
+        
+        <iframe src="ReportarPET.html" class="contenido-iframe"></iframe>
+    </div>
+</div>
+
+ <!-- Sección principal-->
+ <section class="titulo-seccion">
+   <h2 class="titulo">Registro rescatista🐾</h2>
+</section>  
+<section class="hero-rescatista">
+<div class="contenido-hero">
+    <p>Completa el siguiente formulario para formar 
+    parte de PETfriends Hub y difundir a tus rescatados.</p>
+
+  <!--  FORMULARIO  -->
+  <section class="formulario">
+
+    <form action="procesar.php" method="POST" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label>Nombre *</label>
+        <input type="text" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label>Apellidos *</label>
+        <input type="text" name="apellidos" required>
+      </div>
+
+      <div class="form-group">
+        <label>Edad *</label>
+        <input type="number" name="edad" required>
+      </div>
+
+      <div class="form-group">
+        <label>Correo electrónico *</label>
+        <input type="email" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label>Celular *</label>
+        <input type="tel" name="celular" required>
+      </div>
+
+      <div class="form-group">
+        <label>¿Cuántos perros tienes a tu cargo? *</label>
+        <input type="number" name="cantidad_perros" required>
+      </div>
+
+      <div class="form-group">
+        <label>¿Cómo es tu proceso de adopción? *</label>
+        <textarea name="proceso" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Identificación oficial *</label>
+        <input type="file" name="identificacion" required>
+      </div>
+
+      <div class="form-group">
+        <label>Comprobante de domicilio *</label>
+        <input type="file" name="comprobante" required>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+
+    </form>
+
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 PETfriends Hub - Conectando rescatistas con hogares responsables 🐶🐱</p>
+  </footer>
+
+</body>
+</html>
