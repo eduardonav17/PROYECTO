@@ -414,7 +414,7 @@ object-fit: cover;
 /*aqui termina css de soy rescatista*/
 
 
-/*  FORMULARIO REGISTRO RESCATISTA  */
+/*  FORMULARIOs de registro  */
 .formulario {
   width: 90%;            /* Se adapta */
   max-width: 650px;      /* Más ancho que antes */
@@ -428,7 +428,7 @@ object-fit: cover;
 
 /*  CADA GRUPO (label + input) */
 .form-group {
-  margin-bottom: 20px;      /* Espacio entre campos */
+  margin-bottom: 15px;      /* Espacio entre campos */
   display: flex;            /* Activa Flexbox */
   flex-direction: column;   /* Label arriba, input abajo */
 }
@@ -436,7 +436,7 @@ object-fit: cover;
 /*  ESTILO DE LAS ETIQUETAS */
 .form-group label {
   margin-bottom: 8px;   /* Espacio entre label e input */
-  font-weight: 600;     /* Texto un poco más grueso */
+  font-weight: bold;     /* Texto un poco más grueso */
 }
 
 /*  ESTILO DE INPUTS Y TEXTAREA  */
@@ -459,7 +459,7 @@ object-fit: cover;
 .btn-enviar {
   width: 100%;               /* Ocupa todo el ancho */
   padding: 14px;             /* Espacio interno */
-  background-color: #35c2c2;  /* Color principal */
+  background-color: #D36B2D;  /* Color principal */
   border: none;              /* Sin borde */
   border-radius: 8px;        /* Bordes redondeados */
   color: white;              /* Texto blanco */
@@ -475,14 +475,50 @@ object-fit: cover;
 /*aqui termina Reglamento rescatista*/
 
 
+/*Reglamento a rescatista*/
+.reglamento {
+    max-width: 800px;
+    margin: 50px auto;   /* esto lo centra */
+    text-align: left;  
+    font-size: 18px;  
+}
+
+.reglamento h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+.reglamento ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ 
+/*aqui termina css de reglamento rescatista*/
+
+
+
 /*soy adoptante*/
 .hero-adoptante{
     background-color: white;
     padding: 25px 50px 25px;
 }
+/*texto de solicitud*/
+.info-adopcion {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff7f0;   /* fondo muy clarito naranja */
+  border: 2px solid #ff7a00;   /* borde naranja */
+  border-radius: 8px;
+  font-size: 18px;  /*tamaño de letra*/
+  line-height: 1.6;
+}
+/*aqui termina el texto de solicitudes perro y gato*/
 
 /*Quiero ayudar*/
-.hero {
+.hero-ayudar {
    font-family: 'JetBrains Mono', monospace;
 }
 .titulo-seccion {

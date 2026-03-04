@@ -1,2 +1,152 @@
-<Reglamento rescatista html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Titulo de la pagina web-->
+<title>PETfriends hub</title>
+<link rel="icon" type="logoSF.jpeg" href="logop.png" style="background-color: transparent;">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <!--Codigo para mandar al inicio-->
+        <a href="index.html" class="logo-link">
+            <!--Codigo para mostrar el logo-->
+            <img src="logop.png" alt="Logo" class="logo-img">
+            <!--Nombre del proyecto-->
+            <h1 class="logo-text">
+                PET<span class="friends">friends </span>
+                <span class="hub">hub</span>
+            </h1>
+        </a>
+    </div> 
+
+ <div class="nav-right">
+   <nav class="menu">
+<!--menu y submenus-->
+<div class="dropdown">
+    <a href="Soy rescatista.html">Soy rescatista</a>
+
+     <div class="submenu">
+        <a href="Registro a rescatista.html">Registro a rescatista</a>
+        <a href="Reglamento  rescatista.html">Reglamento rescatista</a>
+           
+     </div>
+    </div>
+ <div class="dropdown">
+    <a href="Soy adoptante.html">Soy adoptante</a>
+        
+     <div class="submenu">
+        <a href="Solicitud de adopcion de perro.html">Solicitud de adopcion de perro</a>
+        <a href="Solicitud de adopcion de gato.html">Solicitud de adopcion de gato</a>
+        <a href="Ya he adoptado.html">Ya eh adoptado</a>
+
+        </div>
+    </div>
+ <div class="dropdown">
+    <a href="Quiero ayudar.html">Quiero ayudar</a>
+
+    <div class="submenu">
+        <a href="Solicitud de adopcion de perro.html">Donaciones monetarias</a>
+
+         </div>
+    </div>
+     <a href="Acceder.html">Acceder</a>
+   
+<!--REPORTAR PET HTML-->
+<input type="checkbox" id="activar-pestaña" hidden>
+
+<label for="activar-pestaña" class="btn" style="cursor: pointer; display: inline-block;">
+    REPORTAR PET
+</label>
+   </nav>
+ </div>
+</header>
+<div class="overlay-pestaña">
+    <div class="ventana-blanca">
+        <div class="encabezado-pestaña">
+            <span>Opciones de Reporte</span>
+            <label for="activar-pestaña" class="cerrar-pestaña">&times;</label>
+        </div>
+        
+        <iframe src="ReportarPET.html" class="contenido-iframe"></iframe>
+    </div>
+</div>
+
+ <!-- Sección principal-->
+ <section class="titulo-seccion">
+   <h2 class="titulo">Reglamento a rescatista</h2>
+</section>  
+<section class="hero-rescatista">
+<div class="reglamento">
+    <p>Completa el siguiente formulario para formar 
+    parte de PETfriends Hub y difundir a tus rescatados.</p>
+       
+
+        <h3>Registro y Actualización Anual</h3>
+
+        <h4>Alta Inicial</h4>
+        <ul>
+            <li>Llenar el formulario de registro en el sitio oficial.</li>
+            <li>Enviar identificación oficial vigente.</li>
+            <li>Completar la encuesta con información personal y datos de contacto.</li>
+        </ul>
+        <p><strong>No se solicita comprobante de domicilio.</strong></p>
+
+        <h4>Actualización Anual</h4>
+        <p>La información deberá actualizarse cada año para continuar publicando animales en la plataforma.</p>
+
+        <h3>Publicación de Animales</h3>
+        <ul>
+            <li>Nombre, edad aproximada, sexo.</li>
+            <li>Tamaño, peso y raza (si aplica).</li>
+            <li>Nivel de energía y carácter.</li>
+            <li>Estado de salud (vacunas, desparasitación, esterilización).</li>
+            <li>Lugar de rescate y resguardo actual.</li>
+            <li>Estados donde puede darse en adopción.</li>
+            <li>Datos de contacto.</li>
+            <li>Galería de 3 a 10 fotos recientes.</li>
+        </ul>
+
+        <h3>Proceso de Adopción</h3>
+        <ul>
+            <li>Las solicitudes serán enviadas por PETfriends Hub.</li>
+            <li>Se sugiere un donativo voluntario para apoyar el proyecto.</li>
+            <li>Se deberá firmar acuerdo de adopción.</li>
+            <li>Actualizar el perfil tras concretar la adopción.</li>
+            <li>Subir foto con la nueva familia.</li>
+        </ul>
+
+        <h3>Obligaciones del Rescatista</h3>
+        <ul>
+            <li>Brindar información veraz.</li>
+            <li>Asumir responsabilidad total del animal bajo su custodia.</li>
+            <li>Publicar únicamente animales bajo su cuidado directo.</li>
+            <li>Mantener actualizados los perfiles.</li>
+        </ul>
+
+        <h3>Esterilización</h3>
+        <p>Todos los animales mayores de 6 meses deberán entregarse esterilizados, salvo justificante médico.</p>
+
+        <h3>Eventos</h3>
+        <ul>
+            <li>Portar placa de identificación.</li>
+            <li>Cartilla de vacunación vigente.</li>
+            <li>Cumplir medidas de seguridad (arnés y correa).</li>
+        </ul>
+
+        <h3>Sanciones</h3>
+        <ul>
+            <li>Adopciones fuera del sistema: suspensión temporal.</li>
+            <li>Reincidencia: suspensión prolongada o baja definitiva.</li>
+        </ul>
+
+    </div>
+
+</div>
+</section>

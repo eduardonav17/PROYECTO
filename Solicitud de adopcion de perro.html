@@ -1,2 +1,266 @@
-<Solocitud de adopcion de perrro html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Titulo de la pagina web-->
+<title>PETfriends hub</title>
+<link rel="icon" type="logoSF.jpeg" href="logop.png" style="background-color: transparent;">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <!--Codigo para mandar al inicio-->
+        <a href="index.html" class="logo-link">
+            <!--Codigo para mostrar el logo-->
+            <img src="logop.png" alt="Logo" class="logo-img">
+            <!--Nombre del proyecto-->
+            <h1 class="logo-text">
+                PET<span class="friends">friends </span>
+                <span class="hub">hub</span>
+            </h1>
+        </a>
+    </div> 
+
+ <div class="nav-right">
+   <nav class="menu">
+<!--menu y submenus-->
+<div class="dropdown">
+    <a href="Soy rescatista.html">Soy rescatista</a>
+
+     <div class="submenu">
+        <a href="Registro a rescatista.html">Registro a rescatista</a>
+        <a href="Reglamento  rescatista.html">Reglamento rescatista</a>
+           
+     </div>
+    </div>
+ <div class="dropdown">
+    <a href="Soy adoptante.html">Soy adoptante</a>
+        
+     <div class="submenu">
+        <a href="Solicitud de adopcion de perro.html">Solicitud de adopcion de perro</a>
+        <a href="Solicitud de adopcion de gato.html">Solicitud de adopcion de gato</a>
+        <a href="Ya he adoptado.html">Ya eh adoptado</a>
+
+        </div>
+    </div>
+ <div class="dropdown">
+    <a href="Quiero ayudar.html">Quiero ayudar</a>
+
+    <div class="submenu">
+        <a href="Donaciones monetarias.html">Donaciones monetarias</a>
+
+         </div>
+    </div>
+     <a href="Acceder.html">Acceder</a>
+   
+<!--REPORTAR PET HTML-->
+<input type="checkbox" id="activar-pestaña" hidden>
+
+<label for="activar-pestaña" class="btn" style="cursor: pointer; display: inline-block;">
+    REPORTAR PET
+</label>
+   </nav>
+ </div>
+</header>
+<div class="overlay-pestaña">
+    <div class="ventana-blanca">
+        <div class="encabezado-pestaña">
+            <span>Opciones de Reporte</span>
+            <label for="activar-pestaña" class="cerrar-pestaña">&times;</label>
+        </div>
+        
+        <iframe src="ReportarPET.html" class="contenido-iframe"></iframe>
+    </div>
+</div>
+
+ <!-- Sección principal-->
+ <section class="titulo-seccion">
+   <h2 class="titulo">Solicitud de adopción de perro</h2>
+</section>  
+<section class="hero-adoptante">
+<section class="info-adopcion">
+
+  <p>
+    La solicitud es el primer paso del proceso de adopción en 
+    <strong>PETfriends Hub</strong>. 
+    Por favor, rellena <strong>todos los campos de forma completa y honesta</strong>.
+  </p>
+
+  <p>
+    Revisaremos tu información y, si cumples los requisitos, la enviaremos al rescatista correspondiente.
+  </p>
+
+  <p>
+    A partir del <strong>1 de enero de 2026</strong>, los adoptantes seleccionados deberán cubrir una 
+    <strong>cuota de recuperación de $500 MXN</strong> al momento de confirmar la adopción.
+  </p>
+
+</section>
+
+  <!--  FORMULARIO  -->
+  <section class="formulario">
+
+<form action="#" method="POST" onsubmit="return false;"> <!-- aun no funciona -->
+
+<!--  DATOS BÁSICOS -->
+
+<div class="form-group">
+<label>¿A quién quieres adoptar? *</label>
+<input type="text" name="perro" required>
+</div>
+
+<div class="form-group">
+<label>Nombre *</label>
+<input type="text" name="nombre" required>
+</div>
+
+<div class="form-group">
+<label>Apellidos *</label>
+<input type="text" name="apellidos" required>
+</div>
+
+<div class="form-group">
+<label>Colonia y delegación *</label>
+<input type="text" name="colonia" required>
+</div>
+
+<div class="form-group">
+<label>Código postal *</label>
+<input type="text" name="cp" required>
+</div>
+
+<div class="form-group">
+<label>Ciudad *</label>
+<input type="text" name="ciudad" required>
+</div>
+
+<!--  VIVIENDA -->
+
+<div class="form-group">
+<label>¿Vives en casa o departamento? ¿Propio o rentado? *</label>
+
+<label><input type="radio" name="vivienda" value="Casa propia" required> Casa propia</label>
+<label><input type="radio" name="vivienda" value="Casa rentada"> Casa rentada</label>
+<label><input type="radio" name="vivienda" value="Departamento propio"> Departamento propio</label>
+<label><input type="radio" name="vivienda" value="Departamento rentado"> Departamento rentado</label>
+
+</div>
+
+<div class="form-group">
+<label>Si rentas, ¿tienes permiso del casero? *</label>
+
+<label><input type="radio" name="permiso" value="Si" required> Sí</label>
+<label><input type="radio" name="permiso" value="No"> No</label>
+<label><input type="radio" name="permiso" value="No hablado"> Aún no lo he hablado</label>
+
+</div>
+
+<!-- ===== PREGUNTAS ABIERTAS ===== -->
+
+<div class="form-group">
+<label>¿El perro podría salir a la calle durante el día? *</label>
+<textarea name="salir_calle" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Qué edad tienes? *</label>
+<input type="number" name="edad" required>
+</div>
+
+<div class="form-group">
+<label>¿Cuánto puedes gastar al mes en el perro? *</label>
+<input type="text" name="gasto_mensual" required>
+</div>
+
+<div class="form-group">
+<label>¿Cuánto tiempo estará solo al día? *</label>
+<input type="text" name="tiempo_solo" required>
+</div>
+
+<div class="form-group">
+<label>¿Dónde dormirá el perro? *</label>
+<textarea name="dormira" required></textarea>
+</div>
+
+<div class="form-group">
+<label>Si sales de vacaciones, ¿con quién lo dejarás? *</label>
+<textarea name="vacaciones" required></textarea>
+</div>
+
+
+<div class="form-group">
+<label>¿Te comprometes a cuidarlo toda su vida (15 años)? *</label>
+<textarea name="compromiso" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Tienes capacidad económica? *</label>
+<textarea name="capacidad" required></textarea>
+</div>
+
+
+<div class="form-group">
+<label>¿Todos están de acuerdo en casa? *</label>
+<textarea name="acuerdo" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Alguien es alérgico? *</label>
+<textarea name="alergias" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Qué harías si alguien desarrolla alergia? *</label>
+<textarea name="alergia_solucion" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Por qué quieres adoptar a este perro? *</label>
+<textarea name="motivo" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Por qué deberían elegirte? *</label>
+<textarea name="por_que_elegirte" required></textarea>
+</div>
+
+<div class="form-group">
+<label>¿Te gustó otro perro en concreto? *</label>
+<input type="text" name="otro_perro">
+</div>
+
+<div class="form-group">
+<label>Si ya fue adoptado, ¿quieres que te mostremos otros? *</label>
+<input type="text" name="otros">
+</div>
+
+<!--  CONTACTO  -->
+
+<div class="form-group">
+<label>Celular *</label>
+<input type="tel" name="celular" required>
+</div>
+
+<div class="form-group">
+<label>Email *</label>
+<input type="email" name="email" required>
+</div>
+
+<!--  AVISO PRIVACIDAD  -->
+
+<div class="form-group">
+<label>
+<input type="checkbox" name="privacidad" required>
+Acepto el aviso de privacidad y términos y condiciones.
+</label>
+</div>
+
+<button type="submit" class="btn-enviar">Enviar</button>
+
+</form>
+</section>

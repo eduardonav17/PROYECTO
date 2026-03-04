@@ -1,2 +1,179 @@
-<Donaciones monetarias html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Titulo de la pagina web-->
+<title>PETfriends hub</title>
+<link rel="icon" type="logoSF.jpeg" href="logop.png" style="background-color: transparent;">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <!--Codigo para mandar al inicio-->
+        <a href="index.html" class="logo-link">
+            <!--Codigo para mostrar el logo-->
+            <img src="logop.png" alt="Logo" class="logo-img">
+            <!--Nombre del proyecto-->
+            <h1 class="logo-text">
+                PET<span class="friends">friends </span>
+                <span class="hub">hub</span>
+            </h1>
+        </a>
+    </div> 
+
+ <div class="nav-right">
+   <nav class="menu">
+<!--menu y submenus-->
+<div class="dropdown">
+    <a href="Soy rescatista.html">Soy rescatista</a>
+
+     <div class="submenu">
+        <a href="Registro a rescatista.html">Registro a rescatista</a>
+        <a href="Reglamento  rescatista.html">Reglamento rescatista</a>
+           
+     </div>
+    </div>
+ <div class="dropdown">
+    <a href="Soy adoptante.html">Soy adoptante</a>
+        
+     <div class="submenu">
+        <a href="Solicitud de adopcion de perro.html">Solicitud de adopcion de perro</a>
+        <a href="Solicitud de adopcion de gato.html">Solicitud de adopcion de gato</a>
+        <a href="Ya he adoptado.html">Ya eh adoptado</a>
+
+        </div>
+    </div>
+ <div class="dropdown">
+    <a href="Quiero ayudar.html">Quiero ayudar</a>
+
+    <div class="submenu">
+        <a href="Donaciones monetarias.html">Donaciones monetarias</a>
+
+         </div>
+    </div>
+     <a href="Acceder.html">Acceder</a>
+   
+<!--REPORTAR PET HTML-->
+<input type="checkbox" id="activar-pestaña" hidden>
+
+<label for="activar-pestaña" class="btn" style="cursor: pointer; display: inline-block;">
+    REPORTAR PET
+</label>
+   </nav>
+ </div>
+</header>
+<div class="overlay-pestaña">
+    <div class="ventana-blanca">
+        <div class="encabezado-pestaña">
+            <span>Opciones de Reporte</span>
+            <label for="activar-pestaña" class="cerrar-pestaña">&times;</label>
+        </div>
+        
+        <iframe src="ReportarPET.html" class="contenido-iframe"></iframe>
+    </div>
+</div>
+
+ <!-- Sección principal-->
+ <section class="titulo-seccion">
+   <h2 class="titulo">"Donaciones voluntarias"</h2>
+</section>  
+<section class="hero-ayudar">
+<section class="info-adopcion">
+
+  <p>
+    La solicitud es el primer paso del proceso de adopción en 
+    <strong>PETfriends Hub</strong>. 
+    Por favor, rellena <strong>todos los campos de forma completa y honesta</strong>.
+  </p>
+
+  <p>
+    Revisaremos tu información y, si cumples los requisitos, la enviaremos al rescatista correspondiente.
+  </p>
+
+  <p>
+    A partir del <strong>1 de enero de 2026</strong>, los adoptantes seleccionados deberán cubrir una 
+    <strong>cuota de recuperación de $500 MXN</strong> al momento de confirmar la adopción.
+  </p>
+
+</section>
+
+  <!--  FORMULARIO  -->
+<section class="formulario">
+
+<form action="#" method="POST" onsubmit="return false;"> <!-- aun no funciona -->
+
+<!--  DATOS PERSONALES -->
+
+<div class="form-group">
+<label>Indica tu nombre completo *</label>
+<input type="text" name="nombre" required>
+</div>
+
+<div class="form-group">
+<label>Correo electrónico *</label>
+<input type="email" name="correo" required>
+</div>
+
+<div class="form-group">
+<label>Monto del donativo efectuado (en pesos mexicanos) *</label>
+<input type="number" name="monto" required>
+</div>
+
+<div class="form-group">
+<label>Fecha del donativo *</label>
+<input type="date" name="fecha" required>
+</div>
+
+<!--  COMPROBANTE  -->
+
+<div class="form-group">
+<label>Adjunte el comprobante de la transferencia *</label>
+<input type="file" name="comprobante" accept=".pdf,.jpg,.png" required>
+<small>Puedes subir 1 archivo.</small>
+</div>
+
+<!-- FORMA DE PAGO -->
+
+<div class="form-group">
+<label>Indica la forma de pago de tu donativo *</label>
+
+<div class="opciones">
+<label><input type="radio" name="forma_pago" value="Transferencia" required> Transferencia electrónica</label>
+<label><input type="radio" name="forma_pago" value="Efectivo"> Efectivo</label>
+<label><input type="radio" name="forma_pago" value="Cheque"> Cheque</label>
+<label><input type="radio" name="forma_pago" value="Tarjeta"> Tarjeta de crédito o débito</label>
+<label><input type="radio" name="forma_pago" value="Especie"> Especie</label>
+<label><input type="radio" name="forma_pago" value="Otro"> Otro</label>
+</div>
+
+</div>
+
+<!--  DATOS FISCALES  -->
+
+<div class="form-group">
+<label>Si cuentas con más de un régimen fiscal, indica cuál necesitas para el CFDI</label>
+<input type="text" name="regimen_fiscal">
+</div>
+
+<div class="form-group">
+<label>Si el donativo es en especie, describe el bien y su valor</label>
+<textarea name="donativo_especie" rows="4"></textarea>
+</div>
+
+<div class="form-group">
+<label>Adjunta tu constancia de situación fiscal *</label>
+<input type="file" name="constancia" accept=".pdf" required>
+<small>Solo PDF.</small>
+</div>
+
+<!-- ===== BOTÓN ===== -->
+
+<button type="submit" class="btn-enviar">Enviar</button>
+
+</form>
+</section>
