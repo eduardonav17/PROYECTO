@@ -1,1 +1,17 @@
 /*Estilos para el menu hamburguesa*/
+.cuenta {
+    background-color: #D36B2D;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cuenta:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.05);
+}
