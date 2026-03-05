@@ -7,6 +7,7 @@
 <title>PETfriends hub</title>
 <link rel="icon" type="logo-img" href="logop.png" style="background-color: transparent;">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estilos3.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -27,38 +28,64 @@
         </a>
     </div>
                 
-   <nav class="menu">
-    <!--menu y submenus-->
-    <div class="dropdown">
-        <a href="Soy rescatista.html">Soy rescatista</a>
+<!--Menu hamburguesa-->
+<button class="hamburger-btn" id="hamburger-Btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 
-        <div class="submenu">
+<div class="overlay" id="overlay"></div>
 
-            <a href="Registro a rescatista.html">Registro a rescatista</a>
-            <a href="Reglamento  rescatista.html">Reglamento rescatista</a>
-           
+<nav class="sibebar" id="sibebar">
+    <div class="sidebar-header">
+        Menu Informativo
+    </div>
+
+    <div class="sidebar-content">
+
+        <div class="menu-item">
+            <a href="index.html" class="menu-link">Inicio</a>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-link" onclick="toggleSubmenu('Registro')">
+                Rescatista
+                <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="submenu" id="rescatista">
+                <a href="Soy rescatista.html" class="submenu-item">Soy Rescatista</a>
+                <a href="Registro a rescatista.html" class="submenu-item">Registra a Rescatista</a>
+                <a href="Reglamento  rescatista.html" class="submenu-item">Reglamento Rescatista</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-link" onclick="toggleSubmenu('Solicitud')">
+                Adoptar
+                <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="submenu" id="solicitud">
+                <a href="Soy adoptante.html" class="submenu-item">Soy adoptante</a>
+                <a href="Solicitud de adopcion de perro.html" class="submenu-item">Solicitud de adopción de Perros</a>
+                <a href="Solicitud de adopcion de gato.html" class="submenu-item">Solicitud de adopcion de gatos</a>
+            </div>
+        </div>
+
+                <div class="menu-item">
+            <div class="menu-link" onclick="toggleSubmenu('Ayuda')">
+                Quiero Ayudar
+                <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="submenu" id="ayuda">
+                <a href="Donaciones voluntarias.html" class="submenu-item">Donaciones voluntarias</a>
+            </div>
         </div>
     </div>
-    <div class="dropdown">
-      <a href="Soy adoptante.html">Soy adoptante</a>
-        
-        <div class="submenu">
-            <a href="Solicitud de adopcion de perro.html">Solicitud de adopcion de perro</a>
-            <a href="Solicitud de adopcion de gato.html">Solicitud de adopcion de gato</a>
-            <a href="Ya he adoptado.html">Ya eh adoptado</a>
-
-        </div>
-    </div>
-    <div class="dropdown">
-         <a href="Quiero ayudar.html">Quiero ayudar</a>
-
-          <div class="submenu">
-            <a href="Solicitud de adopcion de perro.html">Donaciones monetarias</a>
-
-         </div>
-    </div>
-      <a href="Acceder.html">Acceder</a>
-   </nav>
+</nav>
 
    <!--REPORTAR PET HTML-->
  <input type="checkbox" id="activar-pestaña" style="display: none;">
@@ -134,5 +161,6 @@
     </a>
 </div>
 
+<script src="script.js"></script>
 </body> 
 </html> 

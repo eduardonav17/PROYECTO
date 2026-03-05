@@ -38,63 +38,6 @@ text-align: center; /*alinea el texto*/
 padding: 40px 20px; /*da espacio interior entre el contenido y borde*/
 }
 
-/*menus y submenus*/
-.menu {
-  display: flex; /*tipo de visualizacion*/
-  gap: 35px; /*espcio entre filas*/
-  align-items: center; /*alineacion vertical*/
-}
-
-.menu a {
-  text-decoration: none; /*docoracion del texto*/
-  color: #2D4F4F; /*color del menu*/
-  font-weight: 600;/*grosor del texto*/
-  font-size: 20px; /*tamaño de la fuente*/
-}
-
-.menu a:hover {
-  color: #f4b400; /*color que pone cuando el mouse pasa por encima del menu */
-}
-
-/* Dropdown */
-.dropdown {
-  position: relative; /*tipo de posicionamiento*/
-}
-
-/* Submenu oculto */
-.submenu {
-  display: none;/*tipo de visualizacion*/
-  position: absolute; /*tipo posicionamiento*/
-  top: 100%; /*distancia superior*/
-  left: 0; /*distancia hacia la izquierda*/
-  background: white; /*propiedad abreviada del fondo*/
-  min-width: 200px; /*ancho minimo permitido*/
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2); /*sombra de caja*/
-  border-radius: 10px; /*redondea esquinas*/
-  padding: 8px 0; /*espacio entre contenidos*/
-}
-
-/* Links del submenu */
-.submenu a { 
-  display: block; /*tipo de visualizacion*/
-  padding: 10px 15px; /*espacio entre contenido*/
-  text-decoration: none; /*decoracion del texto*/
-  color: black; /*color del texto*/
-  font-size: 14px; /*tamaño fuente*/
-}
-
-
-.submenu a:hover {
-  background: #f2f2f2; /*propiedad abreviada del fondo*/
-}
-
-/* Mostrar al pasar el mouse */
-.dropdown:hover .submenu {
-  display: block; /*tipo de visualizacion*/
-}
-/*aqui termina los menus y submenus*/
-
-
 .btn {
 margin-left: 60px; /*margen izquierdo*/
 padding: 10px 12px; /*espacio entre conenido*/
