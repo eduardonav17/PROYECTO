@@ -5,73 +5,27 @@
         <title>PetPerdido</title>
         <link rel="icon" type="logop.jpeg" href="logop.png" style="background-color: transparent;">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"
         <link rel="stylesheet" href="estilos2.css">
+        <link rel="stylesheet" href="estilos4.css">
     </head>
     <body>
 
-        <header class="navbar">
-            <div class="brand">
-                <!--Codigo para mandar al inicio-->
-                <a href="index.html" class="logo-link">
-                    <!--Codigo para mostrar el logo-->
-                    <img src="imagenes/logop.png" class="logo-img">
-                    <!--Nombre del proyecto-->
-                    <h1 class="logo-text">
-                        PET<span class="friends">friends</span>
-                        <span class="hub">hub</span>
-                    </h1>
-                </a>
+        <header class="header">
+            <div class="logo">
+                <img src="imagenes/logop.png">
             </div>
-        
-               <nav class="menu">
-    <!--menu y submenus-->
-    <div class="dropdown">
-        <a href="Soy rescatista.html">Soy rescatista</a>
-
-        <div class="submenu">
-            <a href="Registro a rescatista.html">Registro a rescatista</a>
-            <a href="Reglamento  rescatista.html">Reglamento rescatista</a>
-           
-        </div>
-    </div>
-    <div class="dropdown">
-      <a href="Soy adoptante.html">Soy adoptante</a>
-        
-        <div class="submenu">
-            <a href="Solicitud de adopcion de perro.html">Solicitud de adopcion de perro</a>
-            <a href="Solicitud de adopcion de gato.html">Solicitud de adopcion de gato</a>
-            <a href="Ya he adoptado.html">Ya eh adoptado</a>
-
-        </div>
-    </div>
-    <div class="dropdown">
-         <a href="Quiero ayudar.html">Quiero ayudar</a>
-
-          <div class="submenu">
-            <a href="Solicitud de adopcion de perro.html">Donaciones monetarias</a>
-
-         </div>
-    </div>
-      <a href="Acceder.html">Acceder</a>
-   </nav>
-      <!--REPORTAR PET HTML-->
- <input type="checkbox" id="activar-pestaña" style="display: none;">
-<label for="activar-pestaña" class="btn" style="cursor: pointer; display: inline-block;">
-    REPORTAR PET
-</label>
-
-<div class="overlay-pestaña">
-    <div class="ventana-blanca">
-        <div class="encabezado-pestaña">
-            <span>Opciones de Reporte</span>
-            <label for="activar-pestaña" class="cerrar-pestaña">&times;</label>
-        </div>
-        
-        <iframe src="ReportarPET.html" class="contenido-iframe"></iframe>
-    </div>
-</div>
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="#">Registro Rescatista</a></li>
+                    <li><a href="#">Reglamento Rescatista</a></li>
+                    <li><a href="#">Ya eh Adoptado</a></li>
+                    <li><a href="#">Donaciones Voluntarias</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn"><button>Reportar</button></a>
         </header>
+
 
         <div class="contenedor">
             <h2>Crear Cuenta</h2>
@@ -93,10 +47,10 @@
                     <input type="password" placeholder="Confirmar Contraseña" required>
                 </div>
 
-                <button type="submit">Crear</button>
+                <button type="submit" class="pub">Crear</button>
 
             </form>
-            <button type="submit">Continuar como invitado
+            <button type="submit" class="pub">Continuar como invitado
                 <a href="index.html"></a>
             </button>
         </div>

@@ -48,7 +48,7 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
-button {
+button.pub {
     padding: 12px;
     background: #D36B2D;
     color: white;
