@@ -29,25 +29,7 @@ text-align: center; /*alinea el texto*/
 padding: 40px 20px; /*da espacio interior entre el contenido y borde*/
 }
 
-.btn {
-margin-left: 60px; /*margen izquierdo*/
-padding: 10px 12px; /*espacio entre conenido*/
-border: none; /*define borde completo*/
-border-radius: 12px; /*redondea esquinas*/
-background:#D36B2D; /*propiedad abreviada del fondo*/
-color: #E6E2D3; /*color del texto*/
-cursor: pointer; /*define tipo de puntero*/
-font-family: 'JetBrains Mono', monospace; /*tipo de letra*/
-font-weight: bold; /*grosor del texto*/
-font-size: 11px; /*tamaño fuente*/
-display: inline-block; /*tipo de visualizacion*/
-border: #535858 4px; /*define borde completo*/
-}
 
-.btn:hover{
-  background-color:#D36B2D;
-transform:scale(1.05);
-}
 
 /*BARRA DEL BUSCADOR*/
 .Busqueda {
