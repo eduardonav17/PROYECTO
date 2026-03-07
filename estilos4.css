@@ -1,1 +1,78 @@
 /*css 4 para complementar y sacar mas puntos*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-link{
+    text-decoration: none; /*decoracion del texto*/
+    color: inherit; /*color*/
+    display: flex; /*tipo de visualiacion*/
+    align-items: center; /*alineacion vertical*/
+    gap: 10px; /*da spacio entre filas*/
+}
+
+.header {
+    background-color: #E6E2D3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 145px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 85px;
+    width: auto;
+    transform: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: rgb(8, 95, 117);
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #D4AF37;
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #D36B2D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: white;
+    color: #D36B2D;
+    transform: scale(1.2);
+}

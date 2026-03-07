@@ -60,7 +60,7 @@ button.pub {
     margin-right: 10px;
 }
 
-button:hover {
+button .pub:hover {
     background: #ff4c4c;
     transform: scale(1.05s);
 }
