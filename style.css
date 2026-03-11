@@ -4,14 +4,6 @@
   box-sizing: border-box; /*Define como se calcula el tamaño total*/
 }
 
-.logo-text {
-margin: 0; /*quita el margen del texto*/
-font-size: 22px; /*Tamaño fuente*/
-font-weight: bold; /*Grosor de texto*/
-color:#35c2c2 ; /*color del texto de pet*/
-font-family: 'JetBrains Mono',monospace; /*Tipo de letra*/
-}
-
 /*Codigo para mandar al inicio*/
 /*No tocar!!*/
 .logo-link{
@@ -27,6 +19,7 @@ font-family: 'JetBrains Mono',monospace; /*Tipo de letra*/
 .hero {
 text-align: center; /*alinea el texto*/
 padding: 40px 20px; /*da espacio interior entre el contenido y borde*/
+animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
 
@@ -43,6 +36,7 @@ background: white;
 border: 1px solid #ccc;
 border-radius: 4px;
 padding: 10px;
+animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
 .Busqueda input {
@@ -59,45 +53,30 @@ cursor: pointer;
 }
 /* aqui termina barra de busqueda*/
 
+/*linea entre texto y la barra de busqueda*/
+hr {
+  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
+}
+/*aqui termina*/
+
 /*texto de perro o gato*/
 .titulopg{
 color:rgb(8, 95, 117) ;
 font-size: 40px;
 text-align: center;
+animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 /*termina texto de perro o gato*/
 
-/*Navbar muy importante para santos y Juan*/
-.navbar {
-  background-color: #E6E2D3;
-  padding: 10px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-left: auto;
-}
-/*aqui termina navbar y lo importante*/
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
+footer {
+  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
 .contenedor-categorias {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
 .categorias {
@@ -612,4 +591,16 @@ select, input[type="number"] {
   .registro-rescatista {
     padding: 25px 20px;
   }
+}
+
+@keyframes Aparicion {
+    /*animacion para cuando abra la pagina web*/
+    0%{
+    opacity: 0;
+    transform: translateY(30px); /* que empiezen abajo e invisible*/
+}
+    100%{
+     opacity: 1;
+    transform: translateY(0); /*acomode su posicion y sean visibles*/
+    }
 }
