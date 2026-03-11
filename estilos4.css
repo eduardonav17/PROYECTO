@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 170px;
+    height: 120px;/*para ajustar lo ancho de la barra gris*/
     padding: 5px 10%;
 }
 

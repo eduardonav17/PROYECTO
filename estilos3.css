@@ -16,3 +16,21 @@
     transform: scale(1.05);
 }
 
+/*Crea un menu sticky que se pega a la parte superior cuando se baja la pagina ademas con z-index se pone por delante de todo*/
+.header {
+    background-color: #E6E2D3;
+    color: rgb(8, 95, 117);
+    position: sticky;
+    top: 0;
+    display: grid;  /*es para crear las columnas sin problemas*/
+    grid-template-columns: 1fr 1fr 1fr; /*crea 3 columnas iguales*/
+    align-items: center;
+    z-index: 1000;  /*Se poner por delante de todos los objetos*/
+    height: 60px;
+}
+/*Aqui termina el menu sticky*/
+
+.cre {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
