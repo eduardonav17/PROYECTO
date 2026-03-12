@@ -70,3 +70,33 @@ div h5 {
     color: red;
 }
 /*aqui termina*/
+
+/*apartados de reportar*/
+.reportes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.carda {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.carda button {
+    background: #d96c2c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/*aqui termina*/
