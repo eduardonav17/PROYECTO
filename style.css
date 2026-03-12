@@ -122,20 +122,21 @@ footer {
 /*BOTON PARA PERRO*/
 .card{text-decoration: none;
 color: inherit;
-position:relative;
 width: 280px;
 height: 320px;
-border-radius: 20px;
+  border-radius: 20px;
 display: block;
-transition: 1s;
 }
+
 .card:hover{
 transform: scale(1.1);
 box-shadow: 0 20px 40px  rgba(0,0,0,.25);
 }
+
 .card{width: 240px;
   height: 320px;
 }
+
 .card img{
   width: 100%;
 height: 100% ;
@@ -147,7 +148,6 @@ object-fit: cover;
     gap: 20px;
     justify-content: center;
 }
-
 .card{
     position: relative;   /* CLAVE */
     width: 240px;
@@ -162,6 +162,40 @@ object-fit: cover;
     object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .categorias {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; /* Distribuye las tarjetas ocupando todo el ancho */
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    padding: 0 10px; /* Un poco de separación a los lados de la pantalla */
+    box-sizing: border-box;
+    overflow-x: auto;/*girar hacia el lado*/
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .categorias::-webkit-scrollbar{
+    display: none;
+  }
+
+  .card {
+    /* Esto es lo que les devolverá el tamaño robusto */
+    flex: 0 0 80%; 
+    max-width:160px; /* Evita que se hagan demasiado anchas */
+    height: 300px !important; 
+    margin: 0 !important;
+
+  }
+
+  /* Aseguramos que la imagen no se mueva de su lugar */
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 /*termina el boton*/
 
 .overlay{

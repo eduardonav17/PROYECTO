@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;/*para ajustar lo ancho de la barra gris*/
+    height: 135px;/*para ajustar lo ancho de la barra gris*/
     padding: 5px 10%;
     animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
