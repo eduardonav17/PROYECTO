@@ -92,13 +92,16 @@ div h5 {
 }
 
 .carda button {
-    background: #d96c2c;
+   font-weight: 700;
     color: white;
+    padding: 9px 25px;
+    background: #D36B2D;
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
+
 @media (max-width: 600px) {
     .reportes {
         grid-template-columns: 1fr; /* Cambia de 2 columnas a 1 */
