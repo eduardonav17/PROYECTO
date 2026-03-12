@@ -417,6 +417,7 @@ object-fit: cover;
     background-color: #e9ecef;
     padding: 80px 20px;
     text-align: center;
+    animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
 .titulo-seccion h2 {
@@ -567,6 +568,10 @@ select, input[type="number"] {
 
 .instagram {
     color: #E1306C; /* Rosa Instagram */
+}
+
+.acerca{
+  color: #1F8A70;
 }
 
 /* menus y submenus acomodados para celular siempre ira al ultimo

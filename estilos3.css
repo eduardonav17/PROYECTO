@@ -34,3 +34,39 @@
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*codigo de acerca de nosotros*/
+.chipocles {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.equipo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedor-equipo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carde {
+    background: #f5f5f5;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+div h5 {
+    color: red;
+}
+/*aqui termina*/
