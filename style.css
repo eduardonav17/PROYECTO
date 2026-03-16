@@ -660,3 +660,276 @@ select, input[type="number"] {
     transform: translateY(0); /*acomode su posicion y sean visibles*/
     }
 }
+
+/*css 2*/
+/*css para el reporte de pet*/
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #D36B2D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #D4AF37;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+button.pub {
+    padding: 12px;
+    background: #D36B2D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+button .pub:hover {
+    background: #ff4c4c;
+    transform: scale(1.05s);
+}
+
+/*aqui termina css2*/
+
+/*aqui inicia css3*/
+/*Estilos para el menu hamburguesa*/
+.cuenta {
+    background-color: #D36B2D;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cuenta:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.05);
+}
+
+/*Crea un menu sticky que se pega a la parte superior cuando se baja la pagina ademas con z-index se pone por delante de todo*/
+.header {
+    background-color: #E6E2D3;
+    color: rgb(8, 95, 117);
+    position: sticky;
+    top: 0;
+    display: grid;  /*es para crear las columnas sin problemas*/
+    grid-template-columns: 1fr 1fr 1fr; /*crea 3 columnas iguales*/
+    align-items: center;
+    z-index: 1000;  /*Se poner por delante de todos los objetos*/
+    height: 60px;
+}
+/*Aqui termina el menu sticky*/
+
+.cre {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*codigo de acerca de nosotros*/
+.chipocles {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.equipo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedor-equipo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carde {
+    background: #f5f5f5;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+div h5 {
+    color: red;
+}
+/*aqui termina*/
+
+/*apartados de reportar*/
+.reportes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.carda {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.carda button {
+   font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #D36B2D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 600px) {
+    .reportes {
+        grid-template-columns: 1fr; /* Cambia de 2 columnas a 1 */
+        padding: 20px; /* Reduce un poco el espacio lateral en celular */
+    }
+    
+    .carda {
+        width: 100%; /* Asegura que la tarjeta use el ancho disponible */
+    }
+}
+/*aqui termina*/
+
+/*aqui termina css3*/
+
+
+/*aqui inicia css4*/
+/*css 4 para complementar y sacar mas puntos*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-link{
+    text-decoration: none; /*decoracion del texto*/
+    color: inherit; /*color*/
+    display: flex; /*tipo de visualiacion*/
+    align-items: center; /*alineacion vertical*/
+    gap: 10px; /*da spacio entre filas*/
+}
+
+.header {
+    background-color: #E6E2D3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 135px;/*para ajustar lo ancho de la barra gris*/
+    padding: 5px 10%;
+    animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 85px;
+    width: auto;
+    transform: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: rgb(8, 95, 117);
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #D4AF37;
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #D36B2D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: white;
+    color: #D36B2D;
+    transform: scale(1.2);
+}
+
+/*aqui termina css4*/
