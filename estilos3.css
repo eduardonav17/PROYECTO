@@ -101,3 +101,15 @@ div h5 {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+
+@media (max-width: 600px) {
+    .reportes {
+        grid-template-columns: 1fr; /* Cambia de 2 columnas a 1 */
+        padding: 20px; /* Reduce un poco el espacio lateral en celular */
+    }
+    
+    .carda {
+        width: 100%; /* Asegura que la tarjeta use el ancho disponible */
+    }
+}
+/*aqui termina*/
