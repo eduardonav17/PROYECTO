@@ -162,24 +162,6 @@ object-fit: cover;
     object-fit: cover;
 }
 
-@media (max-width: 600px) {
-  .categorias {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-evenly; /* Distribuye las tarjetas ocupando todo el ancho */
-    align-items: stretch;
-    gap: 10px;
-    width: 100%;
-    padding: 0 10px; /* Un poco de separación a los lados de la pantalla */
-    box-sizing: border-box;
-    overflow-x: auto;/*girar hacia el lado*/
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-  .categorias::-webkit-scrollbar{
-    display: none;
-  }
-
   .card {
     /* Esto es lo que les devolverá el tamaño robusto */
     flex: 0 0 80%; 
@@ -195,7 +177,7 @@ object-fit: cover;
     height: 100%;
     object-fit: cover;
   }
-}
+
 /*termina el boton*/
 
 .overlay{
@@ -606,30 +588,6 @@ select, input[type="number"] {
 
 .acerca{
   color: #1F8A70;
-}
-
-/* menus y submenus acomodados para celular siempre ira al ultimo
- todo lo que pongan tiene que ser ariba de esto */
-@media (max-width: 768px) {
-.navbar{
-  padding: 10px 15px;
-}
-  .menu {
-    flex-wrap: wrap;   
-    gap: 12px;
-    justify-content: flex-end;
-  }
-
-  .menu a {
-    font-size: 16px;
-  }
-
-}
-/*registro rescatista*/
-@media (max-width: 480px) {
-  .registro-rescatista {
-    padding: 25px 20px;
-  }
 }
 
 @keyframes Aparicion {
