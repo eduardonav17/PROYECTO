@@ -912,7 +912,7 @@ div h5 {
 }
 
 .header .logo img {
-    height: 85px;
+    height: 70px;
     width: auto;
     transform: all 0.3s;
 }
@@ -1182,3 +1182,479 @@ div h5 {
 }
 
 /*logo*/
+/*celulares*/
+@media (max-width: 600px) {
+
+  .logo-link {
+    gap: 5px;
+  }
+
+  .logo-link img {
+    height: 45px;
+  }
+
+}
+/*tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .logo-link img {
+    height: 60px;
+  }
+
+}
+/*pantallas grandes*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .logo-link img {
+    height: 60px;
+  }
+
+}
+/*aqui termina lo del logo*/
+
+/*buscador*/
+/*para celulares*/
+@media (max-width: 600px) {
+
+  .Busqueda {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .Busqueda input {
+    font-size: 14px;
+  }
+
+  .Busqueda i {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .Busqueda {
+    max-width: 400px;
+  }
+
+  .Busqueda input {
+    font-size: 15px;
+  }
+
+}
+/*pantallas grandes*/
+@media (min-width: 1200px) {
+
+  .Busqueda {
+    max-width: 600px;
+    padding: 12px;
+  }
+
+  .Busqueda input {
+    font-size: 18px;
+  }
+
+  .Busqueda i {
+    font-size: 20px;
+  }
+
+}
+
+/*letras del titulo de rescatista*/
+/*para celulares*/
+@media (max-width: 600px) {
+
+  .titulo-seccion {
+    padding: 40px 15px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 28px;
+    margin: 0; /* importante */
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .titulo-seccion {
+    padding: 60px 20px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 40px;
+    margin: -20px; /* menos agresivo */
+  }
+
+}
+/*para pantallas grandes*/
+@media (min-width: 1200px) {
+
+  .titulo-seccion {
+    padding: 100px 20px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 60px;
+  }
+
+}
+/*para celulares pqueños*/
+@media (max-width: 400px) {
+
+  .titulo-seccion h2 {
+    font-size: 22px;
+  }
+
+}
+
+/*media para filtros de busqueda en los apartados de perros*/
+/*para celulares*/
+@media (max-width: 600px) {
+
+  .filtros {
+    width: 95%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .filtros h3 {
+    font-size: 16px;
+  }
+
+  .grupo label {
+    font-size: 11px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+
+  .btn-filtrar {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .filtros {
+    width: 350px;
+    padding: 18px;
+  }
+
+  .filtros h3 {
+    font-size: 17px;
+  }
+
+}
+/*para celulares pequeños*/
+@media (max-width: 400px) {
+
+  .filtros {
+    padding: 10px;
+  }
+
+  .radio-group {
+    flex-direction: column; /* se acomodan vertical */
+    gap: 8px;
+  }
+
+}
+
+/*formularios de reortar*/
+/*para celular*/
+@media (max-width: 600px) {
+
+  .contenedor {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button.pub {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  a.pub {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .contenedor {
+    max-width: 400px;
+    padding: 22px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+}
+/*para pantallas grandes*/
+@media (min-width: 1200px) {
+
+  .contenedor {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+}
+
+/*media para tarjeta de donacion*/
+/*para celular*/
+@media (max-width: 600px) {
+
+  .tarjeta-donacion{
+    width: 90%;
+    padding: 20px;
+  }
+
+  .tarjeta-donacion h3{
+    font-size: 16px;
+  }
+
+  .precio{
+    font-size: 26px;
+  }
+
+  .btn-donar{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .metodos{
+    font-size: 13px;
+  }
+
+  .info-adopcion{
+    padding: 20px;
+    font-size: 14px;
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .tarjeta-donacion{
+    width: 300px;
+    padding: 22px;
+  }
+
+  .precio{
+    font-size: 28px;
+  }
+
+  .info-adopcion{
+    font-size: 15px;
+  }
+
+}
+/*para pantallas grandes*/
+@media (min-width: 1200px) {
+
+  .tarjeta-donacion{
+    width: 320px;
+    padding: 30px;
+  }
+
+  .tarjeta-donacion h3{
+    font-size: 20px;
+  }
+
+  .precio{
+    font-size: 36px;
+  }
+
+  .btn-donar{
+    font-size: 18px;
+  }
+
+  .info-adopcion{
+    font-size: 18px;
+  }
+
+}
+/*para celulares pequeños*/
+@media (max-width: 400px) {
+
+  .tarjeta-donacion{
+    padding: 15px;
+  }
+
+  .precio{
+    font-size: 22px;
+  }
+
+  .metodos{
+    font-size: 12px;
+  }
+
+}
+
+/*cuadro de doaciones voluntarias*/
+/*para celular*/
+@media (max-width: 600px) {
+
+  .hero-ayudar {
+    padding: 20px 10px;
+  }
+
+  .contenido-hero {
+    font-size: 16px;
+    margin: 0 auto; /* quitamos negativo */
+    padding: 0 10px;
+  }
+
+  .contenido-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px; /* corregido */
+    padding: 10px;
+  }
+
+  .contenido-hero ul {
+    padding-left: 20px;
+    padding: 10px;
+  }
+
+  .contenido-hero li {
+    font-size: 14px;
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .contenido-hero {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .contenido-hero p {
+    font-size: 18px;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+  }
+
+  .contenido-hero ul {
+    padding-left: 40px;
+  }
+
+}
+/*para pntallas grandes*/
+@media (min-width: 1200px) {
+
+  .contenido-hero {
+    font-size: 24px;
+  }
+
+  .contenido-hero p {
+    font-size: 26px;
+  }
+
+  .contenido-hero li {
+    font-size: 20px;
+  }
+
+}
+/*para celulares pequeños*/
+@media (max-width: 400px) {
+
+  .contenido-hero p {
+    font-size: 14px;
+  }
+
+  .contenido-hero li {
+    font-size: 13px;
+  }
+
+}
+
+/*para reglamento de rescatistas/
+/*para celular*/
+@media (max-width: 600px) {
+
+  .hero-rescatista{
+    padding: 20px 15px;
+  }
+
+  .contenedor-texto{
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedor-texto p{
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+}
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+
+  .hero-rescatista{
+    padding: 25px 30px;
+  }
+
+  .contenedor-texto p{
+    font-size: 17px;
+  }
+
+}
+/*para pantallas grandes*/
+@media (min-width: 1200px) {
+
+  .hero-rescatista{
+    padding: 40px 80px;
+  }
+
+  .contenedor-texto{
+    max-width: 900px;
+  }
+
+  .contenedor-texto p{
+    font-size: 20px;
+  }
+
+}
+
+/*para celulares pequeños*/
+@media (max-width: 400px) {
+
+  .hero-rescatista{
+    padding: 15px 10px;
+  }
+
+  .contenedor-texto p{
+    font-size: 14px;
+  }
+
+}
