@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>PetPerdido</title>
-        <link rel="icon" type="logop.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
+<head>
 
-                <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<!--Configuración de caracteres-->
+<meta charset="UTF-8">
+
+<!--Adaptación a celulares-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Título de la página-->
+<title>Pet Perdido</title>
+
+<!--Icono de la pestaña-->
+<link rel="icon" type="image/webp" href="imagenes/logo.webp">
+
+<!--Archivo de estilos CSS-->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!--Encabezado con logo y menú de navegación-->
+<header class="header">
+
+<!--Logo del sitio que lleva al inicio-->
+<a href="index.html" class="logo logo-link">
+<img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+</a>
+
+<!--Menú de navegación principal-->
+<nav>
+<ul class="nav-links">
+<li><a href="registroarescatista.html">Registro Rescatista</a></li>
+<li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+<li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+<li><a href="acceder.html">Acceder</a></li>
+</ul>
+</nav>
+
+<!--Botón para reportar-->
+<a href="reportarpet.html" class="btn">
+<button>Reportar</button>
+</a>
+
+</header>
 
 <main>
-        <div class="contenedor">
-            <h2>Reportar Pet Perdido</h2>
 
-            <form>
+<!--Sección del formulario para reportar mascotas perdidas-->
+<section class="contenedor">
 
-                <div class="grupo">
-                    <label>Foto de la mascota</label>
-                    <input type="file" accept="image/*" required>
-                </div>
+<h2>Reportar Pet Perdido</h2>
 
-                <div class="grupo">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ej. Max" required>
-                </div>
+<!--Formulario para registrar la mascota perdida-->
+<form>
 
-                <div class="grupo">
-                    <label>Tipo</label>
-                    <select required>
-                        <option value="">Selecciona una opción</option>
-                        <option>Perro</option>
-                        <option>Gato</option>
-                    </select>
-                </div>
+<!--Foto del animal-->
+<div class="grupo">
+<label>Foto de la mascota</label>
+<input type="file" accept="image/*" required>
+</div>
 
-                <div class="grupo">
-                    <label>Raza</label>
-                    <input type="text" placeholder="Ej. Labrador">
-                </div>
+<!--Nombre de la mascota-->
+<div class="grupo">
+<label>Nombre</label>
+<input type="text" placeholder="Ej. Max" required>
+</div>
 
-                <div class="grupo">
-                    <label>Color</label>
-                    <input type="text" placeholder="Ej. Café con blanco">
-                </div>
+<!--Tipo de mascota-->
+<div class="grupo">
+<label>Tipo</label>
+<select required>
+<option value="">Selecciona una opción</option>
+<option>Perro</option>
+<option>Gato</option>
+</select>
+</div>
 
-                <div class="grupo">
-                    <label>Fecha de extravío</label>
-                    <input type="date" required>
-                </div>
+<!--Raza-->
+<div class="grupo">
+<label>Raza</label>
+<input type="text" placeholder="Ej. Labrador">
+</div>
 
-                <div class="grupo">
-                    <label>Lugar donde se perdió</label>
-                    <input type="text" placeholder="Colonia, calle" required>
-                </div>
+<!--Color-->
+<div class="grupo">
+<label>Color</label>
+<input type="text" placeholder="Ej. Café con blanco">
+</div>
 
-                <div class="grupo">
-                    <label>Descripción</label>
-                    <textarea rows="4" placeholder="Señas particulares...." required></textarea>
-                </div>
+<!--Fecha en que se perdió-->
+<div class="grupo">
+<label>Fecha de extravío</label>
+<input type="date" required>
+</div>
 
-                <div class="grupo">
-                    <label>Teléfono de contacto</label>
-                    <input type="tel" placeholder="351-000-0000" required>
-                </div>
+<!--Lugar donde se perdió-->
+<div class="grupo">
+<label>Lugar donde se perdió</label>
+<input type="text" placeholder="Colonia, calle" required>
+</div>
 
-                <button type="submit" class="pub">Publicar Reporte</button>
-            </form>
-        </div>
+<!--Descripción del animal-->
+<div class="grupo">
+<label>Descripción</label>
+<textarea rows="4" placeholder="Señas particulares..." required></textarea>
+</div>
+
+<!--Teléfono de contacto-->
+<div class="grupo">
+<label>Teléfono de contacto</label>
+<input type="tel" placeholder="351-000-0000" required>
+</div>
+
+<!--Botón para enviar el reporte-->
+<button type="submit" class="pub">Publicar Reporte</button>
+
+</form>
+
+</section>
 
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
-    </body>
+</body>
 </html>

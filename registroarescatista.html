@@ -1,98 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--Titulo de la pagina web-->
 <title>PETfriends hub</title>
-<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
+
+<!--Icono de la pestaña-->
+<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp">
+
+<!--Archivo CSS principal-->
 <link rel="stylesheet" href="style.css">
 
-
+<!--Libreria de iconos-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
 
-        <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<!--Encabezado de la pagina con logo y menu-->
+<header class="header">
 
+    <!--Logo de la pagina-->
+    <a href="index.html" class="logo logo-link">
+        <img src="imagenes/logo.webp"
+        alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+    </a>
+
+    <!--Menu de navegacion-->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
+            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+            <li><a href="acceder.html">Acceder</a></li>
+        </ul>
+    </nav>
+
+    <!--Boton para reportar mascotas-->
+    <a href="reportarpet.html" class="btn">
+        <button>Reportar</button>
+    </a>
+
+</header>
+
+<!--Contenido principal-->
 <main>
- <!-- Sección principal-->
- <section class="titulo-seccion">
+
+<!--Titulo de la pagina-->
+<section class="titulo-seccion">
    <h2 class="titulo">Registro rescatista</h2>
 </section>  
-<section class="hero-rescatista">
-<div class="contenido-hero">
 
+<!--Seccion principal donde aparece el formulario-->
+<section class="hero-rescatista">
+
+<section class="contenido-hero">
 
   <!--  FORMULARIO  -->
   <section class="formulario">
 
+  <!--Formulario de registro para rescatistas-->
   <form action="#" method="POST" onsubmit="return false;"> <!-- aun no funciona -->
 
+    <!--Campo nombre-->
     <div class="form-group">
       <label>Nombre *</label>
-      <input type="text" placeholder="Ej: Juan Pablo"  name="nombre" required>
+      <input type="text" placeholder="Ej: Juan Pablo" name="nombre" required>
     </div>
 
+    <!--Campo apellidos-->
     <div class="form-group">
       <label>Apellidos *</label>
-      <input type="text" placeholder="Santos Santos"    name="apellidos" required>
+      <input type="text" placeholder="Santos Santos" name="apellidos" required>
     </div>
 
+    <!--Campo edad-->
     <div class="form-group">
       <label>Edad *</label>
-      <input type="number" placeholder="!6 años"  name="edad" required>
+      <input type="number" placeholder="16 años" name="edad" required>
     </div>
 
+    <!--Correo electronico-->
     <div class="form-group">
       <label>Correo electrónico *</label>
-      <input type="email"  placeholder="juanpablo046540@gmail.com"  name="correo" required>
+      <input type="email" placeholder="juanpablo046540@gmail.com" name="correo" required>
     </div>
 
+    <!--Telefono celular-->
     <div class="form-group">
       <label>Celular *</label>
-      <input type="tel"  placeholder="351-000-0000"  name="celular" required>
+      <input type="tel" placeholder="351-000-0000" name="celular" required>
     </div>
 
+    <!--Cantidad de perros-->
     <div class="form-group">
       <label>¿Cuántos perros tienes a tu cargo? *</label>
       <input type="number" name="cantidad_perros" required>
     </div>
 
+    <!--Subir identificacion-->
     <div class="form-group">
       <label>Identificación oficial *</label>
       <input type="file" name="identificacion" required>
     </div>
 
+    <!--Subir comprobante de domicilio-->
     <div class="form-group">
       <label>Comprobante de domicilio *</label>
       <input type="file" name="comprobante" required>
     </div>
 
+    <!--Boton para enviar formulario-->
     <button type="submit" class="btn-enviar">Enviar</button>
 
   </form>
 
   </section>
-  </section>
+
+</section>
+
+</section>
+
 </main>
   
 </body>
 </html>
-
-

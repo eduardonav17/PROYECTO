@@ -1,94 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>PetMaltratado</title>
-        <link rel="icon" type="logop.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
+<head>
 
-                <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<!--Configuración de caracteres-->
+<meta charset="UTF-8">
 
-<main>        
+<!--Adaptación para celulares-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="contenedor">
-            <h2>Reportar Pet Maltratada</h2>
+<!--Título de la página-->
+<title>Pet Maltratado</title>
 
-            <form>
+<!--Icono de la pestaña-->
+<link rel="icon" type="image/webp" href="imagenes/logo.webp">
 
-                <div class="grupo">
-                    <label>Foto de la mascota</label>
-                    <input type="file" accept="image/*" required>
-                </div>
+<!--Archivo de estilos-->
+<link rel="stylesheet" href="style.css">
 
-                <div class="grupo">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ej. Max" required>
-                </div>
+</head>
 
-                <div class="grupo">
-                    <label>Tipo</label>
-                    <select required>
-                        <option value="">Selecciona una opción</option>
-                        <option>Perro</option>
-                        <option>Gato</option>
-                    </select>
-                </div>
+<body>
 
-                <div class="grupo">
-                    <label>Raza</label>
-                    <input type="text" placeholder="Ej. Labrador">
-                </div>
+<!--Encabezado con logo y menú-->
+<header class="header">
 
-                <div class="grupo">
-                    <label>Color</label>
-                    <input type="text" placeholder="Ej. Café con blanco">
-                </div>
+<!--Logo del sitio-->
+<a href="index.html" class="logo logo-link">
+<img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+</a>
 
-                <div class="grupo">
-                    <label>Fecha de avistamiento de maltrato</label>
-                    <input type="date" required>
-                </div>
+<!--Menú de navegación-->
+<nav>
+<ul class="nav-links">
+<li><a href="registroarescatista.html">Registro Rescatista</a></li>
+<li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+<li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+<li><a href="acceder.html">Acceder</a></li>
+</ul>
+</nav>
 
-                <div class="grupo">
-                    <label>Lugar donde se sucedio</label>
-                    <input type="text" placeholder="Colonia, calle" required>
-                </div>
+<!--Botón para ir a reportar-->
+<a href="reportarpet.html" class="btn">
+<button>Reportar</button>
+</a>
 
-                <div class="grupo">
-                    <label>Descripción</label>
-                    <textarea rows="4" placeholder="Señas particulares...." required></textarea>
-                </div>
+</header>
 
-                <div class="grupo">
-                    <label>Teléfono de contacto</label>
-                    <input type="tel" placeholder="351-000-0000" required>
-                </div>
+<main>
 
-                <button class="pub" type="submit">Reportar Maltrato</button>
-            </form>
-        </div>
+<!--Sección del formulario para reportar maltrato animal-->
+<section class="contenedor">
+
+<h2>Reportar Pet Maltratada</h2>
+
+<!--Formulario de reporte-->
+<form>
+
+<!--Foto del animal-->
+<div class="grupo">
+<label>Foto de la mascota</label>
+<input type="file" accept="image/*" required>
+</div>
+
+<!--Nombre del animal-->
+<div class="grupo">
+<label>Nombre</label>
+<input type="text" placeholder="Ej. Max" required>
+</div>
+
+<!--Tipo de animal-->
+<div class="grupo">
+<label>Tipo</label>
+<select required>
+<option value="">Selecciona una opción</option>
+<option>Perro</option>
+<option>Gato</option>
+</select>
+</div>
+
+<!--Raza-->
+<div class="grupo">
+<label>Raza</label>
+<input type="text" placeholder="Ej. Labrador">
+</div>
+
+<!--Color-->
+<div class="grupo">
+<label>Color</label>
+<input type="text" placeholder="Ej. Café con blanco">
+</div>
+
+<!--Fecha del avistamiento-->
+<div class="grupo">
+<label>Fecha de avistamiento de maltrato</label>
+<input type="date" required>
+</div>
+
+<!--Lugar donde ocurrió-->
+<div class="grupo">
+<label>Lugar donde sucedió</label>
+<input type="text" placeholder="Colonia, calle" required>
+</div>
+
+<!--Descripción del caso-->
+<div class="grupo">
+<label>Descripción</label>
+<textarea rows="4" placeholder="Señas particulares..." required></textarea>
+</div>
+
+<!--Teléfono de contacto-->
+<div class="grupo">
+<label>Teléfono de contacto</label>
+<input type="tel" placeholder="351-000-0000" required>
+</div>
+
+<!--Botón para enviar reporte-->
+<button class="pub" type="submit">Reportar Maltrato</button>
+
+</form>
+
+</section>
 
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
-    </body>
+</body>
 </html>

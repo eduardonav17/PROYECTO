@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--Titulo de la pagina web-->
 <title>PETfriends hub</title>
-<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
+
+<!--Icono de la pestaña-->
+<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp">
+
+<!--Archivo CSS principal-->
 <link rel="stylesheet" href="style.css">
 
-
+<!--Librería de iconos-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
 
-          <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<!--Encabezado con logo y menu-->
+<header class="header">
 
+    <!--Logo de la pagina-->
+    <a href="index.html" class="logo logo-link">
+        <img src="imagenes/logo.webp"
+        alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+    </a>
+
+    <!--Menu de navegacion-->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
+            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+            <li><a href="acceder.html">Acceder</a></li>
+        </ul>
+    </nav>
+
+    <!--Boton para reportar mascotas-->
+    <a href="reportarpet.html" class="btn">
+        <button>Reportar</button>
+    </a>
+
+</header>
+
+<!--Contenido principal de la pagina-->
 <main>
- <!-- Sección principal-->
- <section class="titulo-seccion">
+
+<!--Titulo de la seccion-->
+<section class="titulo-seccion">
    <h2 class="titulo">Ya he adoptado</h2>
 </section>  
+
+<!--Seccion informativa sobre la adopcion-->
 <section class="hero-adoptante">
-    <section class="hero-adoptante">
 
 <p>
-¡Felicidades por adoptar a un nuevo miembro de tu familia! 
+¡Felicidades por adoptar a un nuevo miembro de tu familia!
 </p>
 
 <p>
 En <strong>PETfriends Hub</strong> agradecemos profundamente tu decisión de darle
-un hogar a un animal que lo necesita.</p>
-<p> Gracias a personas como tú,
-muchos gatos y perros pueden tener una segunda oportunidad y una vida llena de amor.
+un hogar a un animal que lo necesita.
 </p>
 
-<p> Para continuar apoyando a los rescatistas
-    y cubrir parte de los gastos
-    veterinarios,
+<p>
+Gracias a personas como tú, muchos gatos y perros pueden tener una segunda oportunidad
+y una vida llena de amor.
 </p>
-<p> alimento, cuidados y gestión
-    del proceso de adopción,
-    solicitamos una <strong>cuota de recuperación de $500 MXN</strong>.
+
+<p>
+Para continuar apoyando a los rescatistas y cubrir parte de los gastos veterinarios,
+</p>
+
+<p>
+alimento, cuidados y gestión del proceso de adopción,
+solicitamos una <strong>cuota de recuperación de $500 MXN</strong>.
 </p>
 
 <p>
@@ -68,23 +92,24 @@ A continuación puedes realizar tu aportación:
 </p>
 
 <!-- Tarjeta de donación -->
-<div class="tarjeta-donacion">
+<section class="tarjeta-donacion">
 
 <h3>Donativo PETfriends Hub</h3>
 
 <p class="precio">$500 MXN</p>
 
+<!--Boton de donacion-->
 <button class="btn-donar">Donar</button>
 
+<!--Metodos de pago-->
 <p class="metodos">
 Métodos de pago aceptados: Tarjeta de crédito, débito o transferencia.
 </p>
 
-</div>
-
+</section>
 
 </section>
-</section>
+
 </main>
 
 </body>

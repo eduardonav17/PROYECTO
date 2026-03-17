@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Acceder</title>
-        <link rel="icon" type="logop.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
 
-        <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="reglamentorescatista.html">Reglamento Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<head>
 
+<meta charset="UTF-8">
+
+<!--Titulo de la pagina-->
+<title>Acceder</title>
+
+<!--Icono de la pestaña-->
+<link rel="icon" type="logop.jpeg" href="imagenes/logo.webp">
+
+<!--Adaptación a móviles-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Archivo CSS-->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!--Encabezado con logo y menú-->
+<header class="header">
+
+    <!--Logo de la pagina-->
+    <a href="index.html" class="logo logo-link">
+        <img src="imagenes/logo.webp" 
+        alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+    </a>
+
+    <!--Menu de navegación-->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
+            <li><a href="reglamentorescatista.html">Reglamento Rescatista</a></li>
+            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+        </ul>
+    </nav>
+
+    <!--Botón para reportar mascotas-->
+    <a href="reportarpet.html" class="btn">
+        <button>Reportar</button>
+    </a>
+
+</header>
+
+<!--Contenido principal-->
 <main>
-        <div class="contenedor">
-            <h2>Crear Cuenta</h2>
 
-            <form>
+<!--Contenedor del formulario-->
+<section class="contenedor">
 
-                <div class="grupo">
-                    <label>Correo electrónico</label>
-                    <input type="email" placeholder="Ej. xxxxxxx@gmail.com" required>
-                </div>
+<h2>Crear Cuenta</h2>
 
-                <div class="grupo">
-                    <label>Contraseña</label>
-                    <input type="password" placeholder="Contraseña" required>
-                </div>
+<!--Formulario de registro-->
+<form>
 
-                <div class="grupo">
-                    <label>Confirmar Contraseña</label>
-                    <input type="password" placeholder="Confirmar Contraseña" required>
-                </div>
+    <!--Correo electrónico-->
+    <section class="grupo">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="Ej. xxxxxxx@gmail.com" required>
+    </section>
 
-                <button type="submit" class="pub">Crear</button>
+    <!--Contraseña-->
+    <section class="grupo">
+        <label>Contraseña</label>
+        <input type="password" placeholder="Contraseña" required>
+    </section>
 
-            </form>
-            <button type="submit" class="pub">Continuar como invitado
-                <a href="index.html"></a>
-            </button>
-        </div>
+    <!--Confirmar contraseña-->
+    <section class="grupo">
+        <label>Confirmar Contraseña</label>
+        <input type="password" placeholder="Confirmar Contraseña" required>
+    </section>
+
+    <!--Botón crear cuenta-->
+    <button type="submit" class="pub">Crear</button>
+
+</form>
+
+<!--Botón para entrar como invitado-->
+<a href="index.html" class="pub">
+Continuar como invitado
+</a>
+
+</section>
+
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
-    </body>
+</body>
 </html>

@@ -1,131 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>GATOS</title>
-    <link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+<!--Configuración de caracteres-->
+<meta charset="UTF-8">
+
+<!--Adaptación a celulares-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Título de la página-->
+<title>GATOS</title>
+
+<!--Icono de la pestaña-->
+<link rel="icon" type="image/webp" href="imagenes/logo.webp">
+
+<!--Archivo de estilos-->
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-            <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<!--Encabezado principal con logo y menú-->
+<header class="header">
+
+<!--Logo del sitio-->
+<a href="index.html" class="logo logo-link">
+<img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+</a>
+
+<!--Menú de navegación-->
+<nav>
+<ul class="nav-links">
+<li><a href="registroarescatista.html">Registro Rescatista</a></li>
+<li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+<li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+<li><a href="acceder.html">Acceder</a></li>
+</ul>
+</nav>
+
+<!--Botón para reportar-->
+<a href="reportarpet.html" class="btn">
+<button>Reportar</button>
+</a>
+
+</header>
 
 <main>
-<!--Video de fondo-->
+
+<!--Sección con video de fondo-->
 <section class="hero-video">
-    <video autoplay muted loop playsinline class="video-bg">
-        <source src="videos/gatos.mp4" type="video/mp4">
-    </video>
 
-    <div class="hero-overlay"></div>
+<!--Video de fondo-->
+<video autoplay muted loop playsinline class="video-bg">
+<source src="videos/gatos.mp4" type="video/mp4">
+</video>
 
-    <div class="hero-content">
-        <div class="text-box">
-            <h1>GATOS</h1>
-            <p>Encuentra a tu mejor amigo</p>
-        </div>
-    </div>
+<!--Capa oscura sobre el video-->
+<div class="hero-overlay"></div>
+
+<!--Contenido encima del video-->
+<div class="hero-content">
+
+<section class="text-box">
+<h1>GATOS</h1>
+<p>Encuentra a tu mejor amigo</p>
 </section>
 
-    <section class="filtros">
-        <h3>Filtrar búsqueda</h3>
-        
-        <!--Sexo-->
-        <div class="grupo">
-        <label>SEXO</label>
-        <div class="radio-group">
-            <label><input type="radio" name="sexo">Macho</label>
-            <label><input type="radio" name="sexo">Hembra</label>
-        </div>
-     </div>
-    
-     <!--Edad-->
-     <div class="grupo">
-        <label>EDAD</label>
-        <select>
-            <option>--</option>
-            <option>Cachorro (menos de 1 año)</option>
-            <option>Joven (de 1 a 4 años)</option>
-            <option>Adulto (4-9 años)</option>
-            <option>Senior (más de 9 años)</option>
-        </select>
-     </div>
+</div>
 
-     <!--Tamaño-->
-     <div class="grupo">
-        <label>TAMAÑO</label>
-        <select>
-            <option>--</option>
-            <option>Pequeño (hasta 10 kg)</option>
-            <option>Mediano (de 10 a 25 kg)</option>
-            <option>Grande (de 25 a 40 kg)</option>
-        </select>
-     </div>
+</section>
 
-     <!--Tipo de Pelaje-->
-     <div class="grupo">
-        <label>TIPO DE PELAJE</label>
-        <select>
-            <option>--</option>
-            <option>Corto</option>
-            <option>Medio</option>
-            <option>Largo</option>
-            <option>Sin pelo (tipo sphynx)</option>
-        </select>
-     </div>
+<!--Sección de filtros de búsqueda-->
+<section class="filtros">
 
-     <!--Color-->
-     <div class="grupo">
-        <label>Color</label>
-        <select>
-            <option>--</option>
-            <option>Negro</option>
-            <option>Blanco</option>
-            <option>Gris</option>
-            <option>Naranja</option>
-            <option>Atrigado</option>
-            <option>Bicolor</option>
-            <option>Tricolor</option>
-            <option>Carey</option>
-        </select>
-     </div>
+<h3>Filtrar búsqueda</h3>
 
-     <!--Nivel de actividad-->
-     <div class="grupo">
-        <label>NIVEL DE ACTIVIDAD</label>
-        <select>
-            <option>--</option>
-            <option>Tranquilo</option>
-            <option>Juguetón</option>
-            <option>Muy Activo</option>
-            <option>Independiente</option>
-        </select>
-       </div>
+<!--Filtro por sexo-->
+<div class="grupo">
+<label>SEXO</label>
 
-     <!--Boton de busqueda-->
-     <button class="btn-filtrar">Buscar</button>
-    </section>
+<div class="radio-group">
+<label><input type="radio" name="sexo"> Macho</label>
+<label><input type="radio" name="sexo"> Hembra</label>
+</div>
+
+</div>
+
+<!--Filtro por edad-->
+<div class="grupo">
+<label>EDAD</label>
+
+<select>
+<option>--</option>
+<option>Cachorro (menos de 1 año)</option>
+<option>Joven (de 1 a 4 años)</option>
+<option>Adulto (4-9 años)</option>
+<option>Senior (más de 9 años)</option>
+</select>
+
+</div>
+
+<!--Filtro por tamaño-->
+<div class="grupo">
+<label>TAMAÑO</label>
+
+<select>
+<option>--</option>
+<option>Pequeño (hasta 10 kg)</option>
+<option>Mediano (de 10 a 25 kg)</option>
+<option>Grande (de 25 a 40 kg)</option>
+</select>
+
+</div>
+
+<!--Filtro por tipo de pelaje-->
+<div class="grupo">
+<label>TIPO DE PELAJE</label>
+
+<select>
+<option>--</option>
+<option>Corto</option>
+<option>Medio</option>
+<option>Largo</option>
+<option>Sin pelo (tipo sphynx)</option>
+</select>
+
+</div>
+
+<!--Filtro por color-->
+<div class="grupo">
+<label>COLOR</label>
+
+<select>
+<option>--</option>
+<option>Negro</option>
+<option>Blanco</option>
+<option>Gris</option>
+<option>Naranja</option>
+<option>Atrigado</option>
+<option>Bicolor</option>
+<option>Tricolor</option>
+<option>Carey</option>
+</select>
+
+</div>
+
+<!--Filtro por actividad-->
+<div class="grupo">
+<label>NIVEL DE ACTIVIDAD</label>
+
+<select>
+<option>--</option>
+<option>Tranquilo</option>
+<option>Juguetón</option>
+<option>Muy Activo</option>
+<option>Independiente</option>
+</select>
+
+</div>
+
+<!--Botón para filtrar-->
+<button class="btn-filtrar">Buscar</button>
+
+</section>
 
 </main>
-<!--Todo lo que se agregue debe ir dentro del main-->    
+<!--Todo lo que se agregue debe ir dentro del main-->
 
 </body>
 </html>

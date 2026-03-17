@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--Titulo de la pagina web-->
 <title>Donaciones Voluntarias</title>
-<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
+
+<!--Icono de la pestaña-->
+<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp">
+
+<!--Archivo CSS-->
 <link rel="stylesheet" href="style.css">
 
-
+<!--Iconos fontawesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
 
-        <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<!--Encabezado con logo y menu-->
+<header class="header">
 
-        <main>
- <!-- Sección principal-->
- <section class="titulo-seccion">
-   <h2 class="titulo">"Donaciones voluntarias"</h2>
+    <!--Logo de la pagina-->
+    <a href="index.html" class="logo logo-link">
+        <img src="imagenes/logo.webp" 
+        alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
+    </a>
+
+    <!--Menu de navegacion-->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
+            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+            <li><a href="acceder.html">Acceder</a></li>
+        </ul>
+    </nav>
+
+    <!--Boton para reportar mascotas-->
+    <a href="reportarpet.html" class="btn">
+        <button>Reportar</button>
+    </a>
+
+</header>
+
+<main>
+
+<!-- Sección principal-->
+<section class="titulo-seccion">
+   <h2 class="titulo">Donaciones voluntarias</h2>
 </section>  
+
+<!--Seccion informativa-->
 <section class="hero-ayudar">
+
 <section class="info-adopcion">
 
-  <p>
+<p>
 En <strong>PETfriends Hub</strong> trabajamos para ayudar a gatos y perros en situación vulnerable,
 apoyando a rescatistas independientes que dedican su tiempo, recursos y esfuerzo a salvar vidas.
 </p>
@@ -47,6 +69,7 @@ apoyando a rescatistas independientes que dedican su tiempo, recursos y esfuerzo
 Los <strong>donativos voluntarios</strong> nos permiten cubrir gastos esenciales como:
 </p>
 
+<!--Lista de gastos que cubren las donaciones-->
 <ul>
 <li>Atención veterinaria</li>
 <li>Vacunas y desparasitación</li>
@@ -66,13 +89,14 @@ Si deseas apoyar nuestra misión, puedes realizar un
 </p>
 
 <p>
- <strong>Tu apoyo puede cambiar la vida de un animal.</strong>
+<strong>Tu apoyo puede cambiar la vida de un animal.</strong>
 </p>
 
 </section>
+
 </section>
 
-  <!--  FORMULARIO  -->
+<!--  FORMULARIO  -->
 <section class="formulario">
 
 <form action="#" method="POST" onsubmit="return false;"> <!-- aun no funciona -->
@@ -112,14 +136,15 @@ Si deseas apoyar nuestra misión, puedes realizar un
 <div class="form-group">
 <label>Indica la forma de pago de tu donativo *</label>
 
-<div class="opciones">
+<!--Opciones de pago-->
+<section class="opciones">
 <label><input type="radio" name="forma_pago" value="Transferencia" required> Transferencia electrónica</label>
 <label><input type="radio" name="forma_pago" value="Efectivo"> Efectivo</label>
 <label><input type="radio" name="forma_pago" value="Cheque"> Cheque</label>
 <label><input type="radio" name="forma_pago" value="Tarjeta"> Tarjeta de crédito o débito</label>
 <label><input type="radio" name="forma_pago" value="Especie"> Especie</label>
 <label><input type="radio" name="forma_pago" value="Otro"> Otro</label>
-</div>
+</section>
 
 </div>
 
@@ -141,12 +166,14 @@ Si deseas apoyar nuestra misión, puedes realizar un
 <small>Solo PDF.</small>
 </div>
 
-<!-- ===== BOTÓN ===== -->
+<!-- BOTÓN ENVIAR -->
 
 <button type="submit" class="btn-enviar">Enviar</button>
 
 </form>
+
 </section>
+
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
