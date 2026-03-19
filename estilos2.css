@@ -1003,3 +1003,63 @@ div h5 {
     }
 
 }
+
+/*media para lo de acceder*/
+/*para tablets */
+@media (min-width: 768px) {
+
+  .registro h1 {
+    font-size: 34px;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 260px;
+    padding: 20px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .registro {
+    padding: 40px;
+  }
+
+  .registro h1 {
+    font-size: 42px;
+  }
+
+  .cards {
+    gap: 30px;
+  }
+
+  .card {
+    width: 280px;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card a {
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+
+  .card a:hover {
+    background: #5f62a3;
+  }
+}
