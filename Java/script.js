@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+//aqui termina el javasript del boton del mapa
