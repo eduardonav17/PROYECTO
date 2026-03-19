@@ -966,3 +966,40 @@ div h5 {
   }
 
 }
+/*media para el mapa*/
+/*para el celular*/
+@media (max-width: 768px) {
+
+    .mapa {
+        padding: 10px;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+
+    .mapa button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+}
+/*para tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mapa iframe {
+        height: 350px;
+    }
+}
+
+/*para pantallas grandes*/
+@media (min-width: 1024px) {
+
+    .mapa {
+        max-width: 1000px;
+    }
+
+    .mapa iframe {
+        height: 500px;
+    }
+
+}

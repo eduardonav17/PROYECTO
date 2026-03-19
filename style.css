@@ -723,41 +723,74 @@ select, input[type="number"] {
   color: var(--naranja-claro);
   transform: scale(1.2);
 }
+/*aqui termina css de mapas*/
 
-/*media para el mapa*/
-/*para el celular*/
-@media (max-width: 768px) {
-
-    .mapa {
-        padding: 10px;
-    }
-
-    .mapa iframe {
-        height: 300px;
-    }
-
-    .mapa button {
-        width: 100%;
-        font-size: 16px;
-    }
-
-}
-/*para tablets*/
-@media (min-width: 768px) and (max-width: 1024px) {
-    .mapa iframe {
-        height: 350px;
-    }
+/*css para acceder*/
+.registro {
+  text-align: center;
+  padding: 40px;
+  background-color: #f5e9d8;
 }
 
-/*para pantallas grandes*/
-@media (min-width: 1024px) {
-
-    .mapa {
-        max-width: 1000px;
-    }
-
-    .mapa iframe {
-        height: 500px;
-    }
-
+.registro h1 {
+  font-size: 40px;
+  color: var(--naranja-claro);
 }
+.registro p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.carda {
+  background-color: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+figure {
+  margin: 0;
+}
+
+.carda img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.carda h3 {
+  color: var(--turquesa-oscuro);
+  margin: 15px 0;
+}
+
+.carda p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #7a7dbb;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background-color: #5f62a3;
+}
+/*aqui termina css de acceder*/
