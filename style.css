@@ -793,28 +793,49 @@ figure {
 .card a:hover {
   background-color: #5f62a3;
 }
-/*css para adoptista*/
+/*aqui termina css de acceder*/
+
+
+/*css para adoptista/rescatistas*/
+.logins{
+margin: 0;
+font-family: Arial;
+background: url(fondoss-de-mascotas.webp) no-repeat center center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
 .registror{
-background: #cfd8dc;
+background: #ffffff;
 padding: 30px;
 border-radius: 15px;
 width: 300px;
 text-align: center;
 }
+h1{
+font-size: 28px;
+}
+input{
+width: 90%;
+padding: 10px;
+margin: 10px 0;
+border-radius: 25px;
+border: 2px solid #dba511;
+}
+.opciones{
+display: flex;
+justify-content: space-between;
+font-size: 12px;
+}
+button{
+width: 100%;
+padding: 10px;
+background: 4a6d8c;
+color: #e28c0a;
+border: none;
+border-radius: 8px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*aqui termina css de acceder*/
+/*aqui termina el css de adoptista y rescatista*/
