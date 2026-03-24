@@ -1,7 +1,7 @@
 /*css 2*/
 /*css para el reporte de pet*/
 
-.body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -87,18 +87,19 @@ button .pub:hover {
     transform: scale(1.05);
 }
 
-/*Crea un menu sticky que se pega a la parte superior cuando se baja la pagina ademas con z-index se pone por delante de todo*/
+/*Crea un menu sticky que se pega a la parte superior cuando se baja la pagina ademas con z-index se pone por delante de todo
 .header {
     background-color: #E6E2D3;
     color: rgb(8, 95, 117);
     position: sticky;
     top: 0;
-    display: grid;  /*es para crear las columnas sin problemas*/
-    grid-template-columns: 1fr 1fr 1fr; /*crea 3 columnas iguales*/
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr; 
     align-items: center;
-    z-index: 1000;  /*Se poner por delante de todos los objetos*/
+    z-index: 1000;  
     height: 60px;
 }
+
 /*Aqui termina el menu sticky*/
 
 .cre {
@@ -212,7 +213,9 @@ div h5 {
     align-items: center;
     height: 135px;/*para ajustar lo ancho de la barra gris*/
     padding: 5px 10%;
-    animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
+    z-index: 1;
+
+    animation: Aparicion 0.8s ease-out forwards;  /*animacion para aperecer NO BORRAR*/
 }
 
 .header .logo {
@@ -228,9 +231,14 @@ div h5 {
 .header .logo img:hover {
     transform: scale(1.2);
 }
-
+/*
 .header .nav-links {
     list-style: none;
+}
+
+.header .i {
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .header .nav-links li{
@@ -251,6 +259,73 @@ div h5 {
 .header .nav-links li a:hover {
     color: #D4AF37;
 }
+*/
+/* Botón */
+#menu-btn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1002;
+}
+
+/* Fondo oscuro */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0,0,0,0.1);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+
+  z-index: 9998;
+}
+
+/* Menú centrado */
+#menu {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  flex-direction: column !important;
+
+  gap: 25px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+
+  z-index: 9999;
+}
+/* Estado activo */
+#overlay.activo,
+#menu.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Links */
+#menu a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*aqui termina menu hamburguesa*/
 
 .header .btn button {
     font-weight: 700;

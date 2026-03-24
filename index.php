@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--Titulo de la pagina web-->
-<title>PETfriends hub</title>
-
-<!--Icono de la pestaña-->
-<link rel="icon" type="logo-img" href="imagenes/logo.webp">
-
-<!--Css enlazados-->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="estilos2.css">
-
-<!--JavaScrip enlazado-->
-<script src="Java/script.js" defer></script>
-
-<!--Iconos de fontawesome para redes sociales y buscador-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-
-<body>
-
-<!--Codigo para menus y logo de la parte arriba-->
-<header class="header">
-
-    <!--Logo de la pagina-->
-    <a href="index.html" class="logo logo-link">
-        <img src="imagenes/logo.webp" 
-        alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-    </a>
-
-    <!--Menu de navegacion principal-->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-            <li><a href="acceder.html">Acceder</a></li>
-        </ul>
-    </nav>
-
-    <!--Boton para reportar mascotas-->
-    <a href="reportarpet.html" class="btn">
-        <button>Reportar</button>
-    </a>
-
-</header>
-<!--Aqui termina el header-->
+<?php
+declare(strict_types=1);
+require_once "header.php";
+?>
 
 <!--El main indica que es el contenido principal de la pagina-->
 <main>

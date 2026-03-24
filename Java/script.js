@@ -24,3 +24,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 //aqui termina el javasript del boton del mapa
+
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+btn.addEventListener("click", () => {
+  menu.classList.add("activo");
+  overlay.classList.add("activo");
+});
+
+overlay.addEventListener("click", () => {
+  menu.classList.remove("activo");
+  overlay.classList.remove("activo");
+});
