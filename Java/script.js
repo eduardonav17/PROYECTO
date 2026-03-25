@@ -24,17 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 //aqui termina el javasript del boton del mapa
-
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
-const overlay = document.getElementById("overlay");
 
 btn.addEventListener("click", () => {
-  menu.classList.add("activo");
-  overlay.classList.add("activo");
-});
+  menu.classList.toggle("active");
 
-overlay.addEventListener("click", () => {
-  menu.classList.remove("activo");
-  overlay.classList.remove("activo");
+  // Cambiar icono
+  if (menu.classList.contains("active")) {
+    btn.classList.remove("bi-list");
+    btn.classList.add("bi-x");
+  } else {
+    btn.classList.remove("bi-x");
+    btn.classList.add("bi-list");
+  }
 });

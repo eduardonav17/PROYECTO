@@ -259,71 +259,53 @@ div h5 {
 .header .nav-links li a:hover {
     color: #D4AF37;
 }
-*/
-/* Botón */
+
+/* Botón hamburguesa */
 #menu-btn {
   font-size: 30px;
   cursor: pointer;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1002;
+  color: black;
+  margin-left: auto;  /*  esto lo mueve */
+  margin-right: 20px; 
 }
 
-/* Fondo oscuro */
-#overlay {
-  position: fixed;
-  top: 0;
+/* Menú lateral */ 
+.menu { 
+  position: fixed; 
+  top: 0; 
+  left: -250px; /* oculto */ 
+  width: 250px; 
+  height: 100%; 
+  background: #222; 
+  padding-top: 60px; transition: 0.3s; 
+  z-index: 1000; 
+}
+
+/* Menú activo */
+.menu.active {
   left: 0;
-
-  width: 100vw;
-  height: 100vh;
-
-  background: rgba(0,0,0,0.1);
-
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-
-  z-index: 9998;
 }
 
-/* Menú centrado */
-#menu {
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center !important;
-  flex-direction: column !important;
-
-  gap: 25px;
-
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-
-  z-index: 9999;
-}
-/* Estado activo */
-#overlay.activo,
-#menu.activo {
-  opacity: 1;
-  pointer-events: auto;
+/* Lista */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
-/* Links */
-#menu a {
+.menu ul li {
+  margin: 20px 0;
+}
+
+.menu ul li a {
   color: white;
-  font-size: 28px;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hover */
+.menu ul li a:hover {
+  color: orange;
 }
 /*aqui termina menu hamburguesa*/
 

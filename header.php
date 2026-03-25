@@ -40,19 +40,8 @@
 
     <!--Menu de navegacion principal-->
     
-       <a> <i class="bi bi-list" id="menu-btn"></i> </a>
+        <i class="bi bi-list" id="menu-btn"></i> 
     
-       <!-- Fondo oscuro 
-        <nav id="overlay"></nav>
-
-        <nav id="menu">
-            <a href="registroarescatista.html">Registro Rescatista</a>
-            <a href="yaheadoptado.html">Ya eh Adoptado</a>
-            <a href="donacionesvoluntarias.html">Donaciones Voluntarias</a>
-            <a href="acceder.html">Acceder</a>
-        </ul>
-    </nav> -->
-
     <!--Boton para reportar mascotas-->
     <a href="reportarpet.html" class="btn">
         <button>Reportar</button>
@@ -61,13 +50,11 @@
 </header>
 <!--Aqui termina el header-->
   
-       <!-- Fondo oscuro -->
-     <nav id="overlay"></nav>
-        <ul>
-        <nav id="menu">
-            <a href="registroarescatista.html">Registro Rescatista</a>
-            <a href="yaheadoptado.html">Ya eh Adoptado</a>
-            <a href="donacionesvoluntarias.html">Donaciones Voluntarias</a>
-            <a href="acceder.html">Acceder</a>
+        <nav id="menu" class="menu">
+            <ul>
+            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
+            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
+            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
+            <li><a href="acceder.html">Acceder</a></li>
         </ul>
     </nav>
