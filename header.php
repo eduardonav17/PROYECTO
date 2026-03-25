@@ -27,8 +27,7 @@
 </head>
 
 <body>
-
-<!--La clase del header esta en el css 4-->
+    
 <!--Codigo para menus y logo de la parte arriba-->
 <header class="header">
 
@@ -43,7 +42,7 @@
         <i class="bi bi-list" id="menu-btn"></i> 
     
     <!--Boton para reportar mascotas-->
-    <a href="reportarpet.html" class="btn">
+    <a href="reportarpet.php" class="btn">
         <button>Reportar</button>
     </a>
 
@@ -52,9 +51,9 @@
   
         <nav id="menu" class="menu">
             <ul>
-            <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-            <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-            <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-            <li><a href="acceder.html">Acceder</a></li>
+            <li><a href="registroarescatista.php">Registro Rescatista</a></li>
+            <li><a href="yaheadoptado.php">Ya eh Adoptado</a></li>
+            <li><a href="donacionesvoluntarias.php">Donaciones Voluntarias</a></li>
+            <li><a href="acceder.php">Acceder</a></li>
         </ul>
     </nav>

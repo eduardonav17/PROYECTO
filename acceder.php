@@ -1,0 +1,44 @@
+<?php
+declare(strict_types=1);
+require_once "header.php";
+?>
+
+<body>
+
+<!--Contenido principal-->
+<main>
+
+<!--Seccion para crear cuenta adoptistas y rescatistas-->
+<section class="registro">
+    <h1>Crear Cuenta</h1>
+    
+    <p>Selecciona tu perfil</p>
+
+    <section class="cards">
+
+
+        <article class="carda">
+            <figure>
+                <img src="imagenes/adoptistas.webp" alt="Una familia conformada por padre, madre e hijos adoptando un perro">
+            </figure>
+            <h3>Soy adoptista</h3>
+            <p>Busca y adopta mascotas que necesitan un hogar.</p>
+            <a href="perfiles/adoptistas.php">Crear Cuenta</a>
+        </article>
+
+        <article class="carda">
+            <figure>
+                <img src="imagenes/rescatista.webp" alt="un rescatista con chaleco azul ayudando a un perro en la calle">
+            </figure>
+            <h3>Soy Rescatista</h3>
+            <p>Publica mascotas y ayúdalas a encontra un hogar.</p>
+            <a href="perfiles/rescatistas.php">Crear Cuenta</a>
+        </article>
+    </section>
+</section>
+
+</main>
+<!--Todo lo que se agregue debe ir dentro del main-->
+
+</body>
+</html>

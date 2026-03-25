@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Titulo de la pagina web-->
-<title>PETfriends hub</title>
-<link rel="icon" type="logoSF.jpeg" href="imagenes/logo.webp" style="background-color: transparent;">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="estilos2.css">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-<body>
-
-          <header class="header">
-            <div class="logo">
-                <a href="index.html" class="logo-link">
-                    <img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="registroarescatista.html">Registro Rescatista</a></li>
-                    <li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-                    <li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-                    <li><a href="acceder.html">Acceder</a></li>
-                </ul>
-            </nav>
-            <a href="reportarpet.html" class="btn"><button>Reportar</button></a>
-        </header>
+<?php
+declare(strict_types=1);
+require_once "header.php";
+?>
 
 <main>
  <!-- Sección principal-->

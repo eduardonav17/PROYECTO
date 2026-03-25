@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-<!--Configuración de caracteres-->
-<meta charset="UTF-8">
-
-<!--Adaptación para celulares-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--Título de la página-->
-<title>Pet Maltratado</title>
-
-<!--Icono de la pestaña-->
-<link rel="icon" type="image/webp" href="imagenes/logo.webp">
-
-<!--Archivo de estilos-->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="estilos2.css">
-
-</head>
-
-<body>
-
-<!--Encabezado con logo y menú-->
-<header class="header">
-
-<!--Logo del sitio-->
-<a href="index.html" class="logo logo-link">
-<img src="imagenes/logo.webp" alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
-</a>
-
-<!--Menú de navegación-->
-<nav>
-<ul class="nav-links">
-<li><a href="registroarescatista.html">Registro Rescatista</a></li>
-<li><a href="yaheadoptado.html">Ya eh Adoptado</a></li>
-<li><a href="donacionesvoluntarias.html">Donaciones Voluntarias</a></li>
-<li><a href="acceder.html">Acceder</a></li>
-</ul>
-</nav>
-
-<!--Botón para ir a reportar-->
-<a href="reportarpet.html" class="btn">
-<button>Reportar</button>
-</a>
-
-</header>
+<?php
+declare(strict_types=1);
+require_once "header.php";
+?>
 
 <main>
 

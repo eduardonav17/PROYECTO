@@ -41,7 +41,7 @@ require_once "header.php";
     <article class="categorias">
 
         <!--Tarjeta de perros-->
-        <a href="perrosadopcion.html" class="card">
+        <a href="perrosadopcion.php" class="card">
             <img src="imagenes/perro.webp" alt="Perro golden retriever de pie en un campo, con expresión feliz y lengua afuera, iluminado por luz cálida">
 
             <!--Texto que aparece encima de la imagen-->
@@ -52,7 +52,7 @@ require_once "header.php";
         </a>
 
         <!--Tarjeta de gatos-->
-        <a href="gatosadopcion.html" class="card">
+        <a href="gatosadopcion.php" class="card">
             <img src="imagenes/gato.webp" alt="Gato naranja sentado en un camino, con luz cálida de atardecer y fondo desenfocado de naturaleza">
 
             <!--Texto encima de la imagen-->
@@ -80,7 +80,7 @@ require_once "header.php";
     </a>
 
     <!--Seccion acerca de nosotros-->
-    <a href="acercadenosotros.html" class="social-icon acerca">
+    <a href="acercadenosotros.php" class="social-icon acerca">
         <i class="fa-solid fa-users"></i>
     </a>
 
