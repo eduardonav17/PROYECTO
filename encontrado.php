@@ -11,24 +11,21 @@ require_once "header.php";
 <h2>Reportar Pet Encontrado</h2>
 
 <!--Formulario de reporte-->
-<form>
+<form id="formReporte">
 
 <!--Foto de la mascota encontrada-->
 <div class="grupo">
 <label>Foto de la mascota</label>
-<input type="file" accept="image/*" required>
+<input type="file" id="foto" accept="image/*" required>
 </div>
 
 <!--Nombre o apodo-->
-<div class="grupo">
-<label>Nombre de Apodo</label>
-<input type="text" placeholder="Ej. Max" required>
-</div>
+
 
 <!--Tipo de mascota-->
 <div class="grupo">
 <label>Tipo</label>
-<select required>
+<select id="tipo" required>
 <option value="">Selecciona una opción</option>
 <option>Perro</option>
 <option>Gato</option>
@@ -38,37 +35,37 @@ require_once "header.php";
 <!--Raza-->
 <div class="grupo">
 <label>Raza</label>
-<input type="text" placeholder="Ej. Labrador">
+<input type="text" id="raza" placeholder="Ej. Labrador" required>
 </div>
 
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
-<input type="text" placeholder="Ej. Café con blanco">
+<input type="text" id="color" placeholder="Ej. Café con blanco">
 </div>
 
 <!--Fecha en que se encontró-->
 <div class="grupo">
 <label>Fecha de encuentro</label>
-<input type="date" required>
+<input type="date" id="fecha" required>
 </div>
 
 <!--Lugar donde fue encontrado-->
 <div class="grupo">
 <label>Lugar donde se encontró</label>
-<input type="text" placeholder="Colonia, calle" required>
+<input type="text" id="lugar" placeholder="Colonia, calle" required>
 </div>
 
 <!--Descripción del animal-->
 <div class="grupo">
 <label>Descripción</label>
-<textarea rows="4" placeholder="Señas particulares..." required></textarea>
+<textarea id="descripcion" rows="4" placeholder="Señas particulares..." required></textarea>
 </div>
 
 <!--Teléfono de contacto-->
 <div class="grupo">
 <label>Teléfono de contacto</label>
-<input type="tel" placeholder="351-000-0000" required>
+<input type="tel" id="telefono" placeholder="351-000-0000" required>
 </div>
 
 <!--Botón para enviar el reporte-->
@@ -79,6 +76,9 @@ require_once "header.php";
 </section>
 
 </main>
+
+<!--Conexión con JS-->
+<script src="reporte.js"></script>
 
 </body>
 </html>

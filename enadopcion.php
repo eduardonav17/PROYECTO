@@ -1,7 +1,4 @@
-<?php
-declare(strict_types=1);
-require_once "header.php";
-?>
+<?php declare(strict_types=1); require_once "header.php"; ?>
 
 <main>
 
@@ -11,24 +8,24 @@ require_once "header.php";
 <h2>Dar Pet en Adopción</h2>
 
 <!--Formulario de registro de mascota-->
-<form>
+<form id="formMascota">
 
 <!--Foto de la mascota-->
 <div class="grupo">
 <label>Foto de la mascota</label>
-<input type="file" accept="image/*" required>
+<input type="file" id="foto" accept="image/*" required>
 </div>
 
 <!--Nombre de la mascota-->
 <div class="grupo">
 <label>Nombre</label>
-<input type="text" placeholder="Ej. Max" required>
+<input type="text" id="nombre" placeholder="Ej. Max" required>
 </div>
 
 <!--Tipo de mascota-->
 <div class="grupo">
 <label>Tipo</label>
-<select required>
+<select id="tipo" required>
 <option value="">Selecciona una opción</option>
 <option>Perro</option>
 <option>Gato</option>
@@ -38,31 +35,31 @@ require_once "header.php";
 <!--Raza-->
 <div class="grupo">
 <label>Raza</label>
-<input type="text" placeholder="Ej. Labrador">
+<input type="text" id="raza" placeholder="Ej. Labrador">
 </div>
 
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
-<input type="text" placeholder="Ej. Café con blanco">
+<input type="text" id="color" placeholder="Ej. Café con blanco">
 </div>
 
 <!--Lugar de adopción-->
 <div class="grupo">
 <label>Lugar donde se da en adopción</label>
-<input type="text" placeholder="Colonia, calle" required>
+<input type="text" id="lugar" placeholder="Colonia, calle" required>
 </div>
 
 <!--Descripción de la mascota-->
 <div class="grupo">
 <label>Descripción</label>
-<textarea rows="4" placeholder="Señas particulares..." required></textarea>
+<textarea id="descripcion" rows="4" placeholder="Señas particulares..." required></textarea>
 </div>
 
 <!--Teléfono de contacto-->
 <div class="grupo">
 <label>Teléfono de contacto</label>
-<input type="tel" placeholder="351-000-0000" required>
+<input type="tel" id="telefono" placeholder="351-000-0000" required>
 </div>
 
 <!--Botón para publicar-->
@@ -73,7 +70,11 @@ require_once "header.php";
 </section>
 
 </main>
+
 <!--Todo lo que se agregue debe ir dentro del main-->
+
+<!--AQUÍ CONECTAS TU JS-->
+<script src="script.js"></script>
 
 </body>
 </html>

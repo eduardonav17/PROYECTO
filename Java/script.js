@@ -39,3 +39,133 @@ btn.addEventListener("click", () => {
     btn.classList.add("bi-list");
   }
 });
+
+//AQUI EMPIEZA EN ADOPCION-----
+
+window.onload = function() {
+
+    const inputNombre = document.getElementById("nombre");
+
+    // Verifica que sí existe el input
+    if (!inputNombre) {
+        console.error("No se encontró el campo nombre");
+        return;
+    }
+
+    // Bloquear números y caracteres
+    inputNombre.addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+window.onload = function() {
+
+    function soloLetras(inputId) {
+        const input = document.getElementById(inputId);
+        if (!input) return;
+
+        input.addEventListener("input", function() {
+            this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+        });
+    }
+
+    function soloNumeros(inputId) {
+        const input = document.getElementById(inputId);
+        if (!input) return;
+
+        input.addEventListener("input", function() {
+            this.value = this.value.replace(/[^0-9\-]/g, "");
+        });
+    }
+
+    //Aplicar validaciones
+    soloLetras("nombremascota");
+    soloLetras("raza");
+    soloLetras("color");
+
+    soloNumeros("telefono");
+
+};
+};
+//AQUI EMPIEZA ENCONTRADO-----
+
+window.onload = function() {
+
+    // Espera a que toda la página cargue antes de ejecutar el código
+    // Esto evita errores cuando los elementos aún no existen
+    const form = document.getElementById("formReporte");
+
+    //BLOQUEAR NÚMEROS Y CARACTERES (solo permite letras)
+
+    document.getElementById("raza").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    document.getElementById("color").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    //BLOQUEAR LETRAS (solo permite números y guiones)
+
+    document.getElementById("telefono").addEventListener("input", function() {
+        // Elimina todo lo que NO sea número (0-9) o guion (-)
+        this.value = this.value.replace(/[^0-9\-]/g, "");
+    });
+
+};
+
+//AQUI EMPIEZA MALTRATO-----
+
+window.onload = function() {
+
+    // Espera a que cargue toda la página
+    const form = document.getElementById("formMaltrato");
+
+    // 🔹 BLOQUEAR NÚMEROS Y CARACTERES (solo letras)
+
+    document.getElementById("nombre").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    document.getElementById("raza").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    document.getElementById("color").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    // 🔹 BLOQUEAR LETRAS (solo números y guiones)
+
+    document.getElementById("telefono").addEventListener("input", function() {
+        this.value = this.value.replace(/[^0-9\-]/g, "");
+    });
+
+};
+
+//AQUI EMPIEZA PERDIDO-----
+
+window.onload = function() {
+
+    // Espera a que cargue toda la página
+    const form = document.getElementById("formPerdido");
+
+    // 🔹 BLOQUEAR NÚMEROS Y CARACTERES (solo letras)
+
+    document.getElementById("nombre").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    document.getElementById("raza").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    document.getElementById("color").addEventListener("input", function() {
+        this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
+    });
+
+    // 🔹 BLOQUEAR LETRAS (solo números y guiones)
+
+    document.getElementById("telefono").addEventListener("input", function() {
+        this.value = this.value.replace(/[^0-9\-]/g, "");
+    });
+
+};
