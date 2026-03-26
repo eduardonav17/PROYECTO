@@ -52,7 +52,7 @@ window.onload = function() {
         return;
     }
 
-    // Bloquear números y caracteres
+    //Bloquear números y caracteres
     inputNombre.addEventListener("input", function() {
         this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
     });
@@ -119,7 +119,7 @@ window.onload = function() {
     // Espera a que cargue toda la página
     const form = document.getElementById("formMaltrato");
 
-    // 🔹 BLOQUEAR NÚMEROS Y CARACTERES (solo letras)
+    //BLOQUEAR NÚMEROS Y CARACTERES (solo letras)
 
     document.getElementById("nombre").addEventListener("input", function() {
         this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
@@ -133,7 +133,7 @@ window.onload = function() {
         this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
     });
 
-    // 🔹 BLOQUEAR LETRAS (solo números y guiones)
+    //BLOQUEAR LETRAS (solo números y guiones)
 
     document.getElementById("telefono").addEventListener("input", function() {
         this.value = this.value.replace(/[^0-9\-]/g, "");
@@ -148,7 +148,7 @@ window.onload = function() {
     // Espera a que cargue toda la página
     const form = document.getElementById("formPerdido");
 
-    // 🔹 BLOQUEAR NÚMEROS Y CARACTERES (solo letras)
+    //BLOQUEAR NÚMEROS Y CARACTERES (solo letras)
 
     document.getElementById("nombre").addEventListener("input", function() {
         this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
@@ -162,7 +162,7 @@ window.onload = function() {
         this.value = this.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ\s]/g, "");
     });
 
-    // 🔹 BLOQUEAR LETRAS (solo números y guiones)
+    //BLOQUEAR LETRAS (solo números y guiones)
 
     document.getElementById("telefono").addEventListener("input", function() {
         this.value = this.value.replace(/[^0-9\-]/g, "");
