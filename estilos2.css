@@ -262,22 +262,33 @@ div h5 {
 
 /* Botón hamburguesa */
 #menu-btn {
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   color: black;
-  margin-left: auto;  /*  esto lo mueve */
-  margin-right: 20px; 
+  margin-left: auto;  /* esto lo mueve */
+  margin-right: 20px;
+
+  /* Animación suave para el hover */
+  transition: transform 0.3s ease;
 }
+
+/* Hover del botón (hamburguesa y X) */
+#menu-btn:hover {
+  transform: scale(1.2);
+}
+
 
 /* Menú lateral */ 
 .menu { 
   position: fixed; 
   top: 0; 
-  left: -250px; /* oculto */ 
+  left: -250px; /* oculto  */
   width: 250px; 
   height: 100%; 
   background: #222; 
-  padding-top: 60px; transition: 0.3s; 
+  padding-top: 60px; 
+  transition: 0.3s; 
+  transform-origin: left center;
   z-index: 1000; 
 }
 

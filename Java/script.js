@@ -24,17 +24,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 //aqui termina el javasript del boton del mapa
+
+//menu hamburguesa
+//boton del menu
 const btn = document.getElementById("menu-btn");
+//contenedor del menu lateral
 const menu = document.getElementById("menu");
 
 btn.addEventListener("click", () => {
   menu.classList.toggle("active");
 
-  // Cambiar icono
+// verifica si esta abierto el menu hamburguesa
   if (menu.classList.contains("active")) {
+
+    // Si el menu  está abierto se cambia el icono hamburguesa (bi-list) por una X (bi-x)
     btn.classList.remove("bi-list");
     btn.classList.add("bi-x");
   } else {
+     // Si el menu está cerrado se cambia el icono X (bi-x) por hamburguesa (bi-list)
     btn.classList.remove("bi-x");
     btn.classList.add("bi-list");
   }

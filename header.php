@@ -55,5 +55,8 @@
             <li><a href="yaheadoptado.php">Ya eh Adoptado</a></li>
             <li><a href="donacionesvoluntarias.php">Donaciones Voluntarias</a></li>
             <li><a href="acceder.php">Acceder</a></li>
+            <li><a href="reglamentorescatista.php">Reglamento rescatista</a></li>
+            <li><a href="registroarescatista.php">Registro rescatista</a></li>
+            
         </ul>
     </nav>
