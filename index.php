@@ -110,7 +110,7 @@ Veterinarias
 
 <!--Pie de pagina-->
 <footer class="cre">
-@PETfriends hub 2026
+@PETfriends hub 2026 que pasa
 </footer>
 
 </body>

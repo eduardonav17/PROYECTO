@@ -23,7 +23,7 @@ require_once "header.php";
             </figure>
             <h3>Soy adoptista</h3>
             <p>Busca y adopta mascotas que necesitan un hogar.</p>
-            <a href="perfiles/adoptistas.php">Crear Cuenta</a>
+            <a href="adoptistas.php">Crear Cuenta</a>
         </article>
 
         <article class="carda">
@@ -32,7 +32,7 @@ require_once "header.php";
             </figure>
             <h3>Soy Rescatista</h3>
             <p>Publica mascotas y ayúdalas a encontra un hogar.</p>
-            <a href="perfiles/rescatistas.php">Crear Cuenta</a>
+            <a href="rescatistas.php">Crear Cuenta</a>
         </article>
     </section>
 </section>

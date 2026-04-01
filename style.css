@@ -800,19 +800,17 @@ figure {
 .logins{
 margin: 0;
 font-family: Arial;
-background: url(fondoss-de-mascotas.webp) no-repeat center center;
+background: url(fondoss-de-mascotas.webp) no-repeat center;
 background-size: cover;
 display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+
+height: 55%;
 }
 .registror{
 background: #ffffff;
 padding: 30px;
 border-radius: 15px;
 width: 300px;
-text-align: center;
 }
 h1{
 font-size: 28px;
