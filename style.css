@@ -803,14 +803,15 @@ font-family: Arial;
 background: url(fondoss-de-mascotas.webp) no-repeat center;
 background-size: cover;
 display: flex;
-
-height: 55%;
+flex-direction: column;/*clave*/
+height: 100vh;
 }
-.registror{
+.registror, .login{
 background: #ffffff;
 padding: 30px;
 border-radius: 15px;
 width: 300px;
+margin: auto;
 }
 h1{
 font-size: 28px;
@@ -835,5 +836,7 @@ color: #e28c0a;
 border: none;
 border-radius: 8px;
 }
-
+.login{
+display: none;
+}
 /*aqui termina el css de adoptista y rescatista*/
