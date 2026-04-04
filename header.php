@@ -38,13 +38,18 @@
     </a>
 
     <!--Menu de navegacion principal-->
-    
         <i class="bi bi-list" id="menu-btn"></i> 
+
+            <nav class="acciones">
+               <i class="fa-solid fa-paw icono-favorito"></i>
+               <i class="fa-solid fa-bars menu"></i>
+           </nav>
     
     <!--Boton para reportar mascotas-->
     <a href="reportarpet.php" class="btn">
         <button>Reportar</button>
     </a>
+
 
 </header>
 <!--Aqui termina el header-->

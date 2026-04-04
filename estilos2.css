@@ -1131,3 +1131,49 @@ div h5 {
     background: #5f62a3;
   }
 }
+
+/*Media para las tarjetas de los perros adoptivos*/
+/*para celulares */
+@media (max-width: 600px) {
+  .card-mascota {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contenedor-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-mascota {
+    width: 220px;
+  }
+
+  .contenedor-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*para laptops de pantalla normal*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .card-mascota {
+    width: 250px;
+  }
+
+  .contenedor-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*para pantallas grandes */
+@media (min-width: 1441px) {
+  .card-mascota {
+    width: 280px;
+  }
+
+  .contenedor-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

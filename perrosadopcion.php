@@ -110,7 +110,7 @@ require_once "header.php";
 <!--Filtro por nivel de energía-->
 <div class="grupo">
 
-<label>NIVEL DE ENERGÍA</label>
+<label>CARÁCTER</label>
 
 <select>
 <option>--</option>
@@ -125,6 +125,28 @@ require_once "header.php";
 <button class="btn-filtrar">Buscar</button>
 
 </section>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/MuestraPerro.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Nombre de la mascota</h3>
+    <p class="tipo">Perro - 4 años</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria</strong> Joven</li>
+        <li><strong>Tamaño:</strong> Mediano</li>
+        <li><strong>Tipo de Pelaje:</strong> ---</li>
+        <li><strong>Color:</strong> ---</li>
+        <li><strong>Carácter:</strong> Tranquilo</li>
+    </ul>
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
 
 </main>
 

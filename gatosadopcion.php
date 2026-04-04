@@ -122,6 +122,28 @@ require_once "header.php";
 
 </section>
 
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/MuestraGato.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Nombre de la mascota</h3>
+    <p class="tipo">Gato - 2 años</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria</strong> Joven</li>
+        <li><strong>Tamaño:</strong> Mediano</li>
+        <li><strong>Tipo de Pelaje:</strong> ---</li>
+        <li><strong>Color:</strong> ---</li>
+        <li><strong>Nivel de Actividad:</strong> Muy activo</li>
+    </ul>
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
