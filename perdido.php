@@ -84,5 +84,8 @@ require_once "header.php";
 <!--Conectar JS-->
 <script src="perdido.js"></script>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

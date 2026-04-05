@@ -76,5 +76,8 @@
 <!--AQUÍ CONECTAS TU JS-->
 <script src="script.js"></script>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

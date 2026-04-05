@@ -34,5 +34,8 @@ require_once "header.php";
 </section>
 </main>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

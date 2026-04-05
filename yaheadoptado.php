@@ -67,5 +67,8 @@ Métodos de pago aceptados: Tarjeta de crédito, débito o transferencia.
 
 </main>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

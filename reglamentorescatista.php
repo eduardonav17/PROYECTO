@@ -96,5 +96,8 @@ Todos los animales mayores de 6 meses deberán entregarse esterilizados, salvo j
 
 </main>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

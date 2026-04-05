@@ -44,4 +44,8 @@ function mostrarRegistro(){
     document.getElementById("login").style.display = "none";
 }
 </script>
+
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>

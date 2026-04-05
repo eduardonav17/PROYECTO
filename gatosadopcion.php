@@ -147,5 +147,8 @@ require_once "header.php";
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

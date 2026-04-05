@@ -176,3 +176,62 @@ window.onload = function() {
     });
 
 };
+
+//Js para mapa de vetrinarias de emergencia
+console.log(document.getElementById("btnEmergencia"));
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.getElementById("btnEmergencia");
+  const dialog = document.getElementById("ventanaEmergencia");
+  const cerrar = document.getElementById("cerrarVentana");
+
+  // VALIDACIÓN IMPORTANTE
+  if (!btn || !dialog || !cerrar) return;
+
+  let mapa;
+
+  btn.addEventListener("click", () => {
+    dialog.showModal();
+
+    if (!mapa) {
+      navigator.geolocation.getCurrentPosition(pos => {
+        const lat = pos.coords.latitude;
+        const lon = pos.coords.longitude;
+
+        mapa = L.map('mapa').setView([lat, lon], 14);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap'
+        }).addTo(mapa);
+
+        L.marker([lat, lon])
+          .addTo(mapa)
+          .bindPopup("Estás aquí")
+          .openPopup();
+
+        fetch(`https://overpass-api.de/api/interpreter?data=
+          [out:json];
+          node["amenity"="veterinary"](around:3000,${lat},${lon});
+          out;
+        `)
+        .then(res => res.json())
+        .then(data => {
+          data.elements.forEach(lugar => {
+            if (lugar.lat && lugar.lon) {
+              L.marker([lugar.lat, lugar.lon])
+                .addTo(mapa)
+                .bindPopup(lugar.tags.name || "Veterinaria");
+            }
+          });
+        });
+
+      });
+    }
+  });
+
+  cerrar.addEventListener("click", () => {
+    dialog.close();
+  });
+
+});

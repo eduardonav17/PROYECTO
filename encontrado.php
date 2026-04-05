@@ -80,5 +80,8 @@ require_once "header.php";
 <!--Conexión con JS-->
 <script src="reporte.js"></script>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

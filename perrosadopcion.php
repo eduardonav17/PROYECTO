@@ -150,5 +150,8 @@ require_once "header.php";
 
 </main>
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

@@ -20,12 +20,18 @@ require_once "header.php";
         </h2>
 
         <!--Buscador de mascotas-->
-        <form class="Busqueda">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="palabras clave">
-        </form>
 
     </section>
+
+    <button id="btnEmergencia">Veterinarias de Emergencia</button>
+
+    <dialog id="ventanaEmergencia">
+  <h2>Veterinarias cercanas</h2>
+
+  <section id="mapa"></section>
+
+  <button id="cerrarVentana">Cerrar</button>
+</dialog>
  
 <hr>
 
@@ -109,11 +115,10 @@ Veterinarias
 </main>
 
 <!--Pie de pagina-->
-<footer class="cre">
-@PETfriends hub 2026 que pasa
-</footer>
+<?php include("footer.php"); ?>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
- 
-<h3 santos puto></h3>

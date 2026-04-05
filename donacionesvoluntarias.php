@@ -132,5 +132,8 @@ Si deseas apoyar nuestra misión, puedes realizar un
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

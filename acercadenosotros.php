@@ -75,5 +75,8 @@ la elaboración de la página y la bitácora.
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>

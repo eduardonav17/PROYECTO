@@ -24,6 +24,9 @@
 <!--librería de Bootstrap Icons-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+<!--link para el mapa de veterinarias de emergencia-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
 </head>
 
 <body>
@@ -65,3 +68,8 @@
             
         </ul>
     </nav>
+
+    <!--link para que funcione el mapa de emrgencias de vetrinarias-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>

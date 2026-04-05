@@ -40,5 +40,8 @@ Cada pequeña acción puede cambiar una vida.
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
 
+<!--Pie de pagina-->
+<?php include("footer.php"); ?>
+
 </body>
 </html>
