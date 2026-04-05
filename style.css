@@ -39,39 +39,9 @@ padding: 40px 20px; /*da espacio interior entre el contenido y borde*/
 animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
-
-
-/*BARRA DEL BUSCADOR*/
-.Busqueda {
-margin: auto;
-margin-top: 20px;
-width: 90%;
-max-width: 500px;
-display: flex;
-align-items: center;
-background: white;
-border: 1px solid #ccc;
-border-radius: 4px;
-padding: 10px;
-animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
-}
-
-.Busqueda input {
-border: none;
-outline: none;
-flex: 1;
-font-size: 16px;
-}
-
-.Busqueda i {
-font-size: 18px;
-margin-left: 10px;
-cursor: pointer;
-}
-/* aqui termina barra de busqueda*/
-
 /*linea entre texto y la barra de busqueda*/
 hr {
+  margin-top: 20px;
   animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 /*aqui termina*/
