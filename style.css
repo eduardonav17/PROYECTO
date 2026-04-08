@@ -968,3 +968,41 @@ display: none;
   color: var(--gris-oscuro);
 }
 /*Aqui termina el footer*/
+
+/*css para el boton de IA*/
+#btnIA {
+  width: 75%; /* ocupa todo el ancho */
+  text-align: center;
+   margin: 0 auto; /*esto lo centra */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+
+  background-color: var(--naranja-bajo);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+
+  font-size: 18px;
+  cursor: pointer;
+  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
+}
+
+/* Hover */
+#btnIA:hover {
+  transform: scale(1.05);
+  background: var(--naranja);
+}
+
+/* Click */
+#btnIA:active {
+  transform: scale(0.97);
+}
+
+#btnIA i {
+  font-size: 20px;
+}

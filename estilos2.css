@@ -1177,3 +1177,27 @@ div h5 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/*media para el boton de la IA*/
+/*para celulares*/
+@media (max-width: 600px) {
+  #btnIA {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/*para tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  #btnIA {
+    font-size: 17px;
+  }
+}
+
+/*para pantallas grandes*/
+@media (min-width: 1025px) {
+  #btnIA {
+    font-size: 20px;
+    padding: 18px;
+  }
+}

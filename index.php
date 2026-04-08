@@ -32,6 +32,11 @@ require_once "header.php";
 
   <button id="cerrarVentana">Cerrar</button>
 </dialog>
+
+<!--El boton para la IA de encontrar mascotas-->
+    <button id="btnIA">
+       <i class="bi bi-alexa"></i> Encontrar mi mascota ideal
+    </button>
  
 <hr>
 

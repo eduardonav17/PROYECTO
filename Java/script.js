@@ -177,25 +177,46 @@ window.onload = function() {
 
 };
 
-//Js para mapa de vetrinarias de emergencia
-console.log(document.getElementById("btnEmergencia"));
-
+//Js para mapa de veterinarias de emergencia
 document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("btnEmergencia");
   const dialog = document.getElementById("ventanaEmergencia");
   const cerrar = document.getElementById("cerrarVentana");
 
-  // VALIDACIÓN IMPORTANTE
   if (!btn || !dialog || !cerrar) return;
 
   let mapa;
+
+  // VETERINARIAS MANUALES
+  const veterinarias = [
+    //Veterinarias que se encontraron en Zamora
+    { nombre: "clinica veterinaria animal dogtor´s", lat: 19.97856081883132, lon: -102.28710672841623 },
+    { nombre: "Veterinaria del Valle", lat: 19.992196320456873, lon: -102.29332259418635 },
+    { nombre: "Veterinaria Argos Pet'S", lat: 19.989385734084184, lon: -102.28730444878465 },
+    { nombre: "Veterinaria Healthy Pets", lat: 19.979837988820847, lon: -102.29342282407245 },
+    { nombre: "Centro Medico Veterinario Petit´s", lat: 19.978464923501264, lon: -102.2843881235527},
+    { nombre: "Tienda de mascotas Domestika", lat: 19.982031712808887, lon: -102.2872450949259},
+    { nombre: "Veterinaria Alcázar", lat: 19.993718579447506, lon: -102.28843424922604},
+    { nombre: "Veterinaria Nava Castillo", lat: 19.982189479262995, lon: -102.28310536456742},
+    { nombre: "Clínica Veterinaria Vet - Mep", lat: 19.987726655462037, lon: -102.28321680014976},
+    { nombre: "Xolotl Veterinaria", lat: 19.983323679281153, lon: -102.2759585222381},
+    { nombre: "Veterinaria Olivares", lat: 19.989228200346428, lon: -102.27263305671511},
+    { nombre: "Polyvet Veterinaria", lat: 19.974272774818896, lon: -102.2819710002995},
+    { nombre: "Clinica Veterinaria Robles", lat: 19.980397075406636, lon: -102.29027742913479},
+    { nombre: "Clinica Veterinaria Y Estetica Canina Petit's", lat: 19.974868174876047, lon: -102.28626187331164},
+    { nombre: "Clin-Vet Veterinaria", lat: 19.97389968655909, lon: -102.28097321861229},
+    { nombre: "Clínica De Especialidades Veterinarias MVZ Pedro Rodríguez Tarré", lat: 19.993028606485932, lon: -102.28383533188085},
+    { nombre: "Hospital Vet Dr David Luz", lat: 19.978031148977287, lon: -102.28142709942945},
+    { nombre: "VETERINARIA DOGTOR VET", lat: 19.972465116430165, lon: -102.28035421594045},
+  ];
 
   btn.addEventListener("click", () => {
     dialog.showModal();
 
     if (!mapa) {
       navigator.geolocation.getCurrentPosition(pos => {
+
         const lat = pos.coords.latitude;
         const lon = pos.coords.longitude;
 
@@ -205,27 +226,46 @@ document.addEventListener("DOMContentLoaded", () => {
           attribution: '© OpenStreetMap'
         }).addTo(mapa);
 
+        // Usuario
         L.marker([lat, lon])
           .addTo(mapa)
           .bindPopup("Estás aquí")
           .openPopup();
 
-        fetch(`https://overpass-api.de/api/interpreter?data=
-          [out:json];
-          node["amenity"="veterinary"](around:3000,${lat},${lon});
-          out;
-        `)
-        .then(res => res.json())
-        .then(data => {
-          data.elements.forEach(lugar => {
-            if (lugar.lat && lugar.lon) {
-              L.marker([lugar.lat, lugar.lon])
-                .addTo(mapa)
-                .bindPopup(lugar.tags.name || "Veterinaria");
-            }
-          });
+        let masCercana = null;
+        let menorDistancia = Infinity;
+
+        veterinarias.forEach(vet => {
+
+          const distancia = calcularDistancia(lat, lon, vet.lat, vet.lon);
+
+          // Guardar la más cercana
+          if (distancia < menorDistancia) {
+            menorDistancia = distancia;
+            masCercana = vet;
+          }
+
+          // Mostrar TODAS
+          L.marker([vet.lat, vet.lon])
+            .addTo(mapa)
+            .bindPopup(vet.nombre);
         });
 
+        // Mostrar la más cercana
+        if (masCercana) {
+          L.marker([masCercana.lat, masCercana.lon])
+            .addTo(mapa)
+            .bindPopup("MÁS CERCANA: " + masCercana.nombre)
+            .openPopup();
+
+          L.circle([masCercana.lat, masCercana.lon], {
+            color: 'red',
+            radius: 100
+          }).addTo(mapa);
+        }
+
+      }, () => {
+        alert("Activa la ubicación para usar esta función");
       });
     }
   });
@@ -234,4 +274,27 @@ document.addEventListener("DOMContentLoaded", () => {
     dialog.close();
   });
 
+});
+
+
+// DISTANCIA
+function calcularDistancia(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+
+  const a =
+    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) *
+    Math.sin(dLon/2) * Math.sin(dLon/2);
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+//aqui termina el js de veterinarias de emergencia
+
+//js del boton de IA por lo pronto
+
+document.getElementById("btnIA").addEventListener("click", () => {
+  alert("Aqui ira la IA para escoger tu mascota ideal, en proceso...");
 });
