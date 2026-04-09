@@ -33,7 +33,7 @@ una segunda oportunidad a los animales, promoviendo el cuidado, el respeto y la 
 <article class="carde">
 <h3>Juan Pablo Sifuentes Ramírez</h3>
 <p>
-Programador que se encarga en HTML y CSS, crucial
+Programador que se encarga en HTML,css y java script, crucial
 para la elaboración del proyecto asignado,
 apoyando a los demás programadores del equipo.
 </p>
@@ -53,7 +53,7 @@ de la página, además del HTML y CSS.
 <h3>Diego Emmanuel Alemán Campos</h3>
 <p>
 Programador que se encarga del diseño
-y estética de la página, además de ayudar al equipo con HTML.
+y estética de la página, además de ayudar al equipo con HTML,css y java script.
 </p>
 </article>
 
@@ -62,8 +62,7 @@ y estética de la página, además de ayudar al equipo con HTML.
 <h3>Erick Eduardo Zuno Navarro</h3>
 <h5>Lider de equipo</h5>
 <p>
-Programador que se encarga del HTML
-y CSS para el proyecto, crucial para
+Programador que se encarga del HTML,css y javascript para el proyecto, crucial para
 la elaboración de la página y la bitácora.
 </p>
 </article>
