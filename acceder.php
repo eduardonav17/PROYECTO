@@ -17,7 +17,7 @@ require_once "header.php";
     <section class="cards">
 
 
-        <article class="carda">
+        <article class="carda"> <a href="adoptistas.php">
             <figure>
                 <img src="imagenes/adoptistas.webp" alt="Una familia conformada por padre, madre e hijos adoptando un perro">
             </figure>

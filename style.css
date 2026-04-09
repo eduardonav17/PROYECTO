@@ -700,6 +700,7 @@ select, input[type="number"] {
   text-align: center;
   padding: 40px;
   background-color: #f5e9d8;
+  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
 .registro h1 {
@@ -724,11 +725,13 @@ select, input[type="number"] {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  transition: transform 0.3s ease;
+  display: block;
 }
 
-.card:hover {
-  transform: translateY(-8px);
+.carda:hover {
+  transform:scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 figure {
@@ -757,11 +760,12 @@ figure {
   color: white;
   text-decoration: none;
   border-radius: 20px;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .card a:hover {
   background-color: #5f62a3;
+  transform:scale(1.08);
 }
 /*aqui termina css de acceder*/
 
@@ -775,6 +779,8 @@ background-size: cover;
 display: flex;
 flex-direction: column;/*clave*/
 height: 100vh;
+animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
+text-decoration: none; /* Quita el subrayado del link */
 }
 .registror, .login{
 background: #ffffff;
