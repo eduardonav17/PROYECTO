@@ -61,21 +61,27 @@
             <ul>
             <li><a href="soyrescatista.php">Soy Rescatista</a>
             <ul class="submenus">
-                <a href="registroarescatista.php">Registro Rescatista</a>
-                <a href="reglamentorescatista.php">Reglamento Rescatista</a>
+                <a href="registroarescatista.php">Registro rescatista</a>
+                <a href="reglamentorescatista.php">Reglamento rescatista</a>
+                <a href="enadopcion.php">Dar en adopcion</a>
             </ul>
             </li>
             <li><a href="soyadoptante.php">Soy Adoptante</a>
             <ul class="submenus">
+                <a href="adoptistas.php">Crear Cuenta</a>
                 <a href="solicituddeadopciondegato.php">Solicitud de adopcion de gato</a>
                 <a href="solicituddeadopciondeperro.php">Solicitud de adopcion de perro</a>
-                <a href="yaheadoptado.php">Ya he Adoptado</a>
+                <a href="yaheadoptado.php">Ya he adoptado</a>
+              
             </ul>
             </li> 
             <li><a href="quieroayudar.php">Quiero ayudar</a>
             <ul class="submenus">
                 <a href="donaciones.php">Donaciones</a>
                 
+            </ul>
+            </li> 
+            <li><a href="acceder.php">Acceder</a>
            
         </ul>
     </nav>

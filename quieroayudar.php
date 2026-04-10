@@ -21,7 +21,6 @@ Hay muchas formas en las que puedes ayudar en Pet Friends Hub:
 
 <!--Lista de formas de ayudar-->
 <ul>
-<li>Ser hogar temporal para un perro o gato en adopción.</li>
 <li>Compartir publicaciones de adopción.</li>
 <li>Apoyar con donaciones de alimento o atención veterinaria.</li>
 <li>Ser voluntario en rescates o apoyo logístico.</li>
