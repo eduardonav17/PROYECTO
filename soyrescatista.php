@@ -13,6 +13,8 @@ require_once "header.php";
         <p>
             Pet Friends Hub es un proyecto que nace con el propósito de apoyar a los rescatistas
             a encontrar hogares responsables y amorosos para sus perros y gatos en adopción.
+        </p>
+        <p>
             Ofrecemos una herramienta práctica y accesible: nuestra plataforma web, un catálogo digital
             donde los adoptantes pueden conocer a los peludos disponibles, ver sus fotos, leer su historia
             y enviar una solicitud de adopción de manera sencilla y segura.

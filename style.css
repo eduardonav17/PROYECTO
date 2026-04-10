@@ -257,13 +257,14 @@ object-fit: cover;
 /*Soy rescatista*/
 .hero-rescatista{
     background-color: white;
-    padding: 25px 50px 25px;
+    padding: 30px 40px 30px;
 }
 
 .contenedor-texto{
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .contenedor-texto p{
@@ -365,6 +366,14 @@ object-fit: cover;
     padding: 30px 40px 30px;
     text-align: center;;
 }
+
+.contenedor-texto{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
 .hero-adoptante p{
     font-size: 16px;
     line-height: 1.7;

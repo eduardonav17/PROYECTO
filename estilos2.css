@@ -233,34 +233,7 @@ div h5 {
 .header .logo img:hover {
     transform: scale(1.2);
 }
-/*
-.header .nav-links {
-    list-style: none;
-}
 
-.header .i {
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.header .nav-links li:hover {
-    transform: scale(1.2);
-}
-
-.header .nav-links a {
-    font-size: 700;
-    color: rgb(8, 95, 117);
-    text-decoration: none;
-}
-
-.header .nav-links li a:hover {
-    color: #D4AF37;
-}
 
 /* Botón hamburguesa */
 #menu-btn {
@@ -287,7 +260,7 @@ div h5 {
   left: -250px; /* oculto  */
   width: 250px; 
   height: 100%; 
-  background: #222; 
+  background: #222222; 
   padding-top: 60px; 
   transition: 0.3s; 
   transform-origin: left center;
@@ -308,18 +281,56 @@ div h5 {
 
 .menu ul li {
   margin: 20px 0;
+  position: relative;
 }
 
 .menu ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  display: block;
 }
 
 /* Hover */
 .menu ul li a:hover {
   color: orange;
 }
+
+
+
+.submenus {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 0;
+  min-width: 200px;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+/*
+.submenus li {
+  margin: 0;
+}
+
+.submenus li a {
+  font-size: 16px;
+  padding: 10px 15px;
+  color: white;
+}
+*/
+.menu ul li:hover .submenus {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+
+}
+
 /*aqui termina menu hamburguesa*/
 
 .header .btn button {
