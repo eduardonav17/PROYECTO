@@ -60,9 +60,9 @@ window.onload = function() {
     soloLetras("nombremascota");
     soloLetras("raza");
     soloLetras("color");
-
+    soloNumeros("edad")
     soloNumeros("telefono");
-
+    
 };
 };
 //AQUI EMPIEZA ENCONTRADO-----
@@ -146,10 +146,11 @@ window.addEventListener("load", function () {
 
     // ===== APLICAR =====
     validarTexto("nombre", "errorNombre");
+    validarTexto("apellidos","errorApellidos")
     validarTexto("raza", "errorRaza");
     validarTexto("color", "errorColor");
-
-    validarTelefono();
+    validarNUmero("edad","errorEdad")
+    validarTelefono("telefono");
 
 });
 

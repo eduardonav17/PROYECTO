@@ -6,11 +6,11 @@ require_once "header.php";
 <!--Contenido principal-->
 <main>
 
-<section class="contenido">
+<section class="f_rescatista">
 
 <h2>Registro rescatista</h2>
 
-<form id="formMascota">
+<form id="formRescatista">
 
 <!--Nombre-->
 <div class="grupo">
@@ -19,21 +19,21 @@ require_once "header.php";
 <span id="errorNombre" style="color:red;"></span>
 </div>
 
-<!--Nombre-->
+<!--Edad-->
 <div class="grupo">
 <label>Apellidos</label>
-<input type="text" id="Apellidos" placeholder="Ej. Sifuentes Ramirez" required>
-<span id="errorApellidos" style="color:red;"></span>
+<input type="text" id="apellidos" placeholder="Ej. Sifuentes Ramirez" required>
+<span id="errrApellidos" style="color:red;"></span>
 </div>
 
-<!--Raza-->
+<!--Edad-->
 <div class="grupo">
 <label>Edad</label>
-<input type="text" id="raza" placeholder="Ej. 67" required>
+<input type="number" id="edad" placeholder="Ej. 67" required>
 <span id="errorEdad" style="color:red;"></span>
 </div>
 
-<!--Color-->
+<!--Corrreo electronico-->
 <div class="grupo">
 <label>Correo eletronico</label>
 <input type="text" id="correo" placeholder="Ej. petfriendshub230@gmail.com">
@@ -53,7 +53,7 @@ require_once "header.php";
 </div>
 
 <!--Botón-->
-<button type="submit" class="pub">Publicar Adopción</button>
+<button type="submit" class="pub">Enviar</button>
 
 </form>
 

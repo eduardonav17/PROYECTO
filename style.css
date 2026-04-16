@@ -288,66 +288,60 @@ object-fit: cover;
 } 
 /*aqui termina css de soy rescatista*/
 
-
-/*  FORMULARIOs de registro  */
-.formulario {
-  width: 90%;            /* Se adapta */
-  max-width: 650px;      /* Más ancho que antes */
-  margin: 60px auto;     /* Centrado */
-  padding: 50px;         /* Espacio interno */
-  background: #f5f5f5;   /* Fondo */
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  font-family: Arial, sans-serif;
+/*formulario de registro rescatista*/
+/* Contenedor principal */
+.f_rescatista {
+    width: 60%;
+    margin: 30px auto;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-/*  CADA GRUPO (label + input) */
-.form-group {
-  margin-bottom: 15px;      /* Espacio entre campos */
-  display: flex;            /* Activa Flexbox */
-  flex-direction: column;   /* Label arriba, input abajo */
+/* Título */
+.f_rescatista h2 {
+    text-align: center;
+    color: #d2691e;
+    margin-bottom: 20px;
 }
 
-/*  ESTILO DE LAS ETIQUETAS */
-.form-group label {
-  margin-bottom: 8px;   /* Espacio entre label e input */
-  font-weight: bold;     /* Texto un poco más grueso */
+/* Cada grupo */
+.grupo {
+    margin-bottom: 15px;
 }
 
-/*  ESTILO DE INPUTS Y TEXTAREA  */
-.form-group input,
-.form-group textarea {
-  padding: 12px;          /* Espacio interno */
-  border-radius: 8px;     /* Bordes redondeados */
-  border: 1px solid #ccc; /* Borde gris claro */
-  font-size: 14px;        /* Tamaño del texto */
+/* Labels */
+.grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-/*  EFECTO CUANDO HACES CLICK EN UN CAMPO  */
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;            /* Quita borde azul del navegador */
-  border-color: var(--turquesa);    /* Cambia borde a turquesa */
+/* Inputs */
+.grupo input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: 0.3s;
 }
 
-/*  BOTÓN DE ENVIAR  */
-.btn-enviar {
-  width: 100%;               /* Ocupa todo el ancho */
-  padding: 14px;             /* Espacio interno */
-  background-color: var(--naranja);  /* Color principal */
-  border: none;              /* Sin borde */
-  border-radius: 8px;        /* Bordes redondeados */
-  color: white;              /* Texto blanco */
-  font-size: 16px;           /* Tamaño del texto */
-  cursor: pointer;           /* Cursor tipo mano */
-  transition: 0.3s;          /* Transición suave */
+/* Botón */
+.pub {
+    width: 100%;
+    padding: 12px;
+    background: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-/*  EFECTO HOVER DEL BOTÓN  */
-.btn-enviar:hover {
-  background-color: var(--azul-cielo);  /* Color más oscuro al pasar el mouse */
+.pub:hover {
+    background: #a0522d;
 }
-/*aqui termina Reglamento rescatista*/
 
 
 /*Reglamento a rescatista*/
