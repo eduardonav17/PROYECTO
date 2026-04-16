@@ -7,7 +7,7 @@
 
   <address>
     <h3>Contacto</h3>
-    <p>Email: ---</p>
+    <p>Email: petfriendshub230@gmail.com</p>
     <p>Tel: ----</p>
   </address>
 

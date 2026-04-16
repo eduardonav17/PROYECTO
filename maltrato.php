@@ -5,27 +5,26 @@ require_once "header.php";
 
 <main>
 
-<!--Sección del formulario para reportar maltrato animal-->
 <section class="contenedor">
 
 <h2>Reportar Pet Maltratada</h2>
 
-<!--Formulario de reporte-->
 <form id="formMaltrato">
 
-<!--Foto del animal-->
+<!--Foto-->
 <div class="grupo">
 <label>Foto de la mascota</label>
 <input type="file" id="foto" accept="image/*" required>
 </div>
 
-<!--Nombre del animal-->
+<!--Nombre-->
 <div class="grupo">
 <label>Nombre</label>
 <input type="text" id="nombre" placeholder="Ej. Max" required>
+<span id="errorNombre" style="color:red;"></span>
 </div>
 
-<!--Tipo de animal-->
+<!--Tipo-->
 <div class="grupo">
 <label>Tipo</label>
 <select id="tipo" required>
@@ -39,39 +38,42 @@ require_once "header.php";
 <div class="grupo">
 <label>Raza</label>
 <input type="text" id="raza" placeholder="Ej. Labrador">
+<span id="errorRaza" style="color:red;"></span>
 </div>
 
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
 <input type="text" id="color" placeholder="Ej. Café con blanco">
+<span id="errorColor" style="color:red;"></span>
 </div>
 
-<!--Fecha del avistamiento-->
+<!--Fecha-->
 <div class="grupo">
 <label>Fecha de avistamiento de maltrato</label>
 <input type="date" id="fecha" required>
 </div>
 
-<!--Lugar donde ocurrió-->
+<!--Lugar-->
 <div class="grupo">
 <label>Lugar donde sucedió</label>
 <input type="text" id="lugar" placeholder="Colonia, calle" required>
 </div>
 
-<!--Descripción del caso-->
+<!--Descripción-->
 <div class="grupo">
 <label>Descripción</label>
 <textarea id="descripcion" rows="4" placeholder="Señas particulares..." required></textarea>
 </div>
 
-<!--Teléfono de contacto-->
+<!--Teléfono-->
 <div class="grupo">
 <label>Teléfono de contacto</label>
-<input type="tel" id="telefono" placeholder="351-000-0000" required>
+<input type="tel" id="telefono" placeholder="3510000000" required>
+<span id="errorTelefono" style="color:red;"></span>
 </div>
 
-<!--Botón para enviar reporte-->
+<!--Botón-->
 <button class="pub" type="submit">Reportar Maltrato</button>
 
 </form>
@@ -79,12 +81,10 @@ require_once "header.php";
 </section>
 
 </main>
-<!--Todo lo que se agregue debe ir dentro del main-->
 
-<!--Conectar JS-->
+<!--JS-->
 <script src="maltrato.js"></script>
 
-<!--Pie de pagina-->
 <?php include("footer.php"); ?>
 
 </body>

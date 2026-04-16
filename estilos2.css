@@ -146,46 +146,48 @@ div h5 {
 /*aqui termina*/
 
 /*apartados de reportar*/
+
 .reportes {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* MÁS ANCHAS */
     gap: 30px;
     padding: 40px;
+    width: 95%;
+    margin: auto;
 }
 
 .carda {
     background: white;
-    padding: 25px;
+    padding: 35px; /* más espacio interno */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
+    width: 100%; /* ocupa todo el espacio disponible */
 }
 
-.card:hover {
+.carda:hover {
     transform: translateY(-5px);
 }
 
 .carda button {
-   font-weight: 700;
+    font-weight: 700;
     color: white;
-    padding: 9px 25px;
+    padding: 12px 30px; /* botón más grande */
     background: #D36B2D;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease;
 }
 
+/* RESPONSIVE */
 @media (max-width: 600px) {
     .reportes {
-        grid-template-columns: 1fr; /* Cambia de 2 columnas a 1 */
-        padding: 20px; /* Reduce un poco el espacio lateral en celular */
-    }
-    
-    .carda {
-        width: 100%; /* Asegura que la tarjeta use el ancho disponible */
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
 }
+
 /*aqui termina*/
 
 /*aqui termina css3*/

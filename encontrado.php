@@ -5,24 +5,19 @@ require_once "header.php";
 
 <main>
 
-<!--Sección del formulario para reportar mascotas encontradas-->
 <section class="contenedor">
 
 <h2>Reportar Pet Encontrado</h2>
 
-<!--Formulario de reporte-->
 <form id="formReporte">
 
-<!--Foto de la mascota encontrada-->
+<!--Foto-->
 <div class="grupo">
 <label>Foto de la mascota</label>
 <input type="file" id="foto" accept="image/*" required>
 </div>
 
-<!--Nombre o apodo-->
-
-
-<!--Tipo de mascota-->
+<!--Tipo-->
 <div class="grupo">
 <label>Tipo</label>
 <select id="tipo" required>
@@ -36,39 +31,42 @@ require_once "header.php";
 <div class="grupo">
 <label>Raza</label>
 <input type="text" id="raza" placeholder="Ej. Labrador" required>
+<span id="errorRaza" style="color:red;"></span>
 </div>
 
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
 <input type="text" id="color" placeholder="Ej. Café con blanco">
+<span id="errorColor" style="color:red;"></span>
 </div>
 
-<!--Fecha en que se encontró-->
+<!--Fecha-->
 <div class="grupo">
 <label>Fecha de encuentro</label>
 <input type="date" id="fecha" required>
 </div>
 
-<!--Lugar donde fue encontrado-->
+<!--Lugar-->
 <div class="grupo">
 <label>Lugar donde se encontró</label>
 <input type="text" id="lugar" placeholder="Colonia, calle" required>
 </div>
 
-<!--Descripción del animal-->
+<!--Descripción-->
 <div class="grupo">
 <label>Descripción</label>
 <textarea id="descripcion" rows="4" placeholder="Señas particulares..." required></textarea>
 </div>
 
-<!--Teléfono de contacto-->
+<!--Teléfono-->
 <div class="grupo">
 <label>Teléfono de contacto</label>
-<input type="tel" id="telefono" placeholder="351-000-0000" required>
+<input type="tel" id="telefono" placeholder="3510000000" required>
+<span id="errorTelefono" style="color:red;"></span>
 </div>
 
-<!--Botón para enviar el reporte-->
+<!--Botón-->
 <button class="pub" type="submit">Reportar avistamiento</button>
 
 </form>
@@ -77,10 +75,8 @@ require_once "header.php";
 
 </main>
 
-<!--Conexión con JS-->
 <script src="reporte.js"></script>
 
-<!--Pie de pagina-->
 <?php include("footer.php"); ?>
 
 </body>

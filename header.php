@@ -40,7 +40,7 @@
         alt="logo de la pagina PETfriends hub con un perro y un gato representando adopcion de mascotas">
     </a>
 
-    <!--Menu de navegacion principal-->
+    <!--Menu de navegacion principal PARA FAVORITOS-->
         <i class="bi bi-list" id="menu-btn"></i> 
 
             <nav class="acciones">

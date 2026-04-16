@@ -2,27 +2,26 @@
 
 <main>
 
-<!--Sección del formulario para publicar mascotas en adopción-->
 <section class="contenedor">
 
 <h2>Dar Pet en Adopción</h2>
 
-<!--Formulario de registro de mascota-->
 <form id="formMascota">
 
-<!--Foto de la mascota-->
+<!--Foto-->
 <div class="grupo">
 <label>Foto de la mascota</label>
 <input type="file" id="foto" accept="image/*" required>
 </div>
 
-<!--Nombre de la mascota-->
+<!--Nombre-->
 <div class="grupo">
 <label>Nombre</label>
 <input type="text" id="nombre" placeholder="Ej. Max" required>
+<span id="errorNombre" style="color:red;"></span>
 </div>
 
-<!--Tipo de mascota-->
+<!--Tipo-->
 <div class="grupo">
 <label>Tipo</label>
 <select id="tipo" required>
@@ -36,33 +35,36 @@
 <div class="grupo">
 <label>Raza</label>
 <input type="text" id="raza" placeholder="Ej. Labrador">
+<span id="errorRaza" style="color:red;"></span>
 </div>
 
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
 <input type="text" id="color" placeholder="Ej. Café con blanco">
+<span id="errorColor" style="color:red;"></span>
 </div>
 
-<!--Lugar de adopción-->
+<!--Lugar-->
 <div class="grupo">
 <label>Lugar donde se da en adopción</label>
 <input type="text" id="lugar" placeholder="Colonia, calle" required>
 </div>
 
-<!--Descripción de la mascota-->
+<!--Descripción-->
 <div class="grupo">
 <label>Descripción</label>
 <textarea id="descripcion" rows="4" placeholder="Señas particulares..." required></textarea>
 </div>
 
-<!--Teléfono de contacto-->
+<!--Teléfono-->
 <div class="grupo">
 <label>Teléfono de contacto</label>
-<input type="tel" id="telefono" placeholder="351-000-0000" required>
+<input type="tel" id="telefono" placeholder="3510000000" required>
+<span id="errorTelefono" style="color:red;"></span>
 </div>
 
-<!--Botón para publicar-->
+<!--Botón-->
 <button type="submit" class="pub">Publicar Adopción</button>
 
 </form>
@@ -71,12 +73,8 @@
 
 </main>
 
-<!--Todo lo que se agregue debe ir dentro del main-->
-
-<!--AQUÍ CONECTAS TU JS-->
 <script src="script.js"></script>
 
-<!--Pie de pagina-->
 <?php include("footer.php"); ?>
 
 </body>

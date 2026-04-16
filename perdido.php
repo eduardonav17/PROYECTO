@@ -5,27 +5,26 @@ require_once "header.php";
 
 <main>
 
-<!--Sección del formulario para reportar mascotas perdidas-->
 <section class="contenedor">
 
 <h2>Reportar Pet Perdido</h2>
 
-<!--Formulario para registrar la mascota perdida-->
 <form id="formPerdido">
 
-<!--Foto del animal-->
+<!--Foto-->
 <div class="grupo">
 <label>Foto de la mascota</label>
 <input type="file" id="foto" accept="image/*" required>
 </div>
 
-<!--Nombre de la mascota-->
+<!--Nombre-->
 <div class="grupo">
 <label>Nombre</label>
 <input type="text" id="nombre" placeholder="Ej. Max" required>
+<span id="errorNombre" style="color:red;"></span>
 </div>
 
-<!--Tipo de mascota-->
+<!--Tipo-->
 <div class="grupo">
 <label>Tipo</label>
 <select id="tipo" required>
@@ -39,39 +38,42 @@ require_once "header.php";
 <div class="grupo">
 <label>Raza</label>
 <input type="text" id="raza" placeholder="Ej. Labrador">
+<span id="errorRaza" style="color:red;"></span>
 </div>
 
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
 <input type="text" id="color" placeholder="Ej. Café con blanco">
+<span id="errorColor" style="color:red;"></span>
 </div>
 
-<!--Fecha en que se perdió-->
+<!--Fecha-->
 <div class="grupo">
 <label>Fecha de extravío</label>
 <input type="date" id="fecha" required>
 </div>
 
-<!--Lugar donde se perdió-->
+<!--Lugar-->
 <div class="grupo">
 <label>Lugar donde se perdió</label>
 <input type="text" id="lugar" placeholder="Colonia, calle" required>
 </div>
 
-<!--Descripción del animal-->
+<!--Descripción-->
 <div class="grupo">
 <label>Descripción</label>
 <textarea id="descripcion" rows="4" placeholder="Señas particulares..." required></textarea>
 </div>
 
-<!--Teléfono de contacto-->
+<!--Teléfono-->
 <div class="grupo">
 <label>Teléfono de contacto</label>
-<input type="tel" id="telefono" placeholder="351-000-0000" required>
+<input type="tel" id="telefono" placeholder="3510000000" required>
+<span id="errorTelefono" style="color:red;"></span>
 </div>
 
-<!--Botón para enviar el reporte-->
+<!--Botón-->
 <button type="submit" class="pub">Publicar Reporte</button>
 
 </form>
@@ -79,12 +81,9 @@ require_once "header.php";
 </section>
 
 </main>
-<!--Todo lo que se agregue debe ir dentro del main-->
 
-<!--Conectar JS-->
 <script src="perdido.js"></script>
 
-<!--Pie de pagina-->
 <?php include("footer.php"); ?>
 
 </body>
