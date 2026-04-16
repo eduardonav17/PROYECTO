@@ -184,6 +184,19 @@ object-fit: cover;
     object-fit: cover;
   }
 
+.card {
+  position: relative;
+}
+
+.card img {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
 /*termina el boton*/
 
 .overlay{
@@ -895,6 +908,9 @@ display: none;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  width: 35%;
+  display: block;
+  margin: 0 auto;
   animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
@@ -950,7 +966,7 @@ display: none;
 
 /*css para el boton de IA*/
 #btnIA {
-  width: 75%; /* ocupa todo el ancho */
+  width: 35%; /* ocupa todo el ancho */
   text-align: center;
    margin: 0 auto; /*esto lo centra */
 

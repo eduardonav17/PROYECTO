@@ -1,30 +1,3 @@
-//Esta linea se encarga de de ejecutar el codigo despues de que cargue la pagina
-document.addEventListener("DOMContentLoaded", function() {
-
-    //aqui se van a guardar los id en las variables
-    var mapa = document.getElementById("mapaFrame");
-    var boton = document.getElementById("toggleMapa");
-
-    //en en este codigo se va a encargar de llamar un evento cuando el usario da click en el boton
-    boton.addEventListener("click", function() {
-
-        //esto es una estructura de decisionmque pregunta si el mapa esta oculto
-        // si la respuesta es si entonces el mapa se abre
-        if (mapa.style.display === "none") {
-            mapa.style.display = "block";
-            //y en el boton se pone la leyenda de "ocultar mapa"
-            boton.textContent = "Ocultar Mapa";
-            //si la respuesta es falsa entonce el programa no hace nada
-        } else {
-            mapa.style.display = "none";
-            boton.textContent = "Mostra Mapa";
-        }
-
-    });
-
-});
-//aqui termina el javasript del boton del mapa
-
 //menu hamburguesa
 //boton del menu
 const btn = document.getElementById("menu-btn");
@@ -460,16 +433,21 @@ window.addEventListener("load", function () {
 });
 
 //Js para mapa de veterinarias de emergencia
+//este codigo sirve para ejecutarse cuando la pagina ya esta cargada
 document.addEventListener("DOMContentLoaded", () => {
 
+    //declaramos las variables para no utilizrase mas de 1 vez
   const btn = document.getElementById("btnEmergencia");
   const dialog = document.getElementById("ventanaEmergencia");
   const cerrar = document.getElementById("cerrarVentana");
 
+  //estructura de desicion para evitar errore si algun elemento no existe
   if (!btn || !dialog || !cerrar) return;
 
+  //codigo que sirve para guardar el mapa y no crearlo varias veces
   let mapa;
 
+  //codigo que guarda datos y nombre de todas las vetrinarias
   // VETERINARIAS MANUALES
   const veterinarias = [
     //Veterinarias que se encontraron en Zamora
@@ -493,35 +471,48 @@ document.addEventListener("DOMContentLoaded", () => {
     { nombre: "VETERINARIA DOGTOR VET", lat: 19.972465116430165, lon: -102.28035421594045},
   ];
 
+  //codigo que se encarga de ejecutar una accion cuando haces click en el boton
   btn.addEventListener("click", () => {
+    //abre la ventana emergente
     dialog.showModal();
-
+    
+    //codigo que se encarga de verificar si el mapa ya existe
     if (!mapa) {
+        //codigo que pide al navegador para dar acceso a tu ubicacion en tiempo real
       navigator.geolocation.getCurrentPosition(pos => {
 
+        //guarda tu latitud y tu longitud
         const lat = pos.coords.latitude;
         const lon = pos.coords.longitude;
 
+        //crea el mapa en la ventana emergente
         mapa = L.map('mapa').setView([lat, lon], 14);
 
+        //carga el diseño del mapa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '© OpenStreetMap'
         }).addTo(mapa);
 
         // Usuario
+        //pone marcadores en el mapa de donde estas
         L.marker([lat, lon])
           .addTo(mapa)
+          //marca un mesaje cuando das click en el punto
           .bindPopup("Estás aquí")
+          //abre automaticamente el mensaje
           .openPopup();
 
         let masCercana = null;
         let menorDistancia = Infinity;
 
+        //recorretodas las veteriarias
         veterinarias.forEach(vet => {
 
+            //calcula que tan lejos esta cada veterinaria
           const distancia = calcularDistancia(lat, lon, vet.lat, vet.lon);
 
           // Guardar la más cercana
+          //encuentra la veterinaria mas cercanas
           if (distancia < menorDistancia) {
             menorDistancia = distancia;
             masCercana = vet;
@@ -540,18 +531,21 @@ document.addEventListener("DOMContentLoaded", () => {
             .bindPopup("MÁS CERCANA: " + masCercana.nombre)
             .openPopup();
 
+            //dibuja un circulo rojo ubicando la veterinaria mas cercana
           L.circle([masCercana.lat, masCercana.lon], {
             color: 'red',
             radius: 100
           }).addTo(mapa);
         }
 
+        //activa una alerta cuando el usuario no ha activado el sevricio de ubicacion
       }, () => {
         alert("Activa la ubicación para usar esta función");
       });
     }
   });
 
+  //boton que cierra la ventana emergente
   cerrar.addEventListener("click", () => {
     dialog.close();
   });
@@ -560,11 +554,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // DISTANCIA
+//calcula la distancia entre dos puntos de la tierra
 function calcularDistancia(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = (lat2 - lat1) * Math.PI / 180;
   const dLon = (lon2 - lon1) * Math.PI / 180;
 
+  //hace los calculos matematicos
   const a =
     Math.sin(dLat/2) * Math.sin(dLat/2) +
     Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) *
@@ -576,7 +572,7 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
 //aqui termina el js de veterinarias de emergencia
 
 //js del boton de IA por lo pronto
-
 document.getElementById("btnIA").addEventListener("click", () => {
   alert("Aqui ira la IA para escoger tu mascota ideal, en proceso...");
 });
+//aqui termina el js de boton de IA
