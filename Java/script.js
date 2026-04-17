@@ -577,3 +577,25 @@ document.getElementById("btnIA").addEventListener("click", () => {
   alert("Aqui ira la IA para escoger tu mascota ideal, en proceso...");
 });
 //aqui termina el js de boton de IA
+
+
+//js para abrir el filtro de busqueda
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.getElementById("abrirFiltros");
+  const panel = document.getElementById("panelFiltros");
+
+  btn.addEventListener("click", () => {
+    
+    panel.classList.toggle("activo");
+
+    // 👇 cambiar texto
+    if (panel.classList.contains("activo")) {
+      btn.textContent = "Cerrar filtro";
+    } else {
+      btn.textContent = "Filtrar búsqueda";
+    }
+
+  });
+
+});

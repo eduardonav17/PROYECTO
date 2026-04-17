@@ -29,7 +29,11 @@ require_once "header.php";
 </section>
 
 <!--Sección de filtros de búsqueda-->
-<section class="filtros">
+<button id="abrirFiltros" class="btn-abrir-filtros">
+  Filtrar búsqueda
+</button>
+
+<section class="filtros" id="panelFiltros">
 
 <h3>Filtrar búsqueda</h3>
 
@@ -152,6 +156,24 @@ require_once "header.php";
 
 <!--Pie de pagina-->
 <?php include("footer.php"); ?>
+
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.getElementById("abrirFiltros");
+  const panel = document.getElementById("panelFiltros");
+
+  console.log("JS cargado", btn, panel);
+
+  btn.addEventListener("click", () => {
+    console.log("CLICK");
+    panel.classList.toggle("activo");
+  });
+
+});
+</script>
 
 </body>
 </html>
