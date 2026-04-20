@@ -757,13 +757,18 @@ font-family: Arial;
 background: url(fondoss-de-mascotas.webp) no-repeat center;
 background-size: cover;
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: column;/*clave*/
 height: 100vh;
 animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 text-decoration: none; /* Quita el subrayado del link */
 }
+
 .registror, .login{
-background: #ffffff;
+background: rgba(255, 255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 padding: 30px;
 border-radius: 15px;
 width: 300px;
@@ -773,11 +778,15 @@ h1{
 font-size: 28px;
 }
 input{
-width: 90%;
+width: 100%;
 padding: 10px;
-margin: 10px 0;
+margin: 15px 0;
+border: none;
 border-radius: 25px;
-border: 2px solid #dba511;
+border-bottom: 2px solid #dba511;
+background: transparent;
+color: white;
+outline: none;
 }
 .opciones{
 display: flex;
@@ -787,10 +796,11 @@ font-size: 12px;
 button{
 width: 100%;
 padding: 10px;
-background: 4a6d8c;
-color: #e28c0a;
+background: #00aaff;
+color: #fffffe;
 border: none;
-border-radius: 8px;
+border-radius: 10px;
+cursor: pointer;
 }
 .login{
 display: none;
