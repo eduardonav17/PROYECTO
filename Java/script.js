@@ -584,18 +584,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("abrirFiltros");
   const panel = document.getElementById("panelFiltros");
+  const btnCerrar = document.getElementById("cerrarFiltros");
 
+  //abrir/cerrar con botón
   btn.addEventListener("click", () => {
-    
     panel.classList.toggle("activo");
 
-    // 👇 cambiar texto
     if (panel.classList.contains("activo")) {
       btn.textContent = "Cerrar filtro";
     } else {
       btn.textContent = "Filtrar búsqueda";
     }
+  });
 
+  //cerrar con icono
+  btnCerrar.addEventListener("click", () => {
+    panel.classList.remove("activo");
+    btn.textContent = "Filtrar búsqueda";
   });
 
 });
+//aqui termina el js de abrir el filtro de busqueda

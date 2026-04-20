@@ -29,11 +29,11 @@ require_once "header.php";
 </section>
 
 <!--Sección de filtros de búsqueda-->
-<button id="abrirFiltros" class="btn-abrir-filtros">
-  Filtrar búsqueda
-</button>
+<button id="abrirFiltros" class="btn-abrir-filtros">Filtrar búsqueda</button>
 
 <section class="filtros" id="panelFiltros">
+
+<i id="cerrarFiltros" class="bi bi-x-circle-fill icono-cerrar"></i>
 
 <h3>Filtrar búsqueda</h3>
 
@@ -161,12 +161,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("abrirFiltros");
   const panel = document.getElementById("panelFiltros");
+  const btnCerrar = document.getElementById("cerrarFiltros");
 
-  console.log("JS cargado", btn, panel);
-
+  //abrir/cerrar con botón
   btn.addEventListener("click", () => {
-    console.log("CLICK");
     panel.classList.toggle("activo");
+
+    if (panel.classList.contains("activo")) {
+      btn.textContent = "Cerrar filtro";
+    } else {
+      btn.textContent = "Filtrar búsqueda";
+    }
+  });
+
+  //cerrar con icono
+  btnCerrar.addEventListener("click", () => {
+    panel.classList.remove("activo");
+    btn.textContent = "Filtrar búsqueda";
   });
 
 });

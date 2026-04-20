@@ -35,6 +35,8 @@ require_once "header.php";
 
 <section class="filtros" id="panelFiltros">
 
+<i id="cerrarFiltros" class="bi bi-x-circle-fill icono-cerrar"></i>
+
 <h3>Filtrar búsqueda</h3>
 
 <!--Filtro por sexo-->
@@ -107,6 +109,8 @@ require_once "header.php";
 <option>Gris</option>
 <option>Atigrado</option>
 <option>Manchas</option>
+<option>Crema</option>
+<option>Beige</option>
 </select>
 
 </div>
@@ -121,6 +125,7 @@ require_once "header.php";
 <option>Tranquilo</option>
 <option>Moderado</option>
 <option>Muy activo</option>
+<option>Jugueton</option>
 </select>
 
 </div>
@@ -135,19 +140,107 @@ require_once "header.php";
         <i class="fa-solid fa-paw"></i>
     </span>
 
-    <img src="imagenes/Prueba/MuestraPerro.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+    <img src="imagenes/Prueba/perro1.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
 
-    <h3 class="nombre">Nombre de la mascota</h3>
+    <h3 class="nombre">Bento</h3>
     <p class="tipo">Perro - 4 años</p>
 
     <ul class="datos">
         <li><strong>Sexo:</strong> Macho</li>
-        <li><strong>Categoria</strong> Joven</li>
+        <li><strong>Categoria:</strong> Joven</li>
         <li><strong>Tamaño:</strong> Mediano</li>
-        <li><strong>Tipo de Pelaje:</strong> ---</li>
-        <li><strong>Color:</strong> ---</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Cafe/Blanco</li>
         <li><strong>Carácter:</strong> Tranquilo</li>
-    </ul>
+    </ul><article class="card-mascota">
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/perro2.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Pelusa</h3>
+    <p class="tipo">Perro - 7 Meses</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Hembra</li>
+        <li><strong>Categoria:</strong> Cachorro</li>
+        <li><strong>Tamaño:</strong> Pequeño</li>
+        <li><strong>Tipo de Pelaje:</strong> Rizado</li>
+        <li><strong>Color:</strong> Crema</li>
+        <li><strong>Carácter:</strong> Jugueton</li>
+    </ul><article class="card-mascota">
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/perro3.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Kaiser</h3>
+    <p class="tipo">Perro - 5 años</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria:</strong> Adulto</li>
+        <li><strong>Tamaño:</strong> Grande</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Negro/Cafe</li>
+        <li><strong>Carácter:</strong> Tranquilo</li>
+    </ul><article class="card-mascota">
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/perro4.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Milo</h3>
+    <p class="tipo">Perro - 5 Meses</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria:</strong> Cachorro</li>
+        <li><strong>Tamaño:</strong> Pequeño</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Beige</li>
+        <li><strong>Carácter:</strong> Tranquilo</li>
+    </ul><article class="card-mascota">
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/perro5.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Simba</h3>
+    <p class="tipo">Perro - 3 años</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Hembra</li>
+        <li><strong>Categoria:</strong> Joven</li>
+        <li><strong>Tamaño:</strong> Mediano</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Beige</li>
+        <li><strong>Carácter:</strong> Moderado</li>
+    </ul><article class="card-mascota">
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
@@ -164,12 +257,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("abrirFiltros");
   const panel = document.getElementById("panelFiltros");
+  const btnCerrar = document.getElementById("cerrarFiltros");
 
-  console.log("JS cargado", btn, panel);
-
+  //abrir/cerrar con botón
   btn.addEventListener("click", () => {
-    console.log("CLICK");
     panel.classList.toggle("activo");
+
+    if (panel.classList.contains("activo")) {
+      btn.textContent = "Cerrar filtro";
+    } else {
+      btn.textContent = "Filtrar búsqueda";
+    }
+  });
+
+  //cerrar con icono
+  btnCerrar.addEventListener("click", () => {
+    panel.classList.remove("activo");
+    btn.textContent = "Filtrar búsqueda";
   });
 
 });
