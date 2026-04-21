@@ -754,11 +754,10 @@ figure {
 .logins{
 margin: 0;
 font-family: Arial;
-background: url(fondoss-de-mascotas.webp) no-repeat center;
+background:url(fondoss-de-mamamascotas.webp) no-repeat center;
 background-size: cover;
 display: flex;
-justify-content: center;
-align-items: center;
+
 flex-direction: column;/*clave*/
 height: 100vh;
 animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
@@ -766,24 +765,25 @@ text-decoration: none; /* Quita el subrayado del link */
 }
 
 .registror, .login{
-background: rgba(255, 255, 255, 255, 0.1);
+background: rgba(5, 0, 0, 0);
 backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
 padding: 30px;
 border-radius: 15px;
 width: 300px;
 margin: auto;
+color:white;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 h1{
 font-size: 28px;
 }
 input{
-width: 100%;
-padding: 10px;
-margin: 15px 0;
+width: 90%;
+padding: 8px;
+margin: 10px 0;
 border: none;
-border-radius: 25px;
 border-bottom: 2px solid #dba511;
+border-radius: 25px;
 background: transparent;
 color: white;
 outline: none;
@@ -799,8 +799,9 @@ padding: 10px;
 background: #00aaff;
 color: #fffffe;
 border: none;
-border-radius: 10px;
+border-radius: 8px;
 cursor: pointer;
+transition: 0.4s;
 }
 .login{
 display: none;
