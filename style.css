@@ -777,7 +777,7 @@ box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 h1{
 font-size: 28px;
 }
-input{
+.registror input{
 width: 90%;
 padding: 8px;
 margin: 10px 0;
@@ -904,6 +904,12 @@ display: none;
 
 .btn-adoptar:hover {
   background: var(--turquesa);
+}
+
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /*css para el boten de mapa de vetrinarias de emrgencia*/

@@ -135,6 +135,8 @@ require_once "header.php";
 
 </section>
 
+<!--Tarjetas de visualizacion de perros-->
+<section class="contenedor-cards">
 <article class="card-mascota">
     <span class="favorito">
         <i class="fa-solid fa-paw"></i>
@@ -152,7 +154,7 @@ require_once "header.php";
         <li><strong>Tipo de Pelaje:</strong> Corto</li>
         <li><strong>Color:</strong> Cafe/Blanco</li>
         <li><strong>Carácter:</strong> Tranquilo</li>
-    </ul><article class="card-mascota">
+    </ul>
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
@@ -174,7 +176,7 @@ require_once "header.php";
         <li><strong>Tipo de Pelaje:</strong> Rizado</li>
         <li><strong>Color:</strong> Crema</li>
         <li><strong>Carácter:</strong> Jugueton</li>
-    </ul><article class="card-mascota">
+    </ul>
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
@@ -196,7 +198,7 @@ require_once "header.php";
         <li><strong>Tipo de Pelaje:</strong> Corto</li>
         <li><strong>Color:</strong> Negro/Cafe</li>
         <li><strong>Carácter:</strong> Tranquilo</li>
-    </ul><article class="card-mascota">
+    </ul>
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
@@ -218,7 +220,7 @@ require_once "header.php";
         <li><strong>Tipo de Pelaje:</strong> Corto</li>
         <li><strong>Color:</strong> Beige</li>
         <li><strong>Carácter:</strong> Tranquilo</li>
-    </ul><article class="card-mascota">
+    </ul>
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
@@ -240,10 +242,11 @@ require_once "header.php";
         <li><strong>Tipo de Pelaje:</strong> Corto</li>
         <li><strong>Color:</strong> Beige</li>
         <li><strong>Carácter:</strong> Moderado</li>
-    </ul><article class="card-mascota">
+    </ul>
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
+</section>
 
 </main>
 

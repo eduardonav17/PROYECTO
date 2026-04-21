@@ -126,27 +126,119 @@ require_once "header.php";
 
 </section>
 
+<!--Tarjetas de visualización de gatos-->
+<section class="contenedor-cards">
 <article class="card-mascota">
     <span class="favorito">
         <i class="fa-solid fa-paw"></i>
     </span>
 
-    <img src="imagenes/Prueba/MuestraGato.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+    <img src="imagenes/Prueba/gato1.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
 
-    <h3 class="nombre">Nombre de la mascota</h3>
+    <h3 class="nombre">Nieve</h3>
     <p class="tipo">Gato - 2 años</p>
 
     <ul class="datos">
-        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Sexo:</strong> Hembra</li>
         <li><strong>Categoria</strong> Joven</li>
         <li><strong>Tamaño:</strong> Mediano</li>
-        <li><strong>Tipo de Pelaje:</strong> ---</li>
-        <li><strong>Color:</strong> ---</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Blanco</li>
+        <li><strong>Nivel de Actividad:</strong> Tranquilo</li>
+    </ul>
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/gato2.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Sombra</h3>
+    <p class="tipo">Gato - 3 meses</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria</strong> Cachorro</li>
+        <li><strong>Tamaño:</strong> Pequeño</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Negro</li>
         <li><strong>Nivel de Actividad:</strong> Muy activo</li>
     </ul>
 
     <button class="btn-adoptar">Adoptar</button>
 </article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/gato3.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Mango</h3>
+    <p class="tipo">Gato - 2 meses</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria</strong> Cachorro</li>
+        <li><strong>Tamaño:</strong> Pequeño</li>
+        <li><strong>Tipo de Pelaje:</strong> Corto</li>
+        <li><strong>Color:</strong> Naranja/Atigrado</li>
+        <li><strong>Nivel de Actividad:</strong> Muy activo</li>
+    </ul>
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/gato4.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Pelusa</h3>
+    <p class="tipo">Gato - 3 años</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Hembra</li>
+        <li><strong>Categoria</strong> Joven</li>
+        <li><strong>Tamaño:</strong> Mediano</li>
+        <li><strong>Tipo de Pelaje:</strong> Largo</li>
+        <li><strong>Color:</strong> Gris/Atigrado</li>
+        <li><strong>Nivel de Actividad:</strong> Tranquilo</li>
+    </ul>
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+<article class="card-mascota">
+    <span class="favorito">
+        <i class="fa-solid fa-paw"></i>
+    </span>
+
+    <img src="imagenes/Prueba/gato5.webp" alt="Imagen de prueba con fondo color naranja y letras blancas">
+
+    <h3 class="nombre">Bigotes</h3>
+    <p class="tipo">Gato - 2 meses</p>
+
+    <ul class="datos">
+        <li><strong>Sexo:</strong> Macho</li>
+        <li><strong>Categoria</strong> Cachoro</li>
+        <li><strong>Tamaño:</strong> Pequeño</li>
+        <li><strong>Tipo de Pelaje:</strong> Medio</li>
+        <li><strong>Color:</strong> Atigrado/Bicolor</li>
+        <li><strong>Nivel de Actividad:</strong> Jugueton</li>
+    </ul>
+
+    <button class="btn-adoptar">Adoptar</button>
+</article>
+
+</section>
 
 </main>
 <!--Todo lo que se agregue debe ir dentro del main-->
