@@ -605,3 +605,145 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 //aqui termina el js de abrir el filtro de busqueda
+
+//js para el filtro de busqueda
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btnFiltrar = document.querySelector(".btn-filtrar");
+
+  btnFiltrar.addEventListener("click", () => {
+
+    //Obtener valores seleccionados
+    const sexo = document.querySelector('input[name="sexo"]:checked')?.value || "";
+    const categoria = document.getElementById("categoria").value;
+    const tamano = document.getElementById("tamano").value;
+    const pelaje = document.getElementById("pelaje").value;
+    const color = document.getElementById("color").value;
+    const caracter = document.getElementById("caracter").value;
+
+    //Obtener todas las tarjetas
+    const tarjetas = document.querySelectorAll(".card-mascota");
+
+    tarjetas.forEach(card => {
+
+      let mostrar = true;
+
+      //Comparaciones
+      if (sexo && card.dataset.sexo !== sexo) mostrar = false;
+      if (categoria && card.dataset.categoria !== categoria) mostrar = false;
+      if (tamano && card.dataset.tamano !== tamano) mostrar = false;
+      if (pelaje && card.dataset.pelaje !== pelaje) mostrar = false;
+      if (color && card.dataset.color !== color) mostrar = false;
+      if (caracter && card.dataset.caracter !== caracter) mostrar = false;
+
+      //Mostrar u ocultar
+      card.style.display = mostrar ? "block" : "none";
+
+    });
+
+  });
+
+});
+//aqui termina js del filtro
+
+//js para el boton de retablecer del filtro de busqueda de perros
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btnBuscar = document.querySelector(".btn-filtrar");
+  const btnReset = document.querySelector(".btn-reset");
+
+  const tarjetas = document.querySelectorAll(".card-mascota");
+
+  btnBuscar.addEventListener("click", () => {
+
+    const sexo = document.querySelector('input[name="sexo"]:checked')?.value || "";
+    const color = document.getElementById("color").value;
+    const tamano = document.getElementById("tamano").value;
+    const pelaje = document.getElementById("pelaje").value;
+    const categoria = document.getElementById("categoria").value;
+
+    tarjetas.forEach(card => {
+
+      const matchSexo = !sexo || card.dataset.sexo === sexo;
+      const matchColor = !color || card.dataset.color === color;
+      const matchTamano = !tamano || card.dataset.tamano === tamano;
+      const matchPelaje = !pelaje || card.dataset.pelaje === pelaje;
+      const matchCategoria = !categoria || card.dataset.categoria === categoria;
+
+      if (matchSexo && matchColor && matchTamano && matchPelaje && matchCategoria) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+
+    });
+
+  });
+
+  // 🔄 BOTÓN RESET
+  btnReset.addEventListener("click", () => {
+
+    // Limpiar selects
+    document.querySelectorAll("select").forEach(select => {
+      select.value = "";
+    });
+
+    // Limpiar radios
+    document.querySelectorAll('input[name="sexo"]').forEach(radio => {
+      radio.checked = false;
+    });
+
+    // Mostrar todas las tarjetas
+    tarjetas.forEach(card => {
+      card.style.display = "block";
+    });
+
+  });
+
+});
+
+
+//js para el filtro de busqueda de gatos
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btnBuscar = document.querySelector("#panelFiltros .btn-filtrar");
+  const btnReset = document.querySelector("#panelFiltros .btn-reset");
+  const tarjetas = document.querySelectorAll(".card-mascota");
+
+  btnBuscar.addEventListener("click", () => {
+
+    const sexo = document.querySelector('#panelFiltros input[name="sexo"]:checked')?.value || "";
+    const edad = document.getElementById("edad").value;
+    const tamano = document.getElementById("tamano").value;
+    const pelaje = document.getElementById("pelaje").value;
+    const color = document.getElementById("color").value;
+    const actividad = document.getElementById("actividad").value;
+
+    tarjetas.forEach(card => {
+
+      const matchSexo = !sexo || card.dataset.sexo === sexo;
+      const matchEdad = !edad || card.dataset.edad === edad;
+      const matchTamano = !tamano || card.dataset.tamano === tamano;
+      const matchPelaje = !pelaje || card.dataset.pelaje === pelaje;
+      const matchColor = !color || card.dataset.color === color;
+      const matchActividad = !actividad || card.dataset.actividad === actividad;
+
+      card.style.display =
+        (matchSexo && matchEdad && matchTamano && matchPelaje && matchColor && matchActividad)
+        ? "block"
+        : "none";
+
+    });
+
+  });
+
+  btnReset.addEventListener("click", () => {
+
+    document.querySelectorAll("#panelFiltros select").forEach(s => s.value = "");
+    document.querySelectorAll('#panelFiltros input[name="sexo"]').forEach(r => r.checked = false);
+
+    tarjetas.forEach(card => card.style.display = "block");
+
+  });
+
+});

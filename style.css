@@ -1076,3 +1076,18 @@ display: none;
   color: var(--turquesa);
   transform: scale(1.2);
 }
+
+/*css para boton reset fel filtro de busqueda*/
+.btn-reset {
+  background: var(--naranja);
+  color: var(--blanco);
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  background: var(--turquesa);
+  color: var(--blanco);
+  transform: scale(1.1);
+}

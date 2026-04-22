@@ -42,8 +42,8 @@ require_once "header.php";
 <label>SEXO</label>
 
 <div class="radio-group">
-<label><input type="radio" name="sexo"> Macho</label>
-<label><input type="radio" name="sexo"> Hembra</label>
+<label><input type="radio" name="sexo" value="macho"> Macho</label>
+<label><input type="radio" name="sexo" value="hembra"> Hembra</label>
 </div>
 
 </div>
@@ -52,12 +52,12 @@ require_once "header.php";
 <div class="grupo">
 <label>EDAD</label>
 
-<select>
-<option>--</option>
-<option>Cachorro (menos de 1 año)</option>
-<option>Joven (de 1 a 4 años)</option>
-<option>Adulto (4-9 años)</option>
-<option>Senior (más de 9 años)</option>
+<select id="edad">
+<option value="">--</option>
+<option value="cachorro">Cachorro (menos de 1 año)</option>
+<option value="joven">Joven (de 1 a 4 años)</option>
+<option value="adulto">Adulto (4-9 años)</option>
+<option value="senior">Senior (más de 9 años)</option>
 </select>
 
 </div>
@@ -66,11 +66,11 @@ require_once "header.php";
 <div class="grupo">
 <label>TAMAÑO</label>
 
-<select>
-<option>--</option>
-<option>Pequeño (hasta 10 kg)</option>
-<option>Mediano (de 10 a 25 kg)</option>
-<option>Grande (de 25 a 40 kg)</option>
+<select id="tamano">
+<option value="">--</option>
+<option value="pequeno">Pequeño (hasta 10 kg)</option>
+<option value="mediano">Mediano (de 10 a 25 kg)</option>
+<option value="grande">Grande (de 25 a 40 kg)</option>
 </select>
 
 </div>
@@ -79,12 +79,12 @@ require_once "header.php";
 <div class="grupo">
 <label>TIPO DE PELAJE</label>
 
-<select>
-<option>--</option>
-<option>Corto</option>
-<option>Medio</option>
-<option>Largo</option>
-<option>Sin pelo (tipo sphynx)</option>
+<select id="pelaje">
+<option value="">--</option>
+<option value="corto">Corto</option>
+<option value="medio">Medio</option>
+<option value="largo">Largo</option>
+<option value="sinpelo">Sin pelo (tipo sphynx)</option>
 </select>
 
 </div>
@@ -93,16 +93,16 @@ require_once "header.php";
 <div class="grupo">
 <label>COLOR</label>
 
-<select>
-<option>--</option>
-<option>Negro</option>
-<option>Blanco</option>
-<option>Gris</option>
-<option>Naranja</option>
-<option>Atrigado</option>
-<option>Bicolor</option>
-<option>Tricolor</option>
-<option>Carey</option>
+<select id="color">
+<option value="">--</option>
+<option value="negro">Negro</option>
+<option value="blanco">Blanco</option>
+<option value=""gris>Gris</option>
+<option value="naranja">Naranja</option>
+<option value="atigrado">Atrigado</option>
+<option value="bicolor">Bicolor</option>
+<option value=""tricolor>Tricolor</option>
+<option value="carey">Carey</option>
 </select>
 
 </div>
@@ -111,24 +111,32 @@ require_once "header.php";
 <div class="grupo">
 <label>NIVEL DE ACTIVIDAD</label>
 
-<select>
-<option>--</option>
-<option>Tranquilo</option>
-<option>Juguetón</option>
-<option>Muy Activo</option>
-<option>Independiente</option>
+<select id="actividad">
+<option value="">--</option>
+<option value="tranquilo">Tranquilo</option>
+<option value="jugueton">Juguetón</option>
+<option value="activo">Muy Activo</option>
+<option value="independiente">Independiente</option>
 </select>
 
 </div>
 
 <!--Botón para filtrar-->
-<button class="btn-filtrar">Buscar</button>
+<button type="button" class="btn-filtrar">Buscar</button>
+<button type="button" class="btn-reset">Restablecer</button>
 
 </section>
 
 <!--Tarjetas de visualización de gatos-->
 <section class="contenedor-cards">
-<article class="card-mascota">
+<article class="card-mascota"
+  data-sexo="hembra"
+  data-edad="joven"
+  data-tamano="mediano"
+  data-pelaje="corto"
+  data-color="blanco"
+  data-actividad="tranquilo">
+
     <span class="favorito">
         <i class="fa-solid fa-paw"></i>
     </span>
@@ -150,8 +158,15 @@ require_once "header.php";
     <button class="btn-adoptar">Adoptar</button>
 </article>
 
-<article class="card-mascota">
-    <span class="favorito">
+<article class="card-mascota"
+  data-sexo="macho"
+  data-edad="cachorro"
+  data-tamano="pequeno"
+  data-pelaje="corto"
+  data-color="negro"
+  data-actividad="activo">
+
+    <span class="favorito">        
         <i class="fa-solid fa-paw"></i>
     </span>
 
@@ -172,7 +187,14 @@ require_once "header.php";
     <button class="btn-adoptar">Adoptar</button>
 </article>
 
-<article class="card-mascota">
+<article class="card-mascota"
+  data-sexo="macho"
+  data-edad="cachorro"
+  data-tamano="pequeno"
+  data-pelaje="corto"
+  data-color="atigrado"
+  data-actividad="activo">
+
     <span class="favorito">
         <i class="fa-solid fa-paw"></i>
     </span>
@@ -194,7 +216,14 @@ require_once "header.php";
     <button class="btn-adoptar">Adoptar</button>
 </article>
 
-<article class="card-mascota">
+<article class="card-mascota"
+  data-sexo="hembra"
+  data-edad="joven"
+  data-tamano="mediano"
+  data-pelaje="largo"
+  data-color="atigrado"
+  data-actividad="tranquilo">
+
     <span class="favorito">
         <i class="fa-solid fa-paw"></i>
     </span>
@@ -216,7 +245,14 @@ require_once "header.php";
     <button class="btn-adoptar">Adoptar</button>
 </article>
 
-<article class="card-mascota">
+<article class="card-mascota"
+  data-sexo="macho"
+  data-edad="cachorro"
+  data-tamano="pequeno"
+  data-pelaje="medio"
+  data-color="bicolor"
+  data-actividad="jugueton">
+
     <span class="favorito">
         <i class="fa-solid fa-paw"></i>
     </span>
@@ -270,6 +306,52 @@ document.addEventListener("DOMContentLoaded", () => {
   btnCerrar.addEventListener("click", () => {
     panel.classList.remove("activo");
     btn.textContent = "Filtrar búsqueda";
+  });
+
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btnBuscar = document.querySelector("#panelFiltros .btn-filtrar");
+  const btnReset = document.querySelector("#panelFiltros .btn-reset");
+  const tarjetas = document.querySelectorAll(".card-mascota");
+
+  btnBuscar.addEventListener("click", () => {
+
+    const sexo = document.querySelector('#panelFiltros input[name="sexo"]:checked')?.value || "";
+    const edad = document.getElementById("edad").value;
+    const tamano = document.getElementById("tamano").value;
+    const pelaje = document.getElementById("pelaje").value;
+    const color = document.getElementById("color").value;
+    const actividad = document.getElementById("actividad").value;
+
+    tarjetas.forEach(card => {
+
+      const matchSexo = !sexo || card.dataset.sexo === sexo;
+      const matchEdad = !edad || card.dataset.edad === edad;
+      const matchTamano = !tamano || card.dataset.tamano === tamano;
+      const matchPelaje = !pelaje || card.dataset.pelaje === pelaje;
+      const matchColor = !color || card.dataset.color === color;
+      const matchActividad = !actividad || card.dataset.actividad === actividad;
+
+      card.style.display =
+        (matchSexo && matchEdad && matchTamano && matchPelaje && matchColor && matchActividad)
+        ? "block"
+        : "none";
+
+    });
+
+  });
+
+  btnReset.addEventListener("click", () => {
+
+    document.querySelectorAll("#panelFiltros select").forEach(s => s.value = "");
+    document.querySelectorAll('#panelFiltros input[name="sexo"]').forEach(r => r.checked = false);
+
+    tarjetas.forEach(card => card.style.display = "block");
+
   });
 
 });

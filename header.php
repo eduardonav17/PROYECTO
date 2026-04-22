@@ -85,5 +85,7 @@
 
     <!--link para que funcione el mapa de emrgencias de vetrinarias-->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
