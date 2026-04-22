@@ -12,12 +12,12 @@ require_once "header.php";
 <div class="registror" id="registro">
     <h1>Crear Cuenta</h1>
 
-    <input type="text" placeholder="Nombre Completo">
-    <input type="email" placeholder="Correo Electronico">
-    <input type="text" placeholder="Usuario">
-    <input type="password" placeholder="Contraseña">
-    <input type="password" placeholder="Confirmar Contraseña">
-
+    <input type="text" placeholder="Nombre Completo" required>
+    <input type="email" placeholder="Correo Electronico" required>
+    <input type="text" placeholder="Usuario" required>
+    <input type="password" placeholder="Contraseña" required>
+    <input type="password" placeholder="Confirmar Contraseña" required>
+<input type="date" id="fecha" name="fecha" required>
     <button>Registrarse</button>
 
     <p>¿Ya tienes cuenta?</p>
