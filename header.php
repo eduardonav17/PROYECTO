@@ -56,25 +56,28 @@
 
 </header>
 <!--Aqui termina el header-->
-  
+     
         <nav id="menu" class="menu">
             <ul>
             <li><a href="soyrescatista.php">Soy Rescatista</a>
+            <span class="arrow-btn">&#9662;</span>
             <ul class="submenus">
-                <a href="registroarescatista.php">Registro rescatista</a>
-                <a href="reglamentorescatista.php">Reglamento rescatista</a>
+                <li><a href="registroarescatista.php">Registro rescatista</a></li>
+               <li><a href="reglamentorescatista.php">Reglamento rescatista</a></li>
             </ul>
             </li>
-            <li><a href="soyadoptante.php">Soy Adoptante</a>
+            <li><a href="soyadoptante.php">Soy Adoptante </a>
+                <span class="arrow-btn">&#9662;</span>
             <ul class="submenus">
-                <a href="adoptistas.php">Crear Cuenta</a>
-                <a href="yaheadoptado.php">Ya he adoptado</a>
+                <li><a href="adoptistas.php">Crear Cuenta</a></li>
+                <li><a href="yaheadoptado.php">Ya he adoptado</a></li>
               
             </ul>
             </li> 
-            <li><a href="quieroayudar.php">Quiero ayudar</a>
+            <li><a href="quieroayudar.php">Quiero ayudar</A>
+                 <span class="arrow-btn">&#9662;</span>
             <ul class="submenus">
-                <a href="donaciones.php">Donaciones</a>
+                <li><a href="donaciones.php">Donaciones</a></li>
                 
             </ul>
             </li> 

@@ -1,23 +1,32 @@
-//menu hamburguesa
-//boton del menu
+
+
+// 1. Lógica del Menú Hamburguesa (Ya estaba bien, pero aseguremos consistencia)
 const btn = document.getElementById("menu-btn");
-//contenedor del menu lateral
 const menu = document.getElementById("menu");
 
 btn.addEventListener("click", () => {
-  menu.classList.toggle("active");
+    menu.classList.toggle("active");
+    if (menu.classList.contains("active")) {
+        btn.classList.replace("bi-list", "bi-x");
+    } else {
+        btn.classList.replace("bi-x", "bi-list");
+    }
+});
 
-// verifica si esta abierto el menu hamburguesa
-  if (menu.classList.contains("active")) {
-
-    // Si el menu  está abierto se cambia el icono hamburguesa (bi-list) por una X (bi-x)
-    btn.classList.remove("bi-list");
-    btn.classList.add("bi-x");
-  } else {
-     // Si el menu está cerrado se cambia el icono X (bi-x) por hamburguesa (bi-list)
-    btn.classList.remove("bi-x");
-    btn.classList.add("bi-list");
-  }
+// 2. Lógica de los Submenús (CORREGIDA)
+document.querySelectorAll('.arrow-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // 'this' es el span.arrow-btn. 
+        // El submenú es el elemento que sigue inmediatamente después de la flecha.
+        const submenu = this.nextElementSibling; 
+        
+        if (submenu && submenu.classList.contains('submenus')) {
+            submenu.classList.toggle('show');
+            this.classList.toggle('rotate');
+        }
+    });
 });
 
 //AQUI EMPIEZA EN ADOPCION-----

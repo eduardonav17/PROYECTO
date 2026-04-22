@@ -85,22 +85,7 @@ button .pub:hover {
 .cuenta:hover {
     background-color: #ff4c4c;
     transform: scale(1.05);
-}
-
-/*Crea un menu sticky que se pega a la parte superior cuando se baja la pagina ademas con z-index se pone por delante de todo
-.header {
-    background-color: #E6E2D3;
-    color: rgb(8, 95, 117);
-    position: sticky;
-    top: 0;
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr; 
-    align-items: center;
-    z-index: 1000;  
-    height: 60px;
-}
-
-/*Aqui termina el menu sticky*/
+  }
 
 .cre {
     color: gray;
@@ -286,11 +271,20 @@ div h5 {
   position: relative;
 }
 
+.menu-item{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 20px;
+}
+
+
 .menu ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  display: block;
+  transition: 0.3s;
+  display: inline-block; /* Cambiado de block a inline para que no robe espacio */
 }
 
 /* Hover */
@@ -298,39 +292,43 @@ div h5 {
   color: orange;
 }
 
+.arrow-btn {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
 
+.arrow-btn:hover {
+  color: orange;
+}
 
+/* SUBMENÚS: Estado CERRADO */
 .submenus {
-  position: relative;
-  margin-top: 10px;
-  padding: 10px 0;
-  min-width: 200px;
-  text-align: left;
+  list-style: none;
+  padding: 0 0 0 30px; /* Margen a la izquierda para que se vea escalonado */
   max-height: 0;
   overflow: hidden;
-
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
   transition: all 0.3s ease;
-}
-/*
-.submenus li {
-  margin: 0;
+  background: #2a2a2a; /* Color un poco distinto para diferenciar */
 }
 
-.submenus li a {
-  font-size: 16px;
-  padding: 10px 15px;
-  color: white;
-}
-*/
-.menu ul li:hover .submenus {
-  max-height: 500px;
+/* SUBMENÚS: Estado ABIERTO (Se activa con JS) */
+.submenus.show {
+  max-height: 200px; /* Ajusta según el número de links que tengas */
   opacity: 1;
   visibility: visible;
-  transform: translateY(0px);
+  padding: 10px 0 10px 30px;
+}
 
+.arrow-btn {
+    display: inline-block; /* Permite que la rotación funcione mejor */
+    cursor: pointer;
+    padding: 5px 10px;
+    user-select: none; /* Evita que se seleccione el texto al hacer muchos clics */
 }
 
 /*aqui termina menu hamburguesa*/
