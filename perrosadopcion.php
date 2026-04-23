@@ -165,7 +165,9 @@ require_once "header.php";
         <li><strong>Carácter:</strong> Tranquilo</li>
     </ul>
 
+    <a href="solicituddeadopciondeperro.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -194,7 +196,9 @@ require_once "header.php";
         <li><strong>Carácter:</strong> Jugueton</li>
     </ul>
 
+    <a href="solicituddeadopciondeperro.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -223,7 +227,9 @@ require_once "header.php";
         <li><strong>Carácter:</strong> Tranquilo</li>
     </ul>
 
+    <a href="solicituddeadopciondeperro.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -252,7 +258,9 @@ require_once "header.php";
         <li><strong>Carácter:</strong> Tranquilo</li>
     </ul>
 
+    <a href="solicituddeadopciondeperro.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -281,7 +289,9 @@ require_once "header.php";
         <li><strong>Carácter:</strong> Moderado</li>
     </ul>
 
+    <a href="solicituddeadopciondeperro.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 </section>
 

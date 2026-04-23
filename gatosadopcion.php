@@ -154,8 +154,9 @@ require_once "header.php";
         <li><strong>Color:</strong> Blanco</li>
         <li><strong>Nivel de Actividad:</strong> Tranquilo</li>
     </ul>
-
+   <a href="solicituddeadopciondegato.php">
     <button class="btn-adoptar">Adoptar</button>
+   </a>
 </article>
 
 <article class="card-mascota"
@@ -184,7 +185,9 @@ require_once "header.php";
         <li><strong>Nivel de Actividad:</strong> Muy activo</li>
     </ul>
 
+    <a href="solicituddeadopciondegato.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -213,7 +216,9 @@ require_once "header.php";
         <li><strong>Nivel de Actividad:</strong> Muy activo</li>
     </ul>
 
+    <a href="solicituddeadopciondegato.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -242,7 +247,9 @@ require_once "header.php";
         <li><strong>Nivel de Actividad:</strong> Tranquilo</li>
     </ul>
 
+    <a href="solicituddeadopciondegato.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 <article class="card-mascota"
@@ -271,7 +278,9 @@ require_once "header.php";
         <li><strong>Nivel de Actividad:</strong> Jugueton</li>
     </ul>
 
+    <a href="solicituddeadopciondegato.php">
     <button class="btn-adoptar">Adoptar</button>
+</a>
 </article>
 
 </section>

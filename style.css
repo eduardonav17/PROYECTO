@@ -865,10 +865,12 @@ display: none;
   width: 260px;
   background: #ffffff;
   border-radius: 12px;
-  padding: 12px;
   box-shadow: 0 4px 10px rgb(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card-mascota:hover {
@@ -917,7 +919,7 @@ display: none;
 
 .btn-adoptar {
   width: 100%;
-  margin-top: 10px;
+  margin-top: auto;
   padding: 8px;
   border: none;
   border-radius: 8px;
@@ -1116,4 +1118,75 @@ display: none;
   background: var(--turquesa);
   color: var(--blanco);
   transform: scale(1.1);
+}
+
+/*css para el diseño de las cookies*/
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--gris-medio);
+  color: #fff;
+  padding: 15px 20px;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cookie-banner a {
+  color: #4da6ff;
+  text-decoration: underline;
+}
+
+/* Contenedor de botones */
+.cookie-banner button {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Aceptar */
+#accept-cookies {
+  background: var(--naranja-claro);
+  color: white;
+}
+
+#accept-cookies:hover {
+  background: var(--naranja);
+}
+
+/* Rechazar */
+#reject-cookies {
+  background: var(--turquesa);
+  color: white;
+}
+
+#reject-cookies:hover {
+  background: var(--acerca);
+}
+
+#config-cookies {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+#config-cookies:hover {
+  background: #333;
 }

@@ -97,6 +97,16 @@ require_once "header.php";
 
 </section>
 
+<section id="cookie-banner" class="cookie-banner">
+  <p>
+    Usamos cookies para mejorar tu experiencia. Puedes aceptar o rechazar su uso.
+    <a href="cookies.php">Leer más</a>
+  </p>
+  <button id="accept-cookies">Aceptar</button>
+  <button id="reject-cookies">Rechazar</button>
+  <button id="config-cookies">Configurar</button>
+</section>
+
 </main>
 
 <!--Pie de pagina-->

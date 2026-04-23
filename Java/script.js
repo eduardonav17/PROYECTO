@@ -756,3 +756,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
+//js para las cookies
+const banner = document.getElementById('cookie-banner');
+
+  // Revisar decisión previa
+  const decision = localStorage.getItem('cookiesDecision');
+
+  if (decision) {
+    banner.style.display = 'none';
+  }
+
+  document.getElementById('accept-cookies').addEventListener('click', () => {
+    localStorage.setItem('cookiesDecision', 'accepted');
+    banner.style.display = 'none';
+  });
+
+  document.getElementById('reject-cookies').addEventListener('click', () => {
+    localStorage.setItem('cookiesDecision', 'rejected');
+    banner.style.display = 'none';
+  });
+
+  
+
+  const configBtn = document.getElementById('config-cookies');
+
+  configBtn.addEventListener('click', () => {
+    alert("Aquí puedes implementar opciones como:\n\n- Cookies necesarias\n- Cookies analíticas\n- Cookies de marketing\n\n(Este es un ejemplo simple)");
+  });
