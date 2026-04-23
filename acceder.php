@@ -22,16 +22,14 @@ require_once "header.php";
                 <img src="imagenes/adoptistas.webp" alt="Una familia conformada por padre, madre e hijos adoptando un perro">
             </figure>
             <h3>Soy adoptista</h3>
-            <p>Busca y adopta mascotas que necesitan un hogar.</p>
             <a href="adoptistas.php">Crear Cuenta</a>
         </article>
 
-        <article class="carda">
+        <article class="carda"> <a herf="rescatistas.php">
             <figure>
                 <img src="imagenes/rescatista.webp" alt="un rescatista con chaleco azul ayudando a un perro en la calle">
             </figure>
             <h3>Soy Rescatista</h3>
-            <p>Publica mascotas y ayúdalas a encontra un hogar.</p>
             <a href="rescatistas.php">Crear Cuenta</a>
         </article>
     </section>

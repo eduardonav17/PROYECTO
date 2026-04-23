@@ -695,42 +695,54 @@ select, input[type="number"] {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .carda {
   background-color: white;
-  width: 280px;
+  width: 100%;
+  max-width: 320px; /* tamaño por defecto en pantallas grandes */
+  text-decoration: none;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  display: block;
+  text-align: center;
 }
 
 .carda:hover {
-  transform:scale(1.08);
+  transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-figure {
-  margin: 0;
 }
 
 .carda img {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 20px;
+  margin-bottom: 1px;
 }
 
-.carda h3 {
-  color: var(--turquesa-oscuro);
-  margin: 15px 0;
+/* Tablets → tarjetas más pequeñas y 2 columnas */
+@media (max-width: 992px) {
+  .carda {
+    max-width: 260px;
+    padding: 15px;
+  }
+  .cards {
+    justify-content: center;
+  }
 }
 
-.carda p {
-  font-size: 14px;
-  margin-bottom: 20px;
+/* Celulares → tarjetas aún más pequeñas y en una sola columna */
+@media (max-width: 600px) {
+  .carda {
+    max-width: 100%; /* ocupa todo el ancho disponible */
+    padding: 12px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card a {
@@ -738,15 +750,29 @@ figure {
   padding: 10px 20px;
   background: #7a7dbb;
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* ← evita el subrayado */
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
 
-.card a:hover {
-  background-color: #5f62a3;
-  transform:scale(1.08);
+.carda a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #7a7dbb;
+  color: white;
+  text-decoration: none; /* quita el subrayado */
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
 }
+
+.carda a:hover {
+  background-color: #5f62a3;
+  transform: scale(1.08);
+}
+
+
+
 /*aqui termina css de acceder*/
 
 
