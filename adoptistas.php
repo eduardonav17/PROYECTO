@@ -29,9 +29,6 @@ require_once "header.php";
 
     <input type="email" placeholder="Correo Electronico">
     <input type="password" placeholder="Contraseña">
-
-    <button>Ingresar</button>
-
     <p>¿No tienes cuenta?</p>
     <button onclick="mostrarRegistro()">Registrarse</button>
 </div>

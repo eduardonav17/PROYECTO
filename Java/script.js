@@ -785,3 +785,10 @@ const banner = document.getElementById('cookie-banner');
   configBtn.addEventListener('click', () => {
     alert("Aquí puedes implementar opciones como:\n\n- Cookies necesarias\n- Cookies analíticas\n- Cookies de marketing\n\n(Este es un ejemplo simple)");
   });
+  function confirmarRegistro() {
+    // Oculta el formulario de registro
+    document.getElementById("registro").style.display = "none";
+    
+    // Muestra el mensaje de éxito
+    document.getElementById("mensaje-exito").style.display = "block";
+}
