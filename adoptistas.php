@@ -18,7 +18,7 @@ require_once "header.php";
     <input type="password" placeholder="Contraseña" required>
     <input type="password" placeholder="Confirmar Contraseña" required>
 <input type="date" id="fecha" name="fecha" required>
-    <button>Registrarse</button>
+    <button onclick="Registrarse()">Registrarse</button>
 
     <p>¿Ya tienes cuenta?</p>
     <button onclick="mostrarLogin()">Iniciar Sesión</button>
@@ -26,11 +26,12 @@ require_once "header.php";
 
 <div class="login" id="login" style="display:none;">
     <h1>Iniciar Sesión</h1>
-
     <input type="email" placeholder="Correo Electronico">
     <input type="password" placeholder="Contraseña">
+    <button onclick="Acceder()">Acceder</button>
     <p>¿No tienes cuenta?</p>
     <button onclick="mostrarRegistro()">Registrarse</button>
+
 </div>
 <script>
 function mostrarLogin(){
@@ -41,6 +42,12 @@ function mostrarLogin(){
 function mostrarRegistro(){
     document.getElementById("registro").style.display = "block";
     document.getElementById("login").style.display = "none";
+}
+function Acceder() {
+    alert("Felicidades, ya has creado tu cuenta");
+}
+function Registrarse() {
+    alert("Felicidades, ya te has registrado");
 }
 </script>
 
