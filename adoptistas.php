@@ -18,37 +18,50 @@ require_once "header.php";
     <input type="password" placeholder="Contraseña" required>
     <input type="password" placeholder="Confirmar Contraseña" required>
 <input type="date" id="fecha" name="fecha" required>
-    <button onclick="Registrarse()">Registrarse</button>
+    <button id="btnRegistro">Registrarse</button>
 
     <p>¿Ya tienes cuenta?</p>
-    <button onclick="mostrarLogin()">Iniciar Sesión</button>
+<button type="button" id="btnLogin">Iniciar Sesión</button>
 </div>
 
 <div class="login" id="login" style="display:none;">
     <h1>Iniciar Sesión</h1>
     <input type="email" placeholder="Correo Electronico">
     <input type="password" placeholder="Contraseña">
-    <button onclick="Acceder()">Acceder</button>
+    <button type="button" id="btnAcceder">Acceder</button>
     <p>¿No tienes cuenta?</p>
-    <button onclick="mostrarRegistro()">Registrarse</button>
+     <button id="btnCrearCuenta">Crear Cuenta</button>
 
 </div>
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    document.getElementById("btnLogin").addEventListener("click", function() {
+        mostrarLogin();
+    });
+
+    document.getElementById("btnCrearCuenta").addEventListener("click", function() {
+        mostrarCrearCuenta();
+    });
+
 function mostrarLogin(){
     document.getElementById("registro").style.display = "none";
     document.getElementById("login").style.display = "block";
 }
 
-function mostrarRegistro(){
+function mostrarCrearCuenta(){
     document.getElementById("registro").style.display = "block";
     document.getElementById("login").style.display = "none";
 }
-function Acceder() {
-    alert("Felicidades, ya has creado tu cuenta");
-}
-function Registrarse() {
+
+});
+
+document.getElementById("btnRegistro").addEventListener("click", function() {
     alert("Felicidades, ya te has registrado");
-}
+});
+document.getElementById("btnAcceder").addEventListener("click", function() {
+    alert("Felicidades, ya has accedido");
+});
 </script>
 
 <!--Pie de pagina-->
