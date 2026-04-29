@@ -10,7 +10,7 @@ require_once "header.php";
 
 <!--Seccion para crear cuenta adoptistas y rescatistas-->
 <section class="registro">
-    <h1>Crear Cuenta</h1>
+    <h2>Crear Cuenta</h2>
     
     <p>Selecciona tu perfil</p>
 

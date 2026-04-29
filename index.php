@@ -15,9 +15,9 @@ require_once "header.php";
         </p>
 
         <!--Frase secundaria-->
-        <h2 style="font-family: Verdana;color: darkgoldenrod; font-size: 40px;">
+        <h1 style="font-family: Verdana;color: darkgoldenrod; font-size: 40px;">
         Adopta. Rescata. Ayuda.
-        </h2>
+        </h1>
 
         <!--Buscador de mascotas-->
 
@@ -41,9 +41,9 @@ require_once "header.php";
 <hr>
 
 <!--Titulo de la seccion de adopcion-->
-<h1 class="titulopg">
+<h2 class="titulopg">
 ¿Quieres Adoptar un perro o un gato?
-</h1>
+</h2>
 
 <!--Seccion de categorias de mascotas-->
 <section class="contenedor-categorias">

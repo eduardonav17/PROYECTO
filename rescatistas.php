@@ -8,7 +8,7 @@ require_once "header.php";
 <body class="logins">
 
 <div class="registror" id="registro">
-    <h1>Crear Cuenta</h1>
+    <h2>Crear Cuenta</h2>
 
     <input type="text" placeholder="Nombre Completo">
     <input type="email" placeholder="Correo Electronico">
@@ -23,7 +23,7 @@ require_once "header.php";
 </div>
 
 <div class="login" id="login" style="display:none;">
-    <h1>Iniciar Sesión</h1>
+    <h2>Iniciar Sesión</h2>
 
     <input type="email" placeholder="Correo Electronico">
     <input type="password" placeholder="Contraseña">

@@ -20,7 +20,7 @@ require_once "header.php";
 <div class="hero-content">
 
 <section class="text-box">
-<h1>GATOS</h1>
+<h2>GATOS</h2>
 <p>Encuentra a tu mejor amigo</p>
 </section>
 

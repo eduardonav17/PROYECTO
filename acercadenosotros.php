@@ -7,7 +7,7 @@ require_once "header.php";
 
 <!--Sección principal del título-->
 <section class="titulo-seccion">
-   <h1 class="titulo">Acerca de Nosotros</h1>
+   <h2 class="titulo">Acerca de Nosotros</h2>
 </section>
 
 <!--Descripción del proyecto-->

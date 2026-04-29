@@ -253,7 +253,7 @@ object-fit: cover;
 }
 
 /* Título */
-.text-box h1{
+.text-box h2{
     color: white;
     font-size: 70px;
     margin: 0;
@@ -683,7 +683,7 @@ select, input[type="number"] {
   animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
-.registro h1 {
+.registro h2 {
   font-size: 40px;
   color: var(--naranja-claro);
 }
@@ -800,7 +800,7 @@ margin: auto;
 color:white;
 box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
-h1{
+h2{
 font-size: 28px;
 }
 .registror input{
