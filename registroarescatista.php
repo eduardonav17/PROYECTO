@@ -62,6 +62,7 @@ require_once "header.php";
 </main>
 
 <script src="script.js"></script>
+<script src="forms.js"></script>
 <!--Pie de pagina-->
 <?php include("footer.php"); ?>
   
