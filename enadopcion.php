@@ -41,9 +41,15 @@
 <!--Color-->
 <div class="grupo">
 <label>Color</label>
-<input type="text" id="color" placeholder="Ej. Café con blanco">
-<span id="errorColor" style="color:red;"></span>
-</div>
+<select id="color" required>
+    <option>Cafe</option>
+    <option>Blanco</option>
+    <option>Negro</option>
+    <option>Gris</option>
+    <option>Dorado/Amarillo</option>
+    <option>Naranja</option>
+</select>
+</div>    
 
 <!--Lugar-->
 <div class="grupo">
@@ -74,6 +80,7 @@
 </main>
 
 <script src="script.js"></script>
+<script src="forms.js"></script>
 
 <?php include("footer.php"); ?>
 
