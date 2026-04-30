@@ -503,7 +503,7 @@ ul {
   padding: 20px;
   margin: 0 auto;
    
-}
+}/*
 ul li {
   background: white;
   margin: 12px auto;
@@ -519,7 +519,7 @@ ul li {
   padding-left: 50px;
 }
 
-/* ICONO TIPO CHECK */
+/* ICONO TIPO CHECK 
 
 ul li::before {
   content:  "🐾";
