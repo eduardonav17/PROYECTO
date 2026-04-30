@@ -6,12 +6,14 @@ require_once "header.php";
 <main>
 
 <!--Sección del título-->
-<section class="titulo-seccion">
-<h2 class="titulo">Quiero ayudar</h2>
+<section class="imagenayudar">
+ <img src="imagenes/quiero-ayudar.webp" alt="imagen de un perro y gato acostados en el cesped">
 </section>
 
+ <h2 class="tituloayudar">Quiero ayudar</h2>
+
 <!--Sección de información sobre cómo ayudar-->
-<section class="hero-ayudar">
+<section class="quieroayudar">
 
 <div class="contenido-hero">
 
