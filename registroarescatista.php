@@ -57,7 +57,7 @@ require_once "header.php";
 
 </form>
 
-</section>xxxmzmzmzmzmzxmnmxnnxzmxzcxzbcmnxzbcmnxbcmnxzmnbncbzxmbcnxcbnzbxmnxz
+</section>
 
 </main>
 
