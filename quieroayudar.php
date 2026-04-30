@@ -15,7 +15,7 @@ require_once "header.php";
 <!--Sección de información sobre cómo ayudar-->
 <section class="quieroayudar">
 
-<div class="contenido-hero">
+<div class="contenidoayudar">
 
 <p>
 Hay muchas formas en las que puedes ayudar en Pet Friends Hub:
@@ -30,7 +30,7 @@ Hay muchas formas en las que puedes ayudar en Pet Friends Hub:
 </ul>
 
 <!--Mensaje final motivacional-->
-<p class="mensaje-final">
+<p class="finalayudar">
 Cada pequeña acción puede cambiar una vida.
 </p>
 
